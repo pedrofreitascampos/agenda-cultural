@@ -1,0 +1,4 @@
+.claude/
+config.js
+node_modules/
+*.stackdump
