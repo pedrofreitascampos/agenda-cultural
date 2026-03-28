@@ -87,6 +87,15 @@
 
     <!-- Agenda View (hidden by default) -->
     <div id="agenda-view" class="hidden">
+      <div class="agenda-toolbar">
+        <div class="agenda-filters" id="agenda-filters">
+          <button class="agenda-filter-btn active" data-filter="all">Todos</button>
+          <button class="agenda-filter-btn" data-filter="watching">A ver</button>
+          <button class="agenda-filter-btn" data-filter="attending">Confirmados</button>
+          <button class="agenda-filter-btn" data-filter="custom">Os meus</button>
+        </div>
+        <button id="add-event-btn" class="btn-add-event">+ Adicionar evento</button>
+      </div>
       <div id="agenda-content" class="agenda-content">
         <div class="agenda-empty">
           <p>Marca eventos como "A ver" ou "Confirmado" para os veres aqui.</p>
@@ -99,6 +108,92 @@
   <div id="event-detail" class="event-detail hidden">
     <button id="detail-close" class="detail-close">&times;</button>
     <div id="detail-content"></div>
+  </div>
+
+  <!-- ─── Add Custom Event Modal ──────────────────────── -->
+  <div id="event-modal" class="settings-panel hidden">
+    <div class="settings-backdrop" id="event-modal-backdrop"></div>
+    <div class="settings-drawer">
+      <div class="settings-header">
+        <h2 class="settings-title" id="event-modal-title">Adicionar Evento</h2>
+        <button id="event-modal-close" class="detail-close">&times;</button>
+      </div>
+      <form id="event-form" class="event-form">
+        <div class="form-group">
+          <label class="filter-label" for="ef-title">Titulo *</label>
+          <input type="text" id="ef-title" class="filter-input" required placeholder="Nome do evento">
+        </div>
+        <div class="form-group">
+          <label class="filter-label" for="ef-venue">Local</label>
+          <input type="text" id="ef-venue" class="filter-input" placeholder="Nome do local">
+        </div>
+        <div class="form-group">
+          <label class="filter-label" for="ef-city">Cidade</label>
+          <input type="text" id="ef-city" class="filter-input" placeholder="Lisboa, Porto, ...">
+        </div>
+        <div class="form-group">
+          <label class="filter-label" for="ef-category">Categoria</label>
+          <select id="ef-category" class="filter-input">
+            <option value="music">Musica</option>
+            <option value="theatre">Teatro</option>
+            <option value="dance">Danca</option>
+            <option value="cinema">Cinema</option>
+            <option value="exhibitions">Exposicoes</option>
+            <option value="workshops">Workshops</option>
+            <option value="festivals">Festivais</option>
+            <option value="literature">Literatura</option>
+            <option value="family">Familias</option>
+            <option value="other" selected>Outros</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group" style="flex:1">
+            <label class="filter-label" for="ef-date-start">Data inicio *</label>
+            <input type="date" id="ef-date-start" class="filter-input" required>
+          </div>
+          <div class="form-group" style="flex:1">
+            <label class="filter-label" for="ef-date-end">Data fim</label>
+            <input type="date" id="ef-date-end" class="filter-input">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group" style="flex:1">
+            <label class="filter-label" for="ef-time-start">Hora inicio</label>
+            <input type="time" id="ef-time-start" class="filter-input">
+          </div>
+          <div class="form-group" style="flex:1">
+            <label class="filter-label" for="ef-time-end">Hora fim</label>
+            <input type="time" id="ef-time-end" class="filter-input">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="filter-label">Recorrencia</label>
+          <select id="ef-recurrence" class="filter-input">
+            <option value="">Evento unico</option>
+            <option value="daily">Diario</option>
+            <option value="weekly">Semanal</option>
+            <option value="biweekly">Quinzenal</option>
+            <option value="monthly">Mensal</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="filter-label" for="ef-cost">Preco</label>
+          <input type="text" id="ef-cost" class="filter-input" placeholder="Gratuito, 10€, ...">
+        </div>
+        <div class="form-group">
+          <label class="filter-label" for="ef-url">Link</label>
+          <input type="url" id="ef-url" class="filter-input" placeholder="https://...">
+        </div>
+        <div class="form-group">
+          <label class="filter-label" for="ef-notes">Notas</label>
+          <textarea id="ef-notes" class="filter-input" rows="3" placeholder="Notas pessoais..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="button" id="ef-delete" class="btn-danger hidden">Apagar</button>
+          <button type="submit" class="btn-primary">Guardar</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <!-- ─── Settings Panel (Sources) ─────────────────────── -->

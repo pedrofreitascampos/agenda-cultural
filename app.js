@@ -36,6 +36,9 @@ const State = {
   sources: {},            // from data/sources.json
   disabledSources: {},    // { sourceId: true } — user-toggled off
   userEvents: {},         // { eventId: 'watching' | 'attending' }
+  customEvents: [],       // user-created events
+  agendaFilter: 'all',    // 'all' | 'watching' | 'attending' | 'custom'
+  editingEventId: null,   // custom event being edited
   userId: null,
   firebaseReady: false,
   weather: null,          // current weather + forecast cache
@@ -73,6 +76,14 @@ const DOM = {
   sourcesList: $('#sources-list'),
   weatherToggle: $('#weather-toggle'),
   weatherWidget: $('#weather-widget'),
+  agendaFilters: $('#agenda-filters'),
+  addEventBtn: $('#add-event-btn'),
+  eventModal: $('#event-modal'),
+  eventModalBackdrop: $('#event-modal-backdrop'),
+  eventModalClose: $('#event-modal-close'),
+  eventModalTitle: $('#event-modal-title'),
+  eventForm: $('#event-form'),
+  efDelete: $('#ef-delete'),
 };
 
 // ─── Map Setup ───────────────────────────────────────────────
@@ -151,7 +162,24 @@ function createPopupContent(event) {
 function renderMarkers() {
   DOM.clusterGroup.clearLayers();
 
-  const geoEvents = State.filtered.filter(e => e.lat != null && e.lng != null);
+  // Include custom events in map display
+  const allFiltered = State.filtered.concat(
+    State.customEvents.filter(e => {
+      // Apply same date/category/search filters to custom events
+      const { search, dateFrom, dateTo, categories, city } = State.filters;
+      if (search) {
+        const haystack = (e.title + ' ' + (e.venue || '') + ' ' + (e.description || '')).toLowerCase();
+        if (!haystack.includes(search)) return false;
+      }
+      if (dateFrom && e.dateEnd && e.dateEnd < dateFrom) return false;
+      if (dateTo && e.dateStart && e.dateStart > dateTo) return false;
+      if (categories.size > 0 && !categories.has(e.category)) return false;
+      if (city && e.city !== city) return false;
+      return true;
+    })
+  );
+
+  const geoEvents = allFiltered.filter(e => e.lat != null && e.lng != null);
   const markers = [];
 
   for (const event of geoEvents) {
@@ -174,7 +202,7 @@ function renderMarkers() {
   DOM.clusterGroup.addLayers(markers);
 
   // Update event count
-  const total = State.filtered.length;
+  const total = allFiltered.length;
   const mapped = geoEvents.length;
   if (mapped < total) {
     DOM.eventCount.textContent = mapped + ' no mapa \u00B7 ' + total + ' total';
@@ -417,12 +445,19 @@ function openDetail(event) {
   }
 
   // Source badge
-  html += '<div style="font-size:11px;color:var(--color-text-dim);margin-bottom:12px">' +
-    'Fonte: ' + escapeHtml(event.source) + '</div>';
+  if (event.source === 'custom') {
+    html += '<div style="font-size:11px;color:var(--color-text-dim);margin-bottom:12px">Evento pessoal</div>';
+    html += '<button class="btn-secondary" style="margin-bottom:12px" onclick="openEventModal(findEventById(\'' +
+      escapeHtml(event.id).replace(/'/g, "\\'") + '\'))">Editar evento</button>';
+  } else {
+    html += '<div style="font-size:11px;color:var(--color-text-dim);margin-bottom:12px">' +
+      'Fonte: ' + escapeHtml(event.source) + '</div>';
+  }
 
   // Source link
   if (event.sourceUrl) {
-    html += '<a class="detail-link" href="' + escapeHtml(event.sourceUrl) + '" target="_blank" rel="noopener">Ver na fonte original \u2197</a>';
+    html += '<a class="detail-link" href="' + escapeHtml(event.sourceUrl) + '" target="_blank" rel="noopener">' +
+      (event.source === 'custom' ? 'Abrir link \u2197' : 'Ver na fonte original \u2197') + '</a>';
   }
 
   html += '</div>';
@@ -474,7 +509,7 @@ function toggleEventStatus(eventId, status) {
   saveUserEvents();
 
   // Re-render detail if open
-  const event = State.events.find(e => e.id === eventId);
+  const event = findEventById(eventId);
   if (event) openDetail(event);
 
   // Re-render agenda if visible
@@ -513,43 +548,333 @@ function loadUserEvents() {
 
 // ─── Agenda View ─────────────────────────────────────────────
 
-function renderAgenda() {
-  const userEventIds = Object.keys(State.userEvents);
+function initAgenda() {
+  // Filter buttons
+  DOM.agendaFilters.querySelectorAll('.agenda-filter-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      State.agendaFilter = this.dataset.filter;
+      DOM.agendaFilters.querySelectorAll('.agenda-filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      renderAgenda();
+    });
+  });
 
-  if (userEventIds.length === 0) {
+  // Add event button
+  DOM.addEventBtn.addEventListener('click', function () { openEventModal(); });
+}
+
+function getAgendaEvents() {
+  // All events the user has interacted with + custom events
+  const allEvents = getAllEventsIncludingCustom();
+  const filter = State.agendaFilter;
+
+  return allEvents.filter(e => {
+    const status = State.userEvents[e.id];
+    const isCustom = e.source === 'custom';
+
+    if (filter === 'watching') return status === 'watching';
+    if (filter === 'attending') return status === 'attending';
+    if (filter === 'custom') return isCustom;
+    // 'all': any event in userEvents OR any custom event
+    return status || isCustom;
+  }).sort((a, b) => (a.dateStart || '').localeCompare(b.dateStart || ''));
+}
+
+function renderAgenda() {
+  const events = getAgendaEvents();
+
+  // Update filter badges
+  updateAgendaBadges();
+
+  if (events.length === 0) {
+    const messages = {
+      all: 'A tua agenda está vazia.\nMarca eventos como "A ver" ou "Confirmado", ou adiciona os teus próprios.',
+      watching: 'Nenhum evento marcado como "A ver".',
+      attending: 'Nenhum evento confirmado.',
+      custom: 'Ainda não adicionaste eventos.\nClica em "+ Adicionar evento" para começar.',
+    };
     DOM.agendaContent.innerHTML =
       '<div class="agenda-empty">' +
         '<p style="font-size:32px;margin-bottom:12px">\uD83C\uDFAD</p>' +
-        '<p>A tua agenda está vazia.</p>' +
-        '<p style="color:var(--color-text-dim);font-size:13px;margin-top:4px">' +
-          'Marca eventos como "A ver" ou "Confirmado" para os veres aqui.</p>' +
+        '<p>' + escapeHtml(messages[State.agendaFilter] || messages.all).replace(/\n/g, '<br>') + '</p>' +
       '</div>';
     return;
   }
 
-  // Get user's events, sorted by date
-  const agendaEvents = State.events
-    .filter(e => State.userEvents[e.id])
-    .sort((a, b) => (a.dateStart || '').localeCompare(b.dateStart || ''));
+  // Group into today, upcoming, past
+  const today = new Date().toISOString().slice(0, 10);
+  const todayEvents = [];
+  const upcomingEvents = [];
+  const pastEvents = [];
 
-  if (agendaEvents.length === 0) {
-    DOM.agendaContent.innerHTML =
-      '<div class="agenda-empty">' +
-        '<p>Nenhum evento encontrado na tua agenda.</p>' +
-      '</div>';
-    return;
+  for (const e of events) {
+    const endDate = e.dateEnd || e.dateStart || '';
+    const startDate = e.dateStart || '';
+    if (startDate <= today && endDate >= today) {
+      todayEvents.push(e);
+    } else if (startDate > today) {
+      upcomingEvents.push(e);
+    } else {
+      pastEvents.push(e);
+    }
   }
 
-  renderEventList(agendaEvents, 'A Minha Agenda');
+  let html = '';
+
+  if (todayEvents.length > 0) {
+    html += '<div class="agenda-section-header">Hoje</div>';
+    html += renderAgendaCards(todayEvents);
+  }
+  if (upcomingEvents.length > 0) {
+    html += '<div class="agenda-section-header">Próximos</div>';
+    html += renderAgendaCards(upcomingEvents);
+  }
+  if (pastEvents.length > 0) {
+    html += '<div class="agenda-section-header" style="color:var(--color-text-dim)">Passados</div>';
+    html += renderAgendaCards(pastEvents);
+  }
+
+  DOM.agendaContent.innerHTML = html;
+  bindAgendaCardClicks();
+}
+
+function renderAgendaCards(events) {
+  const grouped = groupByDate(events);
+  let html = '';
+
+  for (const [date, dayEvents] of grouped) {
+    html += '<div class="agenda-day-header">' + formatDisplayDate(date) + '</div>';
+    for (const event of dayEvents) {
+      const cat = CATEGORIES[event.category] || CATEGORIES.other;
+      const status = State.userEvents[event.id];
+      const isCustom = event.source === 'custom';
+
+      // Status badge
+      let badge = '';
+      if (isCustom) {
+        badge = '<span class="agenda-card-status custom">Meu</span>';
+      } else if (status === 'attending') {
+        badge = '<span class="agenda-card-status attending">Confirmado</span>';
+      } else if (status === 'watching') {
+        badge = '<span class="agenda-card-status watching">A ver</span>';
+      }
+
+      html += '<div class="agenda-card" data-event-id="' + escapeHtml(event.id) + '">' +
+        '<div class="agenda-card-cat" style="background:' + cat.color + '">' + cat.icon + '</div>' +
+        '<div class="agenda-card-body">' +
+          '<div class="agenda-card-title">' + escapeHtml(event.title) + '</div>' +
+          '<div class="agenda-card-meta">' +
+            (event.venue ? escapeHtml(event.venue) : '') +
+            (event.city ? ' \u00B7 ' + escapeHtml(event.city) : '') +
+            (event.timeStart ? ' \u00B7 ' + event.timeStart : '') +
+            (event.cost ? ' \u00B7 ' + escapeHtml(event.cost) : '') +
+          '</div>' +
+        '</div>' +
+        badge +
+      '</div>';
+    }
+  }
+  return html;
+}
+
+function updateAgendaBadges() {
+  const allEvents = getAllEventsIncludingCustom();
+  const counts = { all: 0, watching: 0, attending: 0, custom: 0 };
+
+  for (const e of allEvents) {
+    const status = State.userEvents[e.id];
+    const isCustom = e.source === 'custom';
+    if (status === 'watching') { counts.watching++; counts.all++; }
+    if (status === 'attending') { counts.attending++; counts.all++; }
+    if (isCustom) { counts.custom++; if (!status) counts.all++; }
+  }
+
+  DOM.agendaFilters.querySelectorAll('.agenda-filter-btn').forEach(btn => {
+    const filter = btn.dataset.filter;
+    const count = counts[filter] || 0;
+    const existing = btn.querySelector('.badge');
+    if (existing) existing.remove();
+    if (count > 0) {
+      btn.insertAdjacentHTML('beforeend', '<span class="badge">' + count + '</span>');
+    }
+  });
+
+  // Update tab badge
+  updateTabBadge(counts.all);
+}
+
+function updateTabBadge(count) {
+  DOM.tabBtns.forEach(btn => {
+    if (btn.dataset.view === 'agenda') {
+      const existing = btn.querySelector('.tab-badge');
+      if (existing) existing.remove();
+      if (count > 0) {
+        btn.insertAdjacentHTML('beforeend', '<span class="tab-badge">' + count + '</span>');
+      }
+    }
+  });
 }
 
 function bindAgendaCardClicks() {
   DOM.agendaContent.querySelectorAll('.agenda-card').forEach(card => {
     card.addEventListener('click', function () {
-      const event = State.events.find(e => e.id === this.dataset.eventId);
+      const event = findEventById(this.dataset.eventId);
       if (event) openDetail(event);
     });
   });
+}
+
+// ─── Custom Events ───────────────────────────────────────────
+
+function getAllEventsIncludingCustom() {
+  return State.events.concat(State.customEvents);
+}
+
+function findEventById(id) {
+  return State.events.find(e => e.id === id) || State.customEvents.find(e => e.id === id);
+}
+
+function openEventModal(existingEvent) {
+  State.editingEventId = existingEvent ? existingEvent.id : null;
+
+  DOM.eventModalTitle.textContent = existingEvent ? 'Editar Evento' : 'Adicionar Evento';
+  DOM.efDelete.classList.toggle('hidden', !existingEvent);
+
+  // Fill form
+  const f = DOM.eventForm;
+  f.querySelector('#ef-title').value = existingEvent ? existingEvent.title : '';
+  f.querySelector('#ef-venue').value = existingEvent ? (existingEvent.venue || '') : '';
+  f.querySelector('#ef-city').value = existingEvent ? (existingEvent.city || '') : '';
+  f.querySelector('#ef-category').value = existingEvent ? (existingEvent.category || 'other') : 'other';
+  f.querySelector('#ef-date-start').value = existingEvent ? (existingEvent.dateStart || '') : new Date().toISOString().slice(0, 10);
+  f.querySelector('#ef-date-end').value = existingEvent ? (existingEvent.dateEnd || '') : '';
+  f.querySelector('#ef-time-start').value = existingEvent ? (existingEvent.timeStart || '') : '';
+  f.querySelector('#ef-time-end').value = existingEvent ? (existingEvent.timeEnd || '') : '';
+  f.querySelector('#ef-recurrence').value = existingEvent ? (existingEvent.recurrence || '') : '';
+  f.querySelector('#ef-cost').value = existingEvent ? (existingEvent.cost || '') : '';
+  f.querySelector('#ef-url').value = existingEvent ? (existingEvent.sourceUrl || '') : '';
+  f.querySelector('#ef-notes').value = existingEvent ? (existingEvent.description || '') : '';
+
+  DOM.eventModal.classList.remove('hidden');
+}
+
+function closeEventModal() {
+  DOM.eventModal.classList.add('hidden');
+  State.editingEventId = null;
+  DOM.eventForm.reset();
+}
+
+function initEventModal() {
+  DOM.eventModalClose.addEventListener('click', closeEventModal);
+  DOM.eventModalBackdrop.addEventListener('click', closeEventModal);
+
+  DOM.eventForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    saveCustomEvent();
+  });
+
+  DOM.efDelete.addEventListener('click', function () {
+    if (State.editingEventId) {
+      deleteCustomEvent(State.editingEventId);
+    }
+  });
+}
+
+function saveCustomEvent() {
+  const f = DOM.eventForm;
+  const title = f.querySelector('#ef-title').value.trim();
+  const dateStart = f.querySelector('#ef-date-start').value;
+  if (!title || !dateStart) return;
+
+  const recurrence = f.querySelector('#ef-recurrence').value;
+
+  const event = {
+    id: State.editingEventId || ('custom-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8)),
+    source: 'custom',
+    sourceUrl: f.querySelector('#ef-url').value.trim(),
+    title: title,
+    description: f.querySelector('#ef-notes').value.trim(),
+    category: f.querySelector('#ef-category').value,
+    imageUrl: '',
+    cost: f.querySelector('#ef-cost').value.trim(),
+    dateStart: dateStart,
+    dateEnd: f.querySelector('#ef-date-end').value || dateStart,
+    timeStart: f.querySelector('#ef-time-start').value || null,
+    timeEnd: f.querySelector('#ef-time-end').value || null,
+    isRecurring: !!recurrence,
+    recurrence: recurrence,
+    recurrenceNote: recurrence ? recurrenceLabel(recurrence) : '',
+    venue: f.querySelector('#ef-venue').value.trim(),
+    address: '',
+    lat: null,
+    lng: null,
+    city: f.querySelector('#ef-city').value.trim(),
+    tags: [],
+    fetchedAt: new Date().toISOString(),
+  };
+
+  // If recurring, generate occurrences as dateEnd
+  if (recurrence && !f.querySelector('#ef-date-end').value) {
+    // Default: extend 3 months for recurring events
+    const end = new Date(dateStart);
+    end.setMonth(end.getMonth() + 3);
+    event.dateEnd = end.toISOString().slice(0, 10);
+  }
+
+  if (State.editingEventId) {
+    // Update existing
+    const idx = State.customEvents.findIndex(e => e.id === State.editingEventId);
+    if (idx >= 0) State.customEvents[idx] = event;
+  } else {
+    State.customEvents.push(event);
+    // Auto-mark as attending
+    State.userEvents[event.id] = 'attending';
+  }
+
+  saveCustomEvents();
+  saveUserEvents();
+  closeEventModal();
+  applyFilters();
+  if (State.view === 'agenda') renderAgenda();
+  toast(State.editingEventId ? 'Evento atualizado' : 'Evento adicionado');
+}
+
+function deleteCustomEvent(eventId) {
+  State.customEvents = State.customEvents.filter(e => e.id !== eventId);
+  delete State.userEvents[eventId];
+  saveCustomEvents();
+  saveUserEvents();
+  closeEventModal();
+  applyFilters();
+  if (State.view === 'agenda') renderAgenda();
+  toast('Evento apagado');
+}
+
+function recurrenceLabel(recurrence) {
+  const labels = {
+    daily: 'Diário',
+    weekly: 'Semanal',
+    biweekly: 'Quinzenal',
+    monthly: 'Mensal',
+  };
+  return labels[recurrence] || '';
+}
+
+function saveCustomEvents() {
+  try {
+    localStorage.setItem('agora_customEvents', JSON.stringify(State.customEvents));
+  } catch { /* full */ }
+
+  if (State.userId && State.firebaseReady) {
+    firebase.database().ref('users/' + State.userId + '/customEvents').set(State.customEvents);
+  }
+}
+
+function loadCustomEvents() {
+  try {
+    const stored = localStorage.getItem('agora_customEvents');
+    if (stored) State.customEvents = JSON.parse(stored);
+  } catch { /* corrupt */ }
 }
 
 // ─── View Switching ──────────────────────────────────────────
@@ -570,7 +895,7 @@ function switchView(view) {
   } else {
     $('#map').classList.add('hidden');
     DOM.agendaView.classList.remove('hidden');
-    // Keep filter panel visible for agenda too
+    DOM.filterPanel.classList.remove('hidden');
     renderAgenda();
   }
 }
@@ -621,10 +946,16 @@ function initFirebase() {
         firebase.database().ref('users/' + user.uid + '/events').once('value').then(function (snap) {
           if (snap.val()) {
             State.userEvents = snap.val();
-            // Also update localStorage
             saveUserEvents();
-            if (State.view === 'agenda') renderAgenda();
           }
+        });
+        firebase.database().ref('users/' + user.uid + '/customEvents').once('value').then(function (snap) {
+          if (snap.val()) {
+            State.customEvents = snap.val();
+            saveCustomEvents();
+          }
+          if (State.view === 'agenda') renderAgenda();
+          updateAgendaBadges();
         });
       } else {
         State.userId = null;
@@ -1036,17 +1367,21 @@ async function init() {
 
   // Load data
   loadUserEvents();
+  loadCustomEvents();
   await Promise.all([loadEvents(), loadSources()]);
 
   // Init UI
   initFilters();
   initTabs();
+  initAgenda();
+  initEventModal();
   initMobileSheet();
   initSettings();
   initFirebase();
 
   // Apply initial filters
   applyFilters();
+  updateAgendaBadges();
 
   // Fetch weather (non-blocking)
   fetchWeather();

@@ -645,6 +645,186 @@ input[type="date"] {
   margin-top: 2px;
 }
 
+/* ─── Agenda Toolbar ──────────────────────────────────────── */
+
+.agenda-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 0 16px;
+  flex-wrap: wrap;
+}
+
+.agenda-filters {
+  display: flex;
+  gap: 4px;
+}
+
+.agenda-filter-btn {
+  background: var(--color-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.agenda-filter-btn:hover {
+  border-color: var(--color-border-light);
+  color: var(--color-text);
+}
+
+.agenda-filter-btn.active {
+  background: rgba(139, 92, 246, 0.15);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.agenda-filter-btn .badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  margin-left: 4px;
+  opacity: 0.7;
+}
+
+.btn-add-event {
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.btn-add-event:hover {
+  background: var(--color-accent-hover);
+}
+
+/* Agenda card status badge */
+.agenda-card-status {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.agenda-card-status.watching {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+}
+
+.agenda-card-status.attending {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+}
+
+.agenda-card-status.custom {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+
+/* Agenda section headers (Hoje, Próximos, Passados) */
+.agenda-section-header {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: 16px 0 8px;
+}
+
+.agenda-section-header:first-child {
+  padding-top: 0;
+}
+
+/* ─── Custom Event Form ───────────────────────────────────── */
+
+.event-form {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+textarea.filter-input {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 24px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.btn-danger {
+  background: none;
+  border: 1px solid #ef4444;
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  font: inherit;
+  font-size: 13px;
+  color: #ef4444;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-right: auto;
+}
+
+.btn-danger:hover {
+  background: rgba(239, 68, 68, 0.12);
+}
+
+/* Tab badge count */
+.tab-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1px 6px;
+  margin-left: 6px;
+}
+
 /* ─── Event List (fallback for ungeolocated events) ───────── */
 
 .event-list-banner {
