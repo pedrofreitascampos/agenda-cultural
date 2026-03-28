@@ -1,5 +1,430 @@
 [
   {
+    "id": "culturaptgov-impress-es-digitais-cole-o-mnac-2024-12-01",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2025/impressoes-digitais-colecao-mnac/",
+    "title": "Impressões Digitais. Coleção MNAC",
+    "description": "Constituída por obras fundadoras da historiografia da arte portuguesa contemporânea, de 1850 à atualidade, a coleção do MNAC guarda vários tesouros nacionais. Tendo aumentado exponencialmente nas últimas três décadas, a coleção, maioritariamente da autoria de criadores nacionais, com uma expressão crescente de artistas mulheres, constitui um legado ímpar, histórico e emotivo, de algum modo tão identitário como as nossas impressões digitais. Depois de sete exposições temporárias, entre 2018 e 20…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15311/impressoesdigitais.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2024-12-01",
+    "dateEnd": "2026-12-01",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional de Arte Contemporânea (MNAC)",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-exposi-o-jos-cardoso-pires-1925-1998-um-novo-neo-realismo-2025-09-30",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2025/exposicao-jose-cardoso-pires-1925-1998-um-novo-neo-realismo/",
+    "title": "Exposição \"José Cardoso Pires (1925-1998) - um novo Neo-Realismo?",
+    "description": "A partir do dia 30 de setembro poderá visitar no espaço da livraria do Museu do Neo-Realismo a exposição José Cardoso Pires (1925-1998) - um novo Neo-Realismo? Comemoração do Centenário. A exposição tem curadoria de António Mota Redol e contém, principalmente, documentos do acervo do Museu do Neo-Realismo provenientes dos espólios de vários escritores. A brochura publicada junta pela primeira vez informação sobre a sua produção, as traduções que realizou, os prefácios e textos de apresentação q…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15113/josecardosopires.jpg",
+    "cost": "Entrada livre",
+    "dateStart": "2025-09-30",
+    "dateEnd": "2026-04-26",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu do Neo-Realismo",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Vila Franca de Xira",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-lugar-de-estar-o-legado-burle-marx-2025-11-26",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2025/lugar-de-estar-o-legado-burle-marx/",
+    "title": "Lugar de estar: o legado Burle Marx",
+    "description": "Esta exposição toma como ponto de partida vinte e dois projetos paisagísticos para áreas públicas, desenvolvidos ao longo de sete décadas por Roberto Burle Marx (1909–1994) e pelos seus colaboradores. Considerado um dos mais inovadores paisagistas do século XX, e uma figura de referência no desenvolvimento do panorama urbano brasileiro, Burle Marx está associado ao imaginário moderno de grandes cidades como Brasília e Rio de Janeiro. A apresentação do MAC/CCB desenvolve-se através de cinco eixo…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15329/mac.jpg",
+    "cost": "Entrada livre",
+    "dateStart": "2025-11-26",
+    "dateEnd": "2026-04-05",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "MAC/CCB – Museu de Arte Contemporânea e Centro de Arquitetura",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-do-riso-e-do-siso-cole-es-margem-da-casa-museu-fernando-de-c-2025-11-27",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2025/do-riso-e-do-siso-colecoes-a-margem-da-casa-museu-fernando-de-castro/",
+    "title": "Do riso e do siso: Coleções à margem da Casa-Museu Fernando de Castro",
+    "description": "O Museu Nacional Soares dos Reis (MNSR) inaugura, a 27 novembro, pelas 18h30, com entrada livre, a exposição “Do riso e do siso: Coleções à margem da Casa-Museu Fernando de Castro”, uma nova abordagem dedicada às dimensões humorísticas, irónicas e caricaturais do singular universo do colecionador portuense Fernando de Castro (1888-1946). Com curadoria de Ana Mântua, Coordenadora da Casa-Museu Fernando de Castro, a exposição conta com o apoio do Círculo Dr. José de Figueiredo - Amigos do Museu N…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15328/dorisoedosiso.jpg",
+    "cost": "Entrada livre para residentes em Portugal",
+    "dateStart": "2025-11-27",
+    "dateEnd": "2026-04-26",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional Soares dos Reis (MNSR) De terça a domingo, das 10h00 às 18h00",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-j-n-o-h-primaveras-2026-01-07",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/ja-nao-ha-primaveras/",
+    "title": "Já Não Há Primaveras",
+    "description": "CICLO DE CAFÉ-TEATRO uma criação de Ivo Bastos, Ricardo Alves e Rodrigo Santos Teatro da Palmilha Dentada, Teatro Nacional São João Sinopse do evento Diz-se que o tempo está a mudar e que as estações andam trocadas. Mas se as primaveras já não têm o mesmo esplendor, o teatro da Palmilha Dentada mantém o brilho de sempre. Entre janeiro e julho de 2026, a companhia instala-se no Bar Ubu e no Salão Nobre do Teatro São João para apresentar Já Não Há Primaveras. Um ciclo de café-teatro que inclui se…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15640/643937206_1352118006947610_2750626596389366637_n.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-01-07",
+    "dateEnd": "2026-07-08",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-sequeira-os-estudos-finais-2026-01-12",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/sequeira-os-estudos-finais/",
+    "title": "“Sequeira: os Estudos Finais”",
+    "description": "O Museu Nacional Soares dos Reis (MNSR) acolherá, durante o ano 2026, um ciclo de quatro exposições constituídas por bens culturais emblemáticos do Museu Nacional de Arte Antiga (MNAA), integradas na programação anual do MNSR dedicada ao tema «Cruzamentos Artísticos». Este programa propõe o diálogo entre coleções, contextos e linguagens, reforçando uma abordagem interinstitucional, interdisciplinar e contemporânea. A primeira exposição «Sequeira: os Estudos Finais» abre a 12 de fevereiro, estan…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15524/sequeira.jpg",
+    "cost": "Bilhete geral: 10,00 € Entrada gratuita, em qualquer dia da semana (até ao limite de 52 entradas po…",
+    "dateStart": "2026-01-12",
+    "dateEnd": "2026-04-12",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional Soares dos Reis",
+    "address": "",
+    "lat": 41.147846,
+    "lng": -8.621584,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-leituras-no-mosteiro-2026-01-20",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/leituras-no-mosteiro/",
+    "title": "Leituras no Mosteiro",
+    "description": "coordenação Paula Braga organização Teatro Nacional São João Sinopse do evento As Leituras no Mosteiro entram em circulação no primeiro semestre de 2026 pelas Escolas Artísticas do Porto. Saem assim de portas e, a cada chamada nessa itinerância, o repertório diz presente! Território em constante expansão, é uma obra aberta, não só enquanto repositório de salvaguarda da memória como de acolhimento de novos autores e textos. Nos primeiros seis meses do ano, o programa das Leituras irá revisitar r…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15641/leituras-no-mosteiro.jpg",
+    "cost": "Entrada gratuita",
+    "dateStart": "2026-01-20",
+    "dateEnd": "2026-06-16",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-habitar-portugal-2026-02-11",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/habitar-portugal/",
+    "title": "Habitar Portugal",
+    "description": "A arquitetura enquanto gesto político; o evidenciar de posições de rutura; o potenciar da persistência de memórias. Assim se definiram três eixos que oferecem um novo olhar sobre o projeto da Ordem dos Arquitectos, na senda das Exposições Nacionais de Arquitectura, iniciadas na década de 1980 pela então denominada Associação dos Arquitectos Portugueses. Para a sétima edição de Habitar Portugal, foram selecionadas 100 obras, com distintos programas e escalas diferentes, orientadas pela represent…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15525/habitar-portugal.jpg",
+    "cost": "Entrada livre",
+    "dateStart": "2026-02-11",
+    "dateEnd": "2026-04-26",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "CCB Centro de Arquitetura",
+    "address": "",
+    "lat": 38.695902,
+    "lng": -9.207474,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-calafrio-shiver-2026-02-26",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/calafrio-shiver/",
+    "title": "Calafrio/ Shiver",
+    "description": "Inspirada no cinema noir e construída a partir de fotogramas de filmes antigos, esta exposição explora a fronteira frágil entre o medo privado e o pânico coletivo, entre a experiência íntima e a sua amplificação pelos media. O percurso divide-se em três momentos - O Quarto, A Mensagem e a Multidão - como se o visitante atravessasse uma sequência cinematográfica. Do medo íntimo e silencioso, à intrusão dos media na esfera pessoal, até à pressão quase absurda da multidão, o percurso revela como o…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15551/calafrio.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-02-26",
+    "dateEnd": "2026-03-31",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional de Arte Contemporânea do Chiado",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-clube-de-leituras-dan-adas-2026-02-27",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/clube-de-leituras-dancadas/",
+    "title": "Clube de Leituras Dançadas",
+    "description": "Na temporada 2025/2026, o Clube de Leituras Dançadas regressa como um espaço de encontro entre palavra e movimento, onde a leitura e a dança se cruzam para criar experiências sensoriais e performativas únicas. Concebido e orientado por Paulina Santos, com interpretação de bailarinos e bailarinas da CNB e acompanhamento ao piano por Filipe Tordo, este ciclo propõe mais do que a leitura partilhada de um(a) autor(a): é uma celebração do corpo como veículo da poesia, e da poesia como impulso para o…",
+    "category": "dance",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15592/teatrocamoes.jpg",
+    "cost": "Ver Bilheteira",
+    "dateStart": "2026-02-27",
+    "dateEnd": "2026-07-13",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Camões",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-os-maias-2026-02-27",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/os-maias/",
+    "title": "Os Maias",
+    "description": "Na primeira adaptação coreográfica de Os Maias, obra maior da literatura portuguesa, Fernando Duarte propõe um bailado em três atos que revitaliza a narratividade na dança, uma dimensão amplamente apreciada e reconhecida pelos públicos. Esta criação original cruza a intensidade dramática do universo de Eça de Queirós com a expressividade única da criação coreográfica, num exercício contemporâneo de intermedialidade que evoca, reinterpreta e dá nova vida a personagens singulares e a questões int…",
+    "category": "dance",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15591/osmaias.jpg",
+    "cost": "15 a 30 €",
+    "dateStart": "2026-02-27",
+    "dateEnd": "2026-04-30",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Camões",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-exposi-o-manuel-filipe-da-obra-ao-negro-s-cores-da-liberdade-2026-03-04",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/exposicao-manuel-filipe-da-obra-ao-negro-as-cores-da-liberdade/",
+    "title": "Exposição Manuel Filipe: da obra ao negro às cores da liberdade",
+    "description": "Com o comissariado científico de Fernanda Alves e Pedro Ferrão (MNMC), esta exposição realizada em articulação com o município da Figueira da Foz dá continuidade ao programa de itinerância iniciado em 2024, nos municípios de Mira, Ansião, Figueiró dos Vinhos e Mealhada. Projeto promovido pelo MNMC em parceria com o município de Condeixa, o PO.RO.S - Museu Portugal Romano em Sicó e o Plano Nacional das Artes, visa a divulgação e partilha da obra do pintor Manuel Filipe (1908-2002), um dos precur…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15615/large_mf_cartaz_b7283d88b3.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-04",
+    "dateEnd": "2026-04-25",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional Machado de Castro",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Coimbra",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-transbordo-luanda-de-v-rias-luandas-2026-03-07",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/transbordo-luanda-de-varias-luandas/",
+    "title": "Transbordo – Luanda: de várias Luandas",
+    "description": "A Fundação Bienal de Arte de Cerveira inaugura, no dia 7 de março, às 16h00, o seu 3.º ciclo expositivo com a exposição “Transbordo – Luanda: de várias Luandas”, integrada no programa das cidades convidadas. Com curadoria de Edna Bettencourt e Paula Nascimento, a mostra propõe uma reflexão plural sobre Luanda, explorando múltiplas narrativas, geografias e identidades através do trabalho de 10 artistas angolanos. ▪️ Programa 16h00: Ato inaugural 16h30: Inauguração da exposição “A-Salto” 17h00: I…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15586/transbordo.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-07",
+    "dateEnd": "2026-05-23",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Vila Nova de Cerveira",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Vila Nova de Cerveira",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-falsas-hist-rias-verdadeiras-uma-pina-colagem-2026-03-12",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/falsas-historias-verdadeiras-uma-pina-colagem/",
+    "title": "Falsas Histórias Verdadeiras: Uma Pina Colagem",
+    "description": "“Nós somos os trampolineiros, falsos fingidores verdadeiros, atores, imitadores, tocadores, dançadores, cantadores, contadores…” Para Manuel António Pina (1943-2012), o verdadeiro e o falso, o ser e o parecer jogam-se não só num palco, mas antes de mais no espaço lúdico da nossa imaginação. Falsas Histórias Verdadeiras: Uma Pina Colagem deixa-se conduzir por esse “pássaro da cabeça” ao partir de uma dramaturgia que abraça todas as proveniências das palavras de Pina – o teatro, a poesia, as crón…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15541/falsas-historias-verdadeiras-uma-pina-colagem.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-12",
+    "dateEnd": "2026-04-12",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Família"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-do-riso-ao-siso-cole-es-margem-da-casa-museu-fernando-de-cas-2026-03-25",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/do-riso-ao-siso-colecoes-a-margem-da-casa-museu-fernando-de-castro/",
+    "title": "Do Riso ao Siso – Coleções à margem da Casa-Museu Fernando de Castro",
+    "description": "\"Esta exposição dá a conhecer uma vertente menos conhecida de Fernando de Castro – comerciante, poeta, colecionador e cenógrafo portuense - revelando o seu olhar irónico e bem-humorado através de um conjunto de caricaturas que exploram a sociedade e o quotidiano da cidade do Porto. Apesar da atmosfera austera e barroca da sua casa, hoje Casa-Museu, Fernando de Castro cultivava um humor subtil e observador. Nas suas caricaturas, utilizava o desenho como ferramenta de reflexão e crítica social, t…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15686/large_lionesa_riso_siso_9530d86a5a.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-25",
+    "dateEnd": "2026-04-26",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional Soares dos Reis",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-filodemo-2026-03-27",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/filodemo/",
+    "title": "Filodemo",
+    "description": "Filodemo é uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos, feitos de enganos e revelações. O seu universo é tudo menos atual, um retrato distante, quase anacrónico, das convenções e dos modos de amar de outro tempo. Mas é precisamente nessa distância que se abre um espaço fértil para a invenção: olhar de novo para o que nos é estr…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15705/filodermo.jpg",
+    "cost": "Ver Bilheteira",
+    "dateStart": "2026-03-27",
+    "dateEnd": "2026-05-15",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Vários locais",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
+  },
+  {
+    "id": "culturaptgov-100-dias-de-crescimento-2026-03-27",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/100-dias-de-crescimento/",
+    "title": "100 dias de crescimento",
+    "description": "100 dias de crescimento é uma proposta expositiva do Coletivo Palma que inaugura dia 27 de março, no Palacete de Santiago, resultante de uma residência no Museu de Agricultura de Fermentões a convite do Guimarães Project Room. A investigação artística desenvolvida em residência cruzou práticas de observação, investigação, recolha, experimentação e ativação de saberes tradicionais, ancoradas no ritmo da planta do linho e nos processos históricos da sua transformação no território de Guimarães. N…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15701/large_colectivo_palma_86bfd0605b.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-27",
+    "dateEnd": "2026-05-15",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu de Alberto Sampaio",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Guimarães",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
     "id": "agendalx-174735",
     "source": "agendalx",
     "sourceUrl": "https://www.agendalx.pt/events/event/a-descoberta-do-castelo-de-sao-jorge-5/",
@@ -22,7 +447,7 @@
     "tags": [
       "ar-livre"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-221023",
@@ -47,7 +472,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-229303",
@@ -73,7 +498,7 @@
       "marionetas",
       "monstra"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-230360",
@@ -99,7 +524,7 @@
       "instalacao",
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-231881",
@@ -126,7 +551,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-232072",
@@ -153,7 +578,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-232631",
@@ -176,7 +601,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-233301",
@@ -202,7 +627,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-233524",
@@ -227,7 +652,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-189919",
@@ -254,7 +679,7 @@
       "gratuito",
       "mindfulness-2"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-221087",
@@ -277,7 +702,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-227178",
@@ -303,7 +728,7 @@
       "alfred-hitchcock",
       "retrospetiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-229309",
@@ -328,7 +753,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-230367",
@@ -353,7 +778,7 @@
     "tags": [
       "arquitetura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-231347",
@@ -378,7 +803,7 @@
     "tags": [
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-231892",
@@ -405,7 +830,7 @@
       "instalacao",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.123Z"
   },
   {
     "id": "agendalx-232082",
@@ -432,7 +857,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232653",
@@ -455,7 +880,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233305",
@@ -481,7 +906,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233538",
@@ -509,7 +934,7 @@
       "drama",
       "terror"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-2740",
@@ -532,7 +957,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-223100",
@@ -557,7 +982,7 @@
     "tags": [
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-229417",
@@ -583,7 +1008,7 @@
       "africa",
       "descolonizacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230550",
@@ -608,7 +1033,7 @@
     "tags": [
       "escultura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231904",
@@ -633,7 +1058,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232100",
@@ -659,7 +1084,7 @@
       "coletiva",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232705",
@@ -686,7 +1111,7 @@
       "coletiva",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233326",
@@ -713,7 +1138,7 @@
       "gratuito",
       "historia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.293Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233666",
@@ -743,7 +1168,7 @@
       "solveig-nordlund",
       "teatro-da-cornucopia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-2819",
@@ -768,7 +1193,7 @@
     "tags": [
       "ar-livre"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-197328",
@@ -791,7 +1216,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-223145",
@@ -816,7 +1241,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231926",
@@ -841,7 +1266,7 @@
     "tags": [
       "ciclo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232108",
@@ -870,7 +1295,7 @@
       "teatro",
       "teatro-sao-luiz"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232711",
@@ -895,7 +1320,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233337",
@@ -922,7 +1347,7 @@
       "botanica",
       "joalharia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233736",
@@ -948,7 +1373,7 @@
       "desenho",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-223157",
@@ -974,7 +1399,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-227958",
@@ -1000,7 +1425,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-229548",
@@ -1025,7 +1450,7 @@
     "tags": [
       "desenho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231504",
@@ -1053,7 +1478,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231929",
@@ -1079,7 +1504,7 @@
       "ciclo",
       "robert-beavers"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232117",
@@ -1104,7 +1529,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232756",
@@ -1130,7 +1555,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233763",
@@ -1155,7 +1580,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-9226",
@@ -1181,7 +1606,7 @@
       "12",
       "ar-livre"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-206119",
@@ -1206,7 +1631,7 @@
     "tags": [
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-229585",
@@ -1232,7 +1657,7 @@
       "cartao",
       "papel"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230864",
@@ -1257,7 +1682,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231509",
@@ -1282,7 +1707,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231968",
@@ -1308,7 +1733,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232124",
@@ -1331,7 +1756,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232777",
@@ -1359,7 +1784,7 @@
       "fotografia",
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233780",
@@ -1384,7 +1809,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-20484",
@@ -1407,7 +1832,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-212745",
@@ -1430,7 +1855,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-228176",
@@ -1455,7 +1880,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-229598",
@@ -1481,7 +1906,7 @@
       "lisboa-romana",
       "luz"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230871",
@@ -1506,7 +1931,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231522",
@@ -1533,7 +1958,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231983",
@@ -1560,7 +1985,7 @@
       "gratuito",
       "sustentabilidade"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232157",
@@ -1585,7 +2010,7 @@
     "tags": [
       "escultura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232803",
@@ -1608,7 +2033,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233785",
@@ -1631,7 +2056,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-33415",
@@ -1656,7 +2081,7 @@
     "tags": [
       "lingua-gestual-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-214676",
@@ -1687,7 +2112,7 @@
       "juliao-sarmento",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-223439",
@@ -1714,7 +2139,7 @@
       "historia",
       "lisboa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-228408",
@@ -1739,7 +2164,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-229603",
@@ -1764,7 +2189,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230872",
@@ -1790,7 +2215,7 @@
       "ciclo",
       "ingmar-bergman"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231529",
@@ -1816,7 +2241,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231988",
@@ -1841,7 +2266,7 @@
     "tags": [
       "ceramica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232162",
@@ -1866,7 +2291,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232883",
@@ -1891,7 +2316,7 @@
     "tags": [
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233349",
@@ -1916,7 +2341,7 @@
     "tags": [
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233816",
@@ -1941,7 +2366,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-34995",
@@ -1966,7 +2391,7 @@
     "tags": [
       "ar-livre"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-215044",
@@ -1989,7 +2414,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-224512",
@@ -2018,7 +2443,7 @@
       "instalacao",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-228619",
@@ -2044,7 +2469,7 @@
       "arqueologia",
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230001",
@@ -2069,7 +2494,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230925",
@@ -2092,7 +2517,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231593",
@@ -2118,7 +2543,7 @@
       "coletiva",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232016",
@@ -2146,7 +2571,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232296",
@@ -2174,7 +2599,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232886",
@@ -2201,7 +2626,7 @@
       "escultura-textil",
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233355",
@@ -2226,7 +2651,7 @@
     "tags": [
       "cartoons"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233856",
@@ -2251,7 +2676,7 @@
     "tags": [
       "desenho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-39755",
@@ -2277,7 +2702,7 @@
       "ar-livre",
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-215189",
@@ -2303,7 +2728,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-224519",
@@ -2326,7 +2751,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-228868",
@@ -2351,7 +2776,7 @@
     "tags": [
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230066",
@@ -2376,7 +2801,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231193",
@@ -2406,7 +2831,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231606",
@@ -2431,7 +2856,7 @@
     "tags": [
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232028",
@@ -2456,7 +2881,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232336",
@@ -2481,7 +2906,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232912",
@@ -2510,7 +2935,7 @@
       "sergei-eisenstein",
       "uniao-sovietica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-233960",
@@ -2536,7 +2961,7 @@
       "gratuito",
       "monstra"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-225244",
@@ -2564,7 +2989,7 @@
       "escultura",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-229072",
@@ -2592,7 +3017,7 @@
       "exposicao",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-230070",
@@ -2617,7 +3042,7 @@
     "tags": [
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231203",
@@ -2644,7 +3069,7 @@
       "gratuito",
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-231607",
@@ -2670,7 +3095,7 @@
       "exposicao",
       "santo-antonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232042",
@@ -2693,7 +3118,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232359",
@@ -2719,7 +3144,7 @@
       "ar-livre",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.124Z"
   },
   {
     "id": "agendalx-232916",
@@ -2746,7 +3171,7 @@
       "ethan-hawke",
       "richard-linklater"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233362",
@@ -2773,7 +3198,7 @@
       "escultura",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233966",
@@ -2799,7 +3224,7 @@
       "fotografia",
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-218822",
@@ -2824,7 +3249,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-225415",
@@ -2850,7 +3275,7 @@
       "fotografia",
       "vestuario"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-230146",
@@ -2875,7 +3300,7 @@
     "tags": [
       "desenho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231218",
@@ -2901,7 +3326,7 @@
       "gratuito",
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231614",
@@ -2926,7 +3351,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232046",
@@ -2951,7 +3376,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232369",
@@ -2976,7 +3401,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233100",
@@ -3001,7 +3426,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-225817",
@@ -3028,7 +3453,7 @@
       "desenho",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-230157",
@@ -3051,7 +3476,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231273",
@@ -3076,7 +3501,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231739",
@@ -3099,7 +3524,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232050",
@@ -3126,7 +3551,7 @@
       "performance",
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233126",
@@ -3152,7 +3577,7 @@
       "desenho",
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-61761",
@@ -3177,7 +3602,7 @@
     "tags": [
       "arte-deco"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-219872",
@@ -3202,7 +3627,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.294Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-229157",
@@ -3230,7 +3655,7 @@
       "instalacao",
       "vidro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-230169",
@@ -3255,7 +3680,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231772",
@@ -3284,7 +3709,7 @@
       "instalacao",
       "performance"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232058",
@@ -3310,7 +3735,7 @@
       "escultura",
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233130",
@@ -3336,7 +3761,7 @@
       "coletiva",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-225872",
@@ -3361,7 +3786,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231798",
@@ -3387,7 +3812,7 @@
       "desenho",
       "masterclasse"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232062",
@@ -3415,7 +3840,7 @@
       "fotografia",
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233258",
@@ -3440,7 +3865,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-83988",
@@ -3468,7 +3893,7 @@
       "historia",
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-230221",
@@ -3493,7 +3918,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231813",
@@ -3519,7 +3944,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232545",
@@ -3545,7 +3970,7 @@
       "coletiva",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233297",
@@ -3571,7 +3996,7 @@
       "escultura",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-221995",
@@ -3598,7 +4023,7 @@
       "escolas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232790",
@@ -3624,7 +4049,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-76920",
@@ -3652,7 +4077,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231400",
@@ -3677,7 +4102,7 @@
     "tags": [
       "criancas"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-177478",
@@ -3704,7 +4129,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-190938",
@@ -3732,7 +4157,7 @@
       "fado-en",
       "videomapping"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-207548",
@@ -3758,7 +4183,7 @@
       "familias",
       "jovens"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231744",
@@ -3784,7 +4209,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-222530",
@@ -3813,7 +4238,7 @@
       "criancas",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-196807",
@@ -3839,7 +4264,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-229478",
@@ -3865,7 +4290,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232634",
@@ -3888,7 +4313,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233725",
@@ -3914,7 +4339,7 @@
       "artesanato",
       "gastronomia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233384",
@@ -3942,7 +4367,7 @@
       "gratuito",
       "teatro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-222744",
@@ -3968,7 +4393,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232145",
@@ -3994,7 +4419,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-223163",
@@ -4021,7 +4446,7 @@
       "familias",
       "teatro-infantil"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231824",
@@ -4047,7 +4472,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232617",
@@ -4073,7 +4498,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233120",
@@ -4100,7 +4525,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233164",
@@ -4128,7 +4553,7 @@
       "gratuito",
       "teatro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-230296",
@@ -4155,7 +4580,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231738",
@@ -4181,7 +4606,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231821",
@@ -4207,7 +4632,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232047",
@@ -4233,7 +4658,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233593",
@@ -4258,7 +4683,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-228960",
@@ -4287,7 +4712,7 @@
       "sissi-martins",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231679",
@@ -4315,7 +4740,7 @@
       "instalacao",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-201456",
@@ -4344,7 +4769,7 @@
       "colonialismo",
       "festas-de-abril"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-221656",
@@ -4370,7 +4795,7 @@
       "comedia",
       "jose-raposo-2"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232306",
@@ -4395,7 +4820,7 @@
     "tags": [
       "gypsy-jazz"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-232743",
@@ -4423,7 +4848,7 @@
       "exposicao",
       "resistencia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-233359",
@@ -4448,7 +4873,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231764",
@@ -4473,7 +4898,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-220196",
@@ -4496,7 +4921,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-227766",
@@ -4524,7 +4949,7 @@
       "luis-vaz-de-camoes",
       "pedro-penim"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231098",
@@ -4549,7 +4974,7 @@
     "tags": [
       "piano"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-231151",
@@ -4574,7 +4999,7 @@
     "tags": [
       "fado-en"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.125Z"
   },
   {
     "id": "agendalx-217132",
@@ -4601,7 +5026,7 @@
       "dia-mundial-do-teatro",
       "lgbtqi"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231000",
@@ -4630,7 +5055,7 @@
       "joao-lourenco",
       "teatro-aberto"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-205352",
@@ -4656,7 +5081,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-225214",
@@ -4683,7 +5108,7 @@
       "flavia-gusmao",
       "jacinto-lucas-pires"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-227897",
@@ -4710,7 +5135,7 @@
       "africa",
       "dia-mundial-do-teatro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-227913",
@@ -4739,7 +5164,7 @@
       "lingua-gestual-portuguesa",
       "wajdi-mouawad"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-228116",
@@ -4766,7 +5191,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-228543",
@@ -4793,7 +5218,7 @@
       "artistas-unidos",
       "pedro-carraca"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-229016",
@@ -4820,7 +5245,7 @@
       "dia-mundial-do-teatro",
       "pedro-saavedra"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233493",
@@ -4847,7 +5272,7 @@
       "folclore",
       "palestina"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.295Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-229689",
@@ -4874,7 +5299,7 @@
       "tag-criancas",
       "teg-familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-225970",
@@ -4900,7 +5325,7 @@
       "filipe-la-feria",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-227726",
@@ -4926,7 +5351,7 @@
       "comedia",
       "ricardo-neves-neves"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231882",
@@ -4952,7 +5377,7 @@
       "16",
       "diana-niepce"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232291",
@@ -4975,7 +5400,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-217128",
@@ -5003,7 +5428,7 @@
       "diogo-infante",
       "tchekhov"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-218383",
@@ -5031,7 +5456,7 @@
       "ricardo-neves-neves",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-230101",
@@ -5056,7 +5481,7 @@
     "tags": [
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232400",
@@ -5083,7 +5508,7 @@
       "um-teatro-em-cada-bairro",
       "vicente-alves-do-o"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-200414",
@@ -5108,7 +5533,7 @@
     "tags": [
       "design"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232364",
@@ -5135,7 +5560,7 @@
       "retrospetiva",
       "werner-herzog"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-2970",
@@ -5160,7 +5585,7 @@
     "tags": [
       "ar-livre"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-17817",
@@ -5186,7 +5611,7 @@
       "gastronomia",
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-221908",
@@ -5212,7 +5637,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-227522",
@@ -5239,7 +5664,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-9303",
@@ -5264,7 +5689,82 @@
     "tags": [
       "fado-en"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
+  },
+  {
+    "id": "culturaptgov-a-trote-ou-a-galope-encontro-de-culturas-no-museu-2026-03-28",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/a-trote-ou-a-galope-encontro-de-culturas-no-museu/",
+    "title": "A Trote ou a Galope... Encontro de Culturas no Museu",
+    "description": "O programa tem início às 10h00, na Praça do Museu, com uma demonstração da Escola Portuguesa de Arte Equestre, aberta ao público em geral. Entre as 10h30 e as 12h30, já no interior do museu, decorrem ateliês de pintura e caligrafia chinesa, destinados ao público infantojuvenil, mediante inscrição prévia (atualmente esgotado). Durante a manhã haverá ainda um apontamento musical pela Escola Chinesa de Lisboa e uma atuação de dança pelo grupo português Folkzitas Juniores. Estas atividades são aber…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15688/large_galopar_para_um_novo_ano_auspicioso_escola_chinesa_e_mnc_28_03_2026_70f6afad9c.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-28",
+    "dateEnd": "2026-03-28",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional dos Coches",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Família"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-onde-meus-p-s-pisam-de-hilda-de-paulo-2026-03-28",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/onde-meus-pes-pisam-de-hilda-de-paulo/",
+    "title": "Onde meus pés pisam de Hilda de Paulo",
+    "description": "\"Com curadoria executiva de Rui Pinheiro e texto de Agrippina R. Manhattan, a exposição reúne um conjunto de obras que atravessam diferentes linguagens - pintura, fotografia, objetos e performance - acompanhando percursos que a artista tem vindo a construir desde que deixou Inhumas, no estado de Goiás (Brasil), até à sua trajetória no contexto artístico português. As obras surgem no espaço expositivo como fragmentos de uma caminhada marcada pelo deslocamento, pela escuta e pela construção de ví…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15687/large_hilda_de_paulo_brincos_fotografia_carlos_campos_b4a0ca0a53.jpg",
+    "cost": "Entrada livre para residentes em Portugal",
+    "dateStart": "2026-03-28",
+    "dateEnd": "2026-05-24",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional Soares dos Reis De terça a domingo, das 10h00 às 18h00",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-manuel-ant-nio-pina-dois-filmes-2026-03-28",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/manuel-antonio-pina-dois-filmes/",
+    "title": "Manuel António Pina: Dois Filmes",
+    "description": "Manuel António Pina: Dois Filmes As Casas não Morrem (2014), de Inês Fonseca Santos, Pedro Macedo + Um sítio onde pousar a cabeça (2011), de Alberto Serra, Ricardo Espírito Santo Sinopse do evento “Há uma imensidão entre nós e as palavras. Só num ato de amor é possível ir ao encontro delas e deixar que elas venham ao nosso encontro.” Estes dois filmes são atos assim, pontos de encontro, de viva voz, com Manuel António Pina. Em ambos, a casa assume uma dimensão simbólica, sendo o lugar do regres…",
+    "category": "cinema",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15645/manuel-antonio-pina-dois-filmes.jpeg",
+    "cost": "",
+    "dateStart": "2026-03-28",
+    "dateEnd": "2026-03-28",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-231528",
@@ -5287,7 +5787,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233662",
@@ -5310,7 +5810,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233769",
@@ -5336,7 +5836,7 @@
       "documentario",
       "reforma-agraria"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-15002",
@@ -5359,7 +5859,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-184720",
@@ -5382,7 +5882,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-217368",
@@ -5407,7 +5907,7 @@
     "tags": [
       "ar-livre"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232195",
@@ -5433,7 +5933,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-229855",
@@ -5461,7 +5961,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231793",
@@ -5489,7 +5989,7 @@
       "musica-portuguesa",
       "percussao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232645",
@@ -5515,7 +6015,7 @@
       "pintura",
       "seminario"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231065",
@@ -5541,7 +6041,7 @@
       "cinema-romeno",
       "festival"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231863",
@@ -5567,7 +6067,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-212539",
@@ -5594,7 +6094,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-212546",
@@ -5621,7 +6121,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232027",
@@ -5646,7 +6146,7 @@
     "tags": [
       "musica-cabo-verdiana"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-225869",
@@ -5674,7 +6174,7 @@
       "gratuito",
       "mario-soares"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233521",
@@ -5699,7 +6199,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-228789",
@@ -5728,7 +6228,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233527",
@@ -5753,7 +6253,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-228895",
@@ -5783,7 +6283,7 @@
       "instalacao",
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233821",
@@ -5809,7 +6309,7 @@
       "desenho",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-228921",
@@ -5835,7 +6335,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233980",
@@ -5861,7 +6361,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-230205",
@@ -5889,7 +6389,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-230293",
@@ -5914,7 +6414,7 @@
     "tags": [
       "arte-digital"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231172",
@@ -5940,7 +6440,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231804",
@@ -5966,7 +6466,7 @@
       "ceramica",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231812",
@@ -5993,7 +6493,7 @@
       "coletiva",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231914",
@@ -6020,7 +6520,7 @@
       "ilustracao",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231949",
@@ -6045,7 +6545,7 @@
     "tags": [
       "ciclo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231993",
@@ -6071,7 +6571,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-5922",
@@ -6097,7 +6597,7 @@
       "ar-livre",
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232548",
@@ -6124,7 +6624,7 @@
       "gratuito",
       "ilustracao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-5941",
@@ -6149,7 +6649,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232618",
@@ -6172,7 +6672,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232701",
@@ -6198,7 +6698,7 @@
       "azulejaria",
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-83962",
@@ -6221,7 +6721,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232920",
@@ -6248,7 +6748,7 @@
       "ciclo",
       "russia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232136",
@@ -6274,7 +6774,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233583",
@@ -6301,7 +6801,7 @@
       "gratuito",
       "realidade-e-ficcao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-230009",
@@ -6328,7 +6828,7 @@
       "gravura",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-226782",
@@ -6354,7 +6854,7 @@
       "margarida-vila-nova",
       "tiago-guedes"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-230965",
@@ -6380,7 +6880,7 @@
       "ciclo",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231361",
@@ -6409,7 +6909,82 @@
       "percurso",
       "workshop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
+  },
+  {
+    "id": "culturaptgov-semin-rio-ci-ncia-e-cultura-quebrar-fronteiras-imagina-o-sim-2026-03-30",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/seminario-ciencia-e-cultura-quebrar-fronteiras-imaginacao-simulacao-e-ficcao-o-que-nos-dizem-sobre-a-realidade/",
+    "title": "Seminário Ciência e Cultura Quebrar fronteiras: Imaginação, simulação e ficção: o que nos dizem sobre a realidade?",
+    "description": "Adelino Cardoso e Nuno Miguel Proença coordenam \"Ciência e Cultura - Quebrar Fronteiras\", um ciclo de seminários pluridisciplinar, que visa criar um espaço de debate e partilha de conhecimento e de experiências oriundos de investigações em curso, desenvolvidas por investigadores de diferentes áreas e em diferentes fases do seu percurso. Nesta sessão, Nuno Proença apresenta o seu trabalho. Prolongando reflexões de anos anteriores, esta sessão será uma oportunidade para interrogar as relações ent…",
+    "category": "other",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15704/stocksnap-book-2592057-1.jpg",
+    "cost": "Entrada livre",
+    "dateStart": "2026-03-30",
+    "dateEnd": "2026-03-30",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Biblioteca Nacional de Portugal",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
+  },
+  {
+    "id": "culturaptgov-encontros-com-a-experi-ncia-2026-03-30",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/encontros-com-a-experiencia/",
+    "title": "Encontros com a Experiência",
+    "description": "A Fundação GDA volta a promover, ao longo de 2026, 2 sessões dos “Encontros com a Experiência”, em Lisboa e no Porto, permitindo a jovens atores a oportunidade de interagir diretamente com profissionais de referência do setor audiovisual. A primeira sessão acontece no Teatro Nacional São João, no dia 30 de março, das 14h30 às 17h30, e as inscrições já estão abertas. Convidados desta sessão: Ivo Canelas (ator) Margarida Cardoso (realizadora) Inscrições e mais informações no site da Fundação GDA:…",
+    "category": "other",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15639/encontrosexperiencia.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-30",
+    "dateEnd": "2026-03-30",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-forma-o-rpm-2026-a-miss-o-dos-museus-o-que-fazemos-e-porque--2026-03-30",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/formacao-rpm-2026-a-missao-dos-museus-o-que-fazemos-e-porque-fazemos-1ª-edicao/",
+    "title": "Formação RPM 2026 | A Missão dos Museus – O que Fazemos e Porque Fazemos (1.ª edição)",
+    "description": "No dia 30 de março, realiza-se no Museu do Neorealismo, a 1.ª edição da formação A Missão dos Museus – O que Fazemos e Porque Fazemos, desenvolvida em parceria com a Acesso Cultura. Nesta ação de formação vamos refletir sobre o papel e o propósito dos museus: Como definimos a nossa missão? Que valores orientam o nosso trabalho? De que forma estes princípios moldam a relação com as comunidades? 6 horas de formação 30 vagas por sessão Valor de inscrição: 20 € — Profissionais de museus da RPM 40 €…",
+    "category": "workshops",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15613/large_rpm_99_0773b0ce8e.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-03-30",
+    "dateEnd": "2026-03-30",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museo do Neo-Realismo",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Vila Franca de Xira",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-231938",
@@ -6432,7 +7007,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232143",
@@ -6460,7 +7035,7 @@
       "gratuito",
       "saude-mental"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232931",
@@ -6488,7 +7063,7 @@
       "ciclo",
       "mozart"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233882",
@@ -6511,7 +7086,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233885",
@@ -6534,7 +7109,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-199051",
@@ -6557,7 +7132,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-230057",
@@ -6580,7 +7155,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231304",
@@ -6605,7 +7180,7 @@
     "tags": [
       "concurso"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231500",
@@ -6631,7 +7206,7 @@
       "ceramica",
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231899",
@@ -6657,7 +7232,7 @@
       "crochet",
       "desenho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-227640",
@@ -6682,7 +7257,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233559",
@@ -6709,7 +7284,7 @@
       "familias",
       "jovens"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-229676",
@@ -6734,7 +7309,7 @@
     "tags": [
       "bandas-sonoras"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-82524",
@@ -6757,7 +7332,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-25707",
@@ -6783,7 +7358,7 @@
       "conversa",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233445",
@@ -6808,7 +7383,7 @@
     "tags": [
       "ciclo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233653",
@@ -6833,7 +7408,7 @@
     "tags": [
       "ciclo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233713",
@@ -6861,7 +7436,7 @@
       "festival",
       "retrospetiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233839",
@@ -6886,7 +7461,7 @@
     "tags": [
       "ciclo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233919",
@@ -6909,7 +7484,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233983",
@@ -6937,7 +7512,7 @@
       "pintura",
       "textil"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232969",
@@ -6967,7 +7542,7 @@
       "gratuito",
       "peddy-paper"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233989",
@@ -6993,7 +7568,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233914",
@@ -7019,7 +7594,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233928",
@@ -7045,7 +7620,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231181",
@@ -7072,7 +7647,7 @@
       "estados-unidos-da-america",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231877",
@@ -7095,7 +7670,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232029",
@@ -7123,7 +7698,7 @@
       "humor",
       "pedro-vieira"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233205",
@@ -7148,7 +7723,7 @@
     "tags": [
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232979",
@@ -7173,7 +7748,7 @@
     "tags": [
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-231639",
@@ -7198,7 +7773,7 @@
     "tags": [
       "16"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-234004",
@@ -7221,7 +7796,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-228509",
@@ -7249,7 +7824,7 @@
       "rui-melo",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232257",
@@ -7276,7 +7851,7 @@
       "miguel-dias",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-232816",
@@ -7304,7 +7879,7 @@
       "gratuito",
       "jovens"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233136",
@@ -7330,7 +7905,7 @@
       "cartoons",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.296Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233294",
@@ -7356,7 +7931,7 @@
       "ciclo",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233716",
@@ -7382,7 +7957,7 @@
       "festa-do-cinema-italiano",
       "pier-paolo-pasolini"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233772",
@@ -7407,7 +7982,7 @@
     "tags": [
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.126Z"
   },
   {
     "id": "agendalx-233789",
@@ -7432,7 +8007,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233890",
@@ -7457,7 +8032,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-229642",
@@ -7480,7 +8055,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233701",
@@ -7506,7 +8081,7 @@
       "conferencia",
       "relojoaria"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-230080",
@@ -7531,7 +8106,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-228279",
@@ -7558,7 +8133,7 @@
       "elmano-sancho",
       "monica-calle"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232858",
@@ -7581,7 +8156,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231643",
@@ -7609,7 +8184,7 @@
       "stephen-sondheim",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233331",
@@ -7634,7 +8209,7 @@
     "tags": [
       "latina"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-38721",
@@ -7659,7 +8234,7 @@
     "tags": [
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-227483",
@@ -7684,7 +8259,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232768",
@@ -7712,7 +8287,7 @@
       "antonio-pires",
       "william-shakespeare"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-229173",
@@ -7737,7 +8312,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231599",
@@ -7763,7 +8338,7 @@
       "encontro",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232368",
@@ -7790,7 +8365,7 @@
       "antestreia",
       "festa-do-cinema-italiano"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233807",
@@ -7818,7 +8393,7 @@
       "fotografia",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233562",
@@ -7845,7 +8420,7 @@
       "familias",
       "jovens"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233755",
@@ -7871,7 +8446,7 @@
       "ciclo",
       "cinema-mudo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233156",
@@ -7897,7 +8472,7 @@
       "coros",
       "piano"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232668",
@@ -7922,7 +8497,7 @@
     "tags": [
       "trompete"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232918",
@@ -7948,7 +8523,7 @@
       "alternativa",
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-172538",
@@ -7971,7 +8546,32 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
+  },
+  {
+    "id": "culturaptgov-lucubratio-2026-04-04",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/lucubratio/",
+    "title": "Lucubratio",
+    "description": "O termo latino lucubratio designa, na sua acepção mais literal, o trabalho realizado à luz de uma vela. Evoca um tempo em que o estudo e a criação dependiam da claridade de uma ténue chama perante a escuridão — uma forma primordial de iluminação que, tal como a génese da fotografia, nasce do domínio da luz sobre a sombra para tornar o mundo visível. Num outro plano, lucubratio refere-se ao pensamento que se desenvolve no silêncio da noite, quando a ausência de distrações sensoriais permite uma…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15702/large_mnfmc_lucubratio_cartaz_web_fec56f7c87.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-04-04",
+    "dateEnd": "2026-06-14",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional Frei Manuel do Cenáculo",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Évora",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-3017",
@@ -7996,7 +8596,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231963",
@@ -8023,7 +8623,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-28792",
@@ -8046,7 +8646,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232865",
@@ -8072,7 +8672,7 @@
       "eletronica",
       "pop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233044",
@@ -8100,7 +8700,7 @@
       "gratuito",
       "jovens"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233721",
@@ -8125,7 +8725,7 @@
     "tags": [
       "ciclo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-223148",
@@ -8152,7 +8752,7 @@
       "conversa",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233879",
@@ -8177,7 +8777,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233642",
@@ -8203,7 +8803,7 @@
       "ciclo",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233099",
@@ -8229,7 +8829,7 @@
       "opera",
       "poesia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233217",
@@ -8254,7 +8854,7 @@
     "tags": [
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231646",
@@ -8281,7 +8881,7 @@
       "companhia-joao-garcia-miguel",
       "miguel-esteves-cardoso"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233206",
@@ -8307,7 +8907,7 @@
       "16",
       "podcast"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-226861",
@@ -8332,7 +8932,7 @@
     "tags": [
       "pop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233517",
@@ -8359,7 +8959,7 @@
       "coletiva",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233767",
@@ -8385,7 +8985,7 @@
       "coletiva",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233798",
@@ -8410,7 +9010,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233801",
@@ -8435,7 +9035,7 @@
     "tags": [
       "ceramica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233804",
@@ -8462,7 +9062,7 @@
       "instalacao",
       "tapecaria"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231649",
@@ -8488,7 +9088,7 @@
       "coletivo-aueeeu",
       "elfriede-jelinek"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-219513",
@@ -8518,7 +9118,7 @@
       "lisboa",
       "memorias-de-lisboa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233203",
@@ -8545,7 +9145,7 @@
       "festa-do-cinema-italiano",
       "festival"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233674",
@@ -8570,7 +9170,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233394",
@@ -8593,7 +9193,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232437",
@@ -8619,7 +9219,7 @@
       "joana-craveiro",
       "teatro-do-vestido"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231123",
@@ -8645,7 +9245,7 @@
       "16",
       "mario-coelho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-218534",
@@ -8672,7 +9272,7 @@
       "comedia",
       "teatro-de-improviso"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233329",
@@ -8698,7 +9298,7 @@
       "amy-winehouse",
       "tributo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233499",
@@ -8723,7 +9323,7 @@
     "tags": [
       "chile"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232943",
@@ -8749,7 +9349,7 @@
       "funk",
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232950",
@@ -8774,7 +9374,32 @@
     "tags": [
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
+  },
+  {
+    "id": "culturaptgov-com-kepa-junkera-juntos-em-mafra-a-prop-sito-de-uma-nova-pan-2026-04-09",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/com-kepa-junkera-juntos-em-mafra-a-proposito-de-uma-nova-pandeireta-um-concerto-para-celebrar-com-o-artista-basco/",
+    "title": "Com Kepa Junkera juntos em Mafra — a propósito de uma nova pandeireta, um concerto para celebrar com o artista basco",
+    "description": "Os bilhetes gratuitos disponibilizados para este evento encontram-se temporariamente esgotados, podendo ser libertados mais lugares caso haja devoluções ou reajustes de sala. A sessão incluirá a apresentação de excertos de dois documentários dedicados ao percurso de Kepa Junkera: “7 Évoras em Kepa” (2018), de José Coimbra e Tiago Guimarães (Ínfimo Frame), cuja versão adaptada ao Salão Imersivo integra a programação de abril do Museu Nacional da Música, após uma primeira apresentação em janeiro;…",
+    "category": "music",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15703/large_cartaz_mnm_evento_kepa_whats_app_image_2026_02_06_at_15_35_40_27e80f0c90.jpg",
+    "cost": "Entrada livre (mediante levantamento prévio bilhetes)",
+    "dateStart": "2026-04-09",
+    "dateEnd": "2026-04-09",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Museu Nacional da Música",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Mafra",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
   },
   {
     "id": "agendalx-233941",
@@ -8799,7 +9424,7 @@
     "tags": [
       "desenho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-184467",
@@ -8822,7 +9447,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-226361",
@@ -8845,7 +9470,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233111",
@@ -8873,7 +9498,7 @@
       "escultura",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233484",
@@ -8900,7 +9525,7 @@
       "conversa",
       "david-bowie"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233678",
@@ -8926,7 +9551,7 @@
       "coletiva",
       "gravura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233828",
@@ -8952,7 +9577,7 @@
       "desenho",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233893",
@@ -8977,7 +9602,7 @@
     "tags": [
       "desenho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233906",
@@ -9002,7 +9627,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-230609",
@@ -9025,7 +9650,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233740",
@@ -9051,7 +9676,7 @@
       "gratuito",
       "musica-erudita"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-234032",
@@ -9078,7 +9703,7 @@
       "sergio-godinho",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232985",
@@ -9103,33 +9728,32 @@
     "tags": [
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
-    "id": "agendalx-234017",
-    "source": "agendalx",
-    "sourceUrl": "https://www.agendalx.pt/events/event/o-lago-dos-cisnes-7/",
-    "title": "O Lago dos Cisnes",
-    "description": "CNB e Fernando Duarte — Estreado em 2013, a versão coreográfica de Fernando Duarte de O Lago dos Cisnes, para a CNB, sobre a partitura intemporal de Piotr Ilitch Tchaikovski, desloca-se da estrutura narrativa e si...",
+    "id": "culturaptgov-o-lago-dos-cisnes-2026-04-10",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/o-lago-dos-cisnes/",
+    "title": "O LAGO DOS CISNES",
+    "description": "Estreado em 2013, a versão coreográfica de Fernando Duarte de O Lago dos Cisnes, para a CNB, sobre a partitura intemporal de Piotr Ilitch Tchaikovski, parte da estrutura narrativa e simbólica do original para construir uma leitura mais interior, mais onírica, onde os limites entre realidade e fantasia, luz e sombra, amor e ilusão se tornam permeáveis. A esta proposta coreográfica junta-se a colaboração do cineasta Edgar Pêra, que assina uma visão cinematográfica concebida especificamente para e…",
     "category": "dance",
-    "imageUrl": "https://www.agendalx.pt/content/uploads/2026/03/CNB-Carla-Pires.jpg",
-    "cost": "15 € a 30 (preço normal (ver descontos aplicáveis))",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15536/olagodoscisnes.jpg",
+    "cost": "Ver Bilheteira",
     "dateStart": "2026-04-10",
     "dateEnd": "2026-04-24",
-    "timeStart": "20:00",
+    "timeStart": null,
     "timeEnd": null,
-    "isRecurring": true,
-    "recurrenceNote": "10 abril a 24 abril 2026, qui: 20h; sex: 20h; sáb: 18h30; dom: 16h",
+    "isRecurring": false,
+    "recurrenceNote": "",
     "venue": "Teatro Camões",
     "address": "",
-    "lat": null,
-    "lng": null,
+    "lat": 38.7071,
+    "lng": -9.13549,
     "city": "Lisboa",
     "tags": [
-      "ballet",
-      "companhia-nacional-de-bailado"
+      "Adultos"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
   },
   {
     "id": "agendalx-232826",
@@ -9155,7 +9779,7 @@
       "dia-mundial-do-teatro",
       "eric-emmanuel-schmitt"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233415",
@@ -9180,7 +9804,7 @@
     "tags": [
       "tunas"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232735",
@@ -9205,7 +9829,7 @@
     "tags": [
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232924",
@@ -9230,7 +9854,7 @@
     "tags": [
       "punk"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232974",
@@ -9255,7 +9879,32 @@
     "tags": [
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
+  },
+  {
+    "id": "culturaptgov-o-lago-dos-cisnes-2026-04-10",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/o-lago-dos-cisnes/",
+    "title": "O LAGO DOS CISNES",
+    "description": "Estreado em 2013, a versão coreográfica de Fernando Duarte de O Lago dos Cisnes, para a CNB, sobre a partitura intemporal de Piotr Ilitch Tchaikovski, parte da estrutura narrativa e simbólica do original para construir uma leitura mais interior, mais onírica, onde os limites entre realidade e fantasia, luz e sombra, amor e ilusão se tornam permeáveis. A esta proposta coreográfica junta-se a colaboração do cineasta Edgar Pêra, que assina uma visão cinematográfica concebida especificamente para e…",
+    "category": "dance",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15536/olagodoscisnes.jpg",
+    "cost": "Ver Bilheteira",
+    "dateStart": "2026-04-10",
+    "dateEnd": "2026-04-24",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Camões",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
   },
   {
     "id": "agendalx-232809",
@@ -9282,7 +9931,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233266",
@@ -9307,7 +9956,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233464",
@@ -9333,7 +9982,7 @@
       "curta-metragem",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233722",
@@ -9358,7 +10007,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233743",
@@ -9384,7 +10033,7 @@
       "gratuito",
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-33396",
@@ -9409,7 +10058,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231786",
@@ -9436,7 +10085,7 @@
       "familias",
       "jovens"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232180",
@@ -9466,7 +10115,7 @@
       "lingua-gestual-portuguesa",
       "sessao-descontraida"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233565",
@@ -9492,7 +10141,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233667",
@@ -9518,7 +10167,7 @@
       "bordado",
       "workshop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-84808",
@@ -9546,7 +10195,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231653",
@@ -9569,7 +10218,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232990",
@@ -9595,7 +10244,7 @@
       "gratuito",
       "musica-erudita"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233750",
@@ -9621,7 +10270,7 @@
       "musica-classica",
       "teg-familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233577",
@@ -9646,7 +10295,7 @@
     "tags": [
       "50-anos-do-25-de-abril"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-230499",
@@ -9671,7 +10320,7 @@
     "tags": [
       "teatro-de-improviso"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232994",
@@ -9696,7 +10345,7 @@
     "tags": [
       "jazz"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-232851",
@@ -9722,7 +10371,7 @@
       "comedia",
       "william-shakespeare"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233222",
@@ -9747,7 +10396,7 @@
     "tags": [
       "classica-indiana"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233681",
@@ -9774,7 +10423,7 @@
       "musica-portuguesa",
       "pop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-221344",
@@ -9800,7 +10449,7 @@
       "ciclo",
       "tiago-p-carvalho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231582",
@@ -9830,7 +10479,7 @@
       "joalharia",
       "moda"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-62225",
@@ -9857,7 +10506,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-231840",
@@ -9883,7 +10532,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-220899",
@@ -9912,7 +10561,7 @@
       "frederick-wiseman",
       "roberto-rossellini"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233015",
@@ -9937,7 +10586,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-199153",
@@ -9963,7 +10612,7 @@
       "gratuito",
       "musica-erudita"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.127Z"
   },
   {
     "id": "agendalx-233225",
@@ -9988,7 +10637,7 @@
     "tags": [
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233728",
@@ -10014,7 +10663,7 @@
       "conferencia",
       "conversa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-218611",
@@ -10040,7 +10689,7 @@
       "musica-classica",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-227451",
@@ -10068,7 +10717,7 @@
       "jon-fosse",
       "teatro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233228",
@@ -10094,7 +10743,7 @@
       "musica-classica",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232798",
@@ -10120,7 +10769,7 @@
       "escultura",
       "instalacao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232913",
@@ -10145,7 +10794,7 @@
     "tags": [
       "mpb"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233092",
@@ -10170,7 +10819,7 @@
     "tags": [
       "eletronica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-227131",
@@ -10198,7 +10847,7 @@
       "conversa",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233824",
@@ -10224,7 +10873,7 @@
       "coletiva",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-227750",
@@ -10250,7 +10899,7 @@
       "16",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-234013",
@@ -10273,7 +10922,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233165",
@@ -10298,7 +10947,7 @@
     "tags": [
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232890",
@@ -10324,7 +10973,7 @@
       "musica-portuguesa",
       "pop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232146",
@@ -10351,7 +11000,7 @@
       "conversa",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233318",
@@ -10376,7 +11025,7 @@
     "tags": [
       "alternativa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233558",
@@ -10403,7 +11052,7 @@
       "cinema-japones",
       "hiroshi-shimizu"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233913",
@@ -10428,7 +11077,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.297Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-234010",
@@ -10456,7 +11105,7 @@
       "eugene-ionesco",
       "joao-mota"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233159",
@@ -10481,7 +11130,7 @@
     "tags": [
       "piano"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233231",
@@ -10507,7 +11156,7 @@
       "musica-classica",
       "piano"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233842",
@@ -10532,7 +11181,7 @@
     "tags": [
       "alternativa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232727",
@@ -10557,7 +11206,7 @@
     "tags": [
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232697",
@@ -10584,7 +11233,7 @@
       "cestaria",
       "cianotipia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233657",
@@ -10610,7 +11259,7 @@
       "ciclo",
       "conversa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233733",
@@ -10636,7 +11285,7 @@
       "ciclo",
       "ditadura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233695",
@@ -10662,7 +11311,7 @@
       "bandas-sonoras",
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233003",
@@ -10687,7 +11336,7 @@
     "tags": [
       "opera"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232397",
@@ -10712,7 +11361,7 @@
     "tags": [
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233310",
@@ -10739,7 +11388,32 @@
       "musica-portuguesa",
       "piano"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
+  },
+  {
+    "id": "culturaptgov-b-r-nice-2026-04-17",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/berenice/",
+    "title": "Bérénice",
+    "description": "Societas, Cesena (Itália), Printemps des Comédiens – Cité du Théâtre Domaine d’O, Montpellier (França) Espetáculo em língua francesa, legendado em português Sinopse do evento Encontro de dois monstros sagrados do teatro: Romeo Castellucci convida Isabelle Huppert para afrontar o poema dramático de Racine. O resultado é um extraordinário monólogo fora do tempo. Ao revisitar o mito trágico de Berenice, Castellucci leva o seu teatro a um ponto de incandescência raro. Recusando procurar a atualidad…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15647/berenice.jpg",
+    "cost": "",
+    "dateStart": "2026-04-17",
+    "dateEnd": "2026-04-19",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-233685",
@@ -10764,7 +11438,7 @@
     "tags": [
       "dia-internacional-dos-monumentos-e-sitios"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233694",
@@ -10790,7 +11464,7 @@
       "dia-internacional-dos-monumentos-e-sitios",
       "mitologia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233698",
@@ -10816,7 +11490,7 @@
       "arquitetura",
       "dia-internacional-dos-monumentos-e-sitios"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233704",
@@ -10843,7 +11517,7 @@
       "dia-internacional-dos-monumentos-e-sitios",
       "festa-da-primavera"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233707",
@@ -10870,7 +11544,7 @@
       "arqueologia",
       "dia-internacional-dos-monumentos-e-sitios"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233812",
@@ -10895,7 +11569,7 @@
     "tags": [
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233853",
@@ -10922,7 +11596,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233901",
@@ -10951,7 +11625,7 @@
       "moda",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233922",
@@ -10976,7 +11650,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-228798",
@@ -11001,7 +11675,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-229976",
@@ -11026,7 +11700,7 @@
     "tags": [
       "sessao-especial"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232781",
@@ -11054,7 +11728,7 @@
       "instalacao",
       "video"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-57255",
@@ -11081,7 +11755,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-212835",
@@ -11110,7 +11784,7 @@
       "lingua-gestual-portuguesa",
       "patrimonio"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233847",
@@ -11133,7 +11807,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233850",
@@ -11159,7 +11833,7 @@
       "10",
       "terramoto"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233133",
@@ -11185,7 +11859,7 @@
       "gravura",
       "workshop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-231771",
@@ -11211,7 +11885,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233896",
@@ -11238,7 +11912,7 @@
       "fotografia",
       "oficina"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232454",
@@ -11263,7 +11937,7 @@
     "tags": [
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232654",
@@ -11288,7 +11962,7 @@
     "tags": [
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233264",
@@ -11313,7 +11987,7 @@
     "tags": [
       "mpb"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232674",
@@ -11338,7 +12012,7 @@
     "tags": [
       "mpb"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232932",
@@ -11363,7 +12037,32 @@
     "tags": [
       "pop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
+  },
+  {
+    "id": "culturaptgov-dims-2026-patrim-nio-vivo-resposta-de-emerg-ncia-em-contexto-2026-04-18",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/dims-2026-patrimonio-vivo-resposta-de-emergencia-em-contextos-de-conflitos-e-desastres/",
+    "title": "DIMS 2026: Património Vivo: Resposta de Emergência em contextos de Conflitos e Desastres",
+    "description": "Comemorado todos os anos a 18 de abril, o Dia Internacional dos Monumentos e Sítios do ICOMOS (DIMS) oferece aos entusiastas do património, profissionais do património e membros do ICOMOS a oportunidade de destacar a responsabilidade partilhada de salvaguardar o nosso património.Este ano, o DIMS concentra-se em dar visibilidade ao trabalho realizado para conservar e proteger o «Património Vivo» culturalmente significativo do mundo — cada vez mais ameaçado por desastres e conflitos em contexto c…",
+    "category": "exhibitions",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15534/dims2026.jpg",
+    "cost": "Entrada livre",
+    "dateStart": "2026-04-18",
+    "dateEnd": "2026-04-18",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Portugal",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
   },
   {
     "id": "agendalx-233236",
@@ -11388,7 +12087,7 @@
     "tags": [
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232409",
@@ -11416,7 +12115,7 @@
       "hugo-franco",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232722",
@@ -11442,7 +12141,7 @@
       "pop",
       "rb"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233737",
@@ -11465,7 +12164,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232719",
@@ -11490,7 +12189,32 @@
     "tags": [
       "rock"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
+  },
+  {
+    "id": "culturaptgov-ciclo-de-forma-o-figurinos-sonoplastia-cenografia-e-adere-os-2026-04-20",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/ciclo-de-formacao-figurinos-sonoplastia-cenografia-e-aderecos/",
+    "title": "Ciclo de Formação Figurinos, Sonoplastia, Cenografia e Adereços",
+    "description": "No primeiro semestre de 2026, o D. Maria II promove um ciclo de formação em diferentes áreas criativas de um espetáculo: figurinos, sonoplastia, cenografia e adereços. Neste ciclo, as pessoas participantes terão oportunidade de contactar com diferentes profissionais e conhecer os seus processos de trabalho, bem como de experimentar na prática diferentes técnicas inerentes ao processo de criação em cada uma das áreas. Inscrições abertas até 31 de mar Dirigido a profissionais das artes performati…",
+    "category": "workshops",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15706/stocksnap-people-2557399.jpg",
+    "cost": "Gratuito",
+    "dateStart": "2026-04-20",
+    "dateEnd": "2026-05-08",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Vários locais",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Ourém",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
   },
   {
     "id": "agendalx-233160",
@@ -11515,7 +12239,7 @@
     "tags": [
       "piano"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233105",
@@ -11542,7 +12266,7 @@
       "zeca-afonso",
       "violoncelo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-225012",
@@ -11567,7 +12291,7 @@
     "tags": [
       "16"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232294",
@@ -11592,7 +12316,7 @@
     "tags": [
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233744",
@@ -11618,7 +12342,7 @@
       "zeca-afonso",
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-222443",
@@ -11645,7 +12369,7 @@
       "opera",
       "transmissao-em-direto"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233460",
@@ -11671,7 +12395,7 @@
       "documentario",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-231661",
@@ -11696,7 +12420,7 @@
     "tags": [
       "elmano-sancho"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233239",
@@ -11722,7 +12446,7 @@
       "musica-classica",
       "coros"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232875",
@@ -11747,7 +12471,7 @@
     "tags": [
       "folk"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-231351",
@@ -11773,7 +12497,7 @@
       "ciclo",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233859",
@@ -11799,7 +12523,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233863",
@@ -11825,7 +12549,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233867",
@@ -11851,7 +12575,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-231466",
@@ -11876,7 +12600,7 @@
     "tags": [
       "12"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-231667",
@@ -11903,7 +12627,7 @@
       "espanha",
       "queer"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233008",
@@ -11929,7 +12653,7 @@
       "opera",
       "richard-wagner"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-227757",
@@ -11957,7 +12681,7 @@
       "os-possessos",
       "ray-bradbury"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233675",
@@ -11983,7 +12707,7 @@
       "zeca-afonso",
       "violoncelo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232904",
@@ -12006,7 +12730,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233449",
@@ -12029,7 +12753,32 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
+  },
+  {
+    "id": "culturaptgov-tannh-user-2026-04-23",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/tannhaeuser/",
+    "title": "Tannhäuser",
+    "description": "Tannhäuser und der Sängerkrieg auf Wartburg – «Tannhäuser e o concurso de canto de Wartburg» – é uma ópera em três atos com libreto e música de Richard Wagner, composta entre 1843 e 1845. A estreia absoluta teve lugar no Teatro da Ópera de Dresden, em 1845, sendo mais tarde apresentada na Ópera de Paris, em 1861, numa versão em francês que incorporava o famoso bailado do primeiro ato. Em 1875, Wagner criaria uma terceira versão para a Ópera de Viena, com uma tradução do libreto francês para ale…",
+    "category": "other",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15707/capturar.jpg",
+    "cost": "",
+    "dateStart": "2026-04-23",
+    "dateEnd": "2026-04-25",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São Carlos",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
   },
   {
     "id": "agendalx-233146",
@@ -12055,7 +12804,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233289",
@@ -12080,7 +12829,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233946",
@@ -12106,7 +12855,7 @@
       "coletiva",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233168",
@@ -12132,7 +12881,7 @@
       "zeca-afonso",
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232819",
@@ -12158,7 +12907,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233568",
@@ -12184,7 +12933,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232746",
@@ -12209,7 +12958,7 @@
     "tags": [
       "musica-cabo-verdiana"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232679",
@@ -12235,7 +12984,7 @@
       "musica-espanhola",
       "pop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-3760",
@@ -12260,7 +13009,7 @@
     "tags": [
       "ar-livre"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-201619",
@@ -12285,7 +13034,7 @@
     "tags": [
       "12"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232745",
@@ -12312,7 +13061,7 @@
       "desenho",
       "estampas"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-231768",
@@ -12335,7 +13084,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233762",
@@ -12360,7 +13109,7 @@
     "tags": [
       "patricia-saramago"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233414",
@@ -12390,7 +13139,7 @@
       "gratuito",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233246",
@@ -12416,7 +13165,7 @@
       "musica-classica",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233011",
@@ -12442,7 +13191,7 @@
       "musica-erudita",
       "violino"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233151",
@@ -12467,7 +13216,7 @@
     "tags": [
       "musica-classica"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233418",
@@ -12492,7 +13241,7 @@
     "tags": [
       "musica-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232432",
@@ -12515,7 +13264,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-81384",
@@ -12538,7 +13287,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-229764",
@@ -12564,7 +13313,7 @@
       "ciclo",
       "cinema-alemao"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232461",
@@ -12591,7 +13340,7 @@
       "maria-barroso",
       "mario-soares"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233927",
@@ -12616,7 +13365,7 @@
     "tags": [
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-229181",
@@ -12642,7 +13391,7 @@
       "concurso",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233142",
@@ -12669,7 +13418,7 @@
       "fotografia",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233710",
@@ -12697,7 +13446,7 @@
       "indielisboa",
       "retrospetiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233833",
@@ -12723,7 +13472,7 @@
       "indielisboa",
       "retrospetiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233836",
@@ -12748,7 +13497,7 @@
     "tags": [
       "indielisboa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233933",
@@ -12775,7 +13524,7 @@
       "escultura",
       "gravura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232211",
@@ -12802,7 +13551,7 @@
       "diogo-infante",
       "helder-gamboa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233163",
@@ -12827,7 +13576,7 @@
     "tags": [
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-234027",
@@ -12853,7 +13602,7 @@
       "14",
       "um-teatro-em-cada-bairro"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-221634",
@@ -12879,7 +13628,7 @@
       "filosofia",
       "pensamento"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-234002",
@@ -12902,7 +13651,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-234020",
@@ -12928,7 +13677,7 @@
       "12",
       "pedro-saavedra"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-224960",
@@ -12954,7 +13703,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-228412",
@@ -12980,7 +13729,7 @@
       "criancas",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232749",
@@ -13005,7 +13754,7 @@
     "tags": [
       "gastronomia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-232625",
@@ -13031,7 +13780,7 @@
       "coletiva",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-231668",
@@ -13056,7 +13805,7 @@
     "tags": [
       "lingua-gestual-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233949",
@@ -13083,7 +13832,32 @@
       "escola-de-calceteiros",
       "escolas"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
+  },
+  {
+    "id": "culturaptgov-musical-mente-2026-05-07",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/musical-mente/",
+    "title": "MUSICAL-MENTE",
+    "description": "Ciclo de concertos com prelúdios sobre humor curadoria Filipe Pinto-Ribeiro DSCH – Associação Musical, Teatro Nacional São João Sinopse do evento O humor grassa nesta quinta edição de MUSICAL-MENTE. Circula livre, manifesto ou subtil, pelos Humores de Câmara, a segunda parte do ciclo, que inclui peças cujo desenho convoca um trio íntimo de instrumentos. Em Three Funny Pieces, o compositor soviético e russo Rodion Shchedrin exercita uma das vertentes da sua prolífica obra, o amor pela paródia e…",
+    "category": "music",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15653/musical-mente.jpg",
+    "cost": "Ver Bilheteira",
+    "dateStart": "2026-05-07",
+    "dateEnd": "2026-05-07",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-232762",
@@ -13108,7 +13882,7 @@
     "tags": [
       "coletiva"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-233875",
@@ -13135,7 +13909,7 @@
       "gratuito",
       "pintura"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
   },
   {
     "id": "agendalx-204014",
@@ -13160,7 +13934,32 @@
     "tags": [
       "lingua-gestual-portuguesa"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.128Z"
+  },
+  {
+    "id": "culturaptgov-repert-rio-s-confer-ncias-2026-05-09",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/repertorio-s-conferencias/",
+    "title": "Repertório(s): Conferências",
+    "description": "O ensaísta Olivier Neveux, o encenador Romeo Castellucci e a coreógrafa Maguy Marin vêm ao Teatro Nacional São João falar-nos das suas ideias de repertório. Com este elenco de luxo, damos início a um ciclo de conferências que tem a ambição de colocar em perspetiva e tensão um conceito central ao nosso ideário e prática. O TNSJ é histórica e estatutariamente um teatro de repertório. Para nós, ele não é tanto um cânone cristalizado de obras, mas um espaço de contínua descoberta e invenção, uma fa…",
+    "category": "workshops",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15654/repertorios-conferencias6985d4ae3ddb1.jpg",
+    "cost": "Entrada gratuita",
+    "dateStart": "2026-05-09",
+    "dateEnd": "2026-05-09",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "TNSJ",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-87972",
@@ -13183,7 +13982,132 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-buchettino-2026-05-13",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/buchettino/",
+    "title": "Buchettino",
+    "description": "Durante cinco intensos dias, abrimos uma pequena grande janela sobre o trabalho de Chiara Guidi – um dos nomes centrais do teatro para a infância na Europa, cofundadora da Socìetas Raffaello Sanzio –, com este espetáculo, o lançamento do seu livro-manifesto e um seminário. Buchettino é uma “fábula acústica” construída a partir do conto O Pequeno Polegar, de Charles Perrault. A artista e pedagoga italiana, que nos anos 90 criou a Scuola Sperimentale di Teatro Infantile, propõe uma rara experiênc…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15655/buchettino68b85208eb29b.jpg",
+    "cost": "Ver Bilheteira",
+    "dateStart": "2026-05-13",
+    "dateEnd": "2026-05-17",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Carlos Alberto",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-el-trabajo-2026-05-14",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/el-trabajo/",
+    "title": "El Trabajo",
+    "description": "Sinopse do evento É um regresso muito desejado. Depois dos memoráveis Las Ideas (2016) e Yo escribo. Vos dibujás (2019), o dramaturgo, encenador, ator e cineasta argentino Federico León – figura emblemática da cena artística independente de Buenos Aires – volta aos nossos palcos para apresentar El trabajo. Um espetáculo diretamente inspirado no tipo muito particular de “trabalho” que se faz nos ateliers para atores. A partir da sua longa experiência como aluno e professor em workshops, Federico…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15656/el-trabajo.jpg",
+    "cost": "",
+    "dateStart": "2026-05-14",
+    "dateEnd": "2026-05-15",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Nacional São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-teatro-infantil-2026-05-15",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/teatro-infantil/",
+    "title": "Teatro Infantil",
+    "description": "“Temos de nos inclinar em direção às crianças e aceitar a sua transformação.” Teatro Infantil: A arte cénica perante os olhos da criança é o livro-súmula do pensamento e do Método de Chiara Guidi, desenvolvidos nos anos 90, quando a artista decidiu invocar o olhar das crianças sobre a própria arte, envolvendo-as no jogo cénico quase desde o início. Dividido em duas partes, desenha dois ângulos distintos: por um lado, o ponto de vista interior de Chiara, que se desenrola num movimento circular e…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15657/teatro-infantil.jpg",
+    "cost": "Entrada gratuita",
+    "dateStart": "2026-05-15",
+    "dateEnd": "2026-05-15",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Carlos Alberto",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-mozart-missa-de-coroa-o-2026-05-16",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/mozart-missa-de-coroacao/",
+    "title": "Mozart: Missa de coroação",
+    "description": "O Centro Cultural e de Congressos das Caldas da Rainha acolhe um concerto de contrastes e brilhantismo, com a Sinfonia n.º 2 de Beethoven e a Missa de Coroação de Mozart. Duas obras-primas do Período Clássico, testemunhos da criatividade humana, serão interpretadas pela Orquestra Sinfónica Portuguesa, o Coro do Teatro Nacional de São Carlos e um conjunto destacado de solistas, sob a direção do aclamado maestro Renato Balsadonna. Composta em 1802, quando a surdez já se instalava em Beethoven, a…",
+    "category": "music",
+    "imageUrl": "",
+    "cost": "",
+    "dateStart": "2026-05-16",
+    "dateEnd": "2026-05-16",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Centro Cultural e Congressos",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Caldas da Rainha",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
+  },
+  {
+    "id": "culturaptgov-arte-e-educa-o-2026-05-16",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/arte-e-educacao/",
+    "title": "Arte e Educação",
+    "description": "Sinopse do evento Num dos diários que manteve na primavera de 1995, quando lançava os alicerces da sua Escola Experimental do Teatro Infantil, Chiara Guidi escreveu: “A Escola não tinha objetivos, mas colocava as pedras de um caminho ou, metaforicamente, os fundamentos para a construção de um Teatro.” Por essa altura, Chiara queria “questionar aquilo que estava a fazer no interior da companhia” [Socìetas Raffaello Sanzio], e assim foi ao encontro das crianças: “Se as tivesse ao meu lado, seria…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15658/arte-e-educacao68b99e57be24e.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-05-16",
+    "dateEnd": "2026-05-16",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Carlos Alberto",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-227460",
@@ -13206,7 +14130,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-230445",
@@ -13232,7 +14156,7 @@
       "concurso",
       "fotografia"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-229066",
@@ -13261,7 +14185,7 @@
       "sissi-martins",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-228583",
@@ -13287,7 +14211,82 @@
       "alex-cassal",
       "marco-mendonca"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-xiii-festival-internacional-de-teatro-do-alentejo-2026-05-21",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/xiii-festival-internacional-de-teatro-do-alentejo/",
+    "title": "XIII Festival Internacional de Teatro do Alentejo",
+    "description": "O Festival Internacional de Teatro do Alentejo valoriza o intercâmbio de ideias entre artistas, criadores, encenadores, atores, produtores, programadores, dramaturgos, autarcas, voluntários e público, muito público. Um festival acolhedor, que fomenta diálogos, instiga artistas, permite o encontro entre artistas e o público, desafia quem participa e que une uma região inteira em torno do Teatro. É o maior acontecimento teatral do Sul de Portugal, região que ocupa um terço do território nacional,…",
+    "category": "festivals",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15538/fita.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-05-21",
+    "dateEnd": "2026-05-30",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Vários locais (Alentejo)",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Beja",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-only-duos-2026-05-22",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/only-duos/",
+    "title": "Only Duos",
+    "description": "Only Duos é um programa da Companhia Nacional de Bailado, exclusivo para a circulação nacional, que celebra a força e a intimidade do encontro entre duas presenças em palco. Com a marca da intemporalidade, este ciclo de duetos reúne criações de diferentes coreógrafos que exploram múltiplas linguagens coreográficas – do clássico ao contemporâneo – evidenciando a riqueza da dança a dois. Cada peça é um universo próprio, onde se cruzam emoção, tensão, cumplicidade e contraste, num diálogo físico e…",
+    "category": "dance",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15593/only-duos.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-05-22",
+    "dateEnd": "2026-06-13",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Nacional (vários locais)",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Vila Nova de Famalicão",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
+  },
+  {
+    "id": "culturaptgov-zombi-manifiesto-2026-05-23",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/zombi-manifiesto/",
+    "title": "Zombi Manifiesto",
+    "description": "\"Em 27 de junho de 1973, um golpe de Estado instalou uma ditadura civil-militar no Uruguai, que durou até março de 1985. Cinquenta anos depois, em maio de 2023, Santiago Sanguinetti escrevia e encenava em Montevideu Zombi Manifiesto, que o FITEI agora recupera. Dois jovens descobrem que os soldados enterrados no cemitério local ganham vida como zombies quando ouvem alguém recitar excertos do Manifesto Comunista. Assim, despertam e sequestram um tenente do Exército Nacional, obrigando-o a aprend…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15674/zombi-manifiesto694030df05023.jpg",
+    "cost": "",
+    "dateStart": "2026-05-23",
+    "dateEnd": "2026-05-25",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Carlos Alberto",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-230222",
@@ -13310,7 +14309,32 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-de-bruckner-a-carlos-gardel-2026-05-26",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/de-bruckner-a-carlos-gardel/",
+    "title": "De Bruckner a Carlos Gardel",
+    "description": "“De Bruckner a Carlos Gardel”: uma viagem por tempos e estilos, pela voz do violoncelo A Academia das Ciências de Lisboa recebe o Quarteto Chiado num programa único que traça uma viagem da música sacra à canção popular, através da rica e expressiva voz do violoncelo. Este concerto explora géneros e épocas diversas, do moteto sacro ao tango sul-americano, demonstrando a versatilidade e a profundidade deste instrumento. A abrir, o moteto Locus iste, de Anton Bruckner, em arranjo para quarteto de…",
+    "category": "music",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15711/capturar.jpg",
+    "cost": "Ver Bilheteira",
+    "dateStart": "2026-05-26",
+    "dateEnd": "2026-05-26",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Academia das Ciências de Lisboa",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
   },
   {
     "id": "agendalx-227769",
@@ -13336,7 +14360,82 @@
       "bolsa-amelia-rey-colaco",
       "lgbtqi"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-toshiib4-2026-05-27",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/toshiib4/",
+    "title": "TOSHiiB4",
+    "description": "TOSHiiB4, uma criação entre a não-ficção e a fantasia, propõe uma revisão empírica da sexualidade na era digital. Acontece num quarto oversized — incluindo o público nesta pijama party — onde a criadora e duas amigas exploram um espaço de autodeterminação sexual dentro de um computador. O espetáculo reflete sobre a infância e a adolescência — a de quem teve um computador só para si — e sobre a obscuridade de narrativas omissas na educação sexual convencional. TOSHiiB4 convoca três amigas em sup…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15535/toshiib4_1920_16780654286841d6f39dfd2.png",
+    "cost": "Ver Bilheteira",
+    "dateStart": "2026-05-27",
+    "dateEnd": "2026-06-20",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Vários locais (Lisboa, Guimarães, Viseu)",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-crime-e-castigo-2026-05-28",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/crime-e-castigo/",
+    "title": "Crime e Castigo",
+    "description": "Após Frankenstein e Os Miseráveis, também apresentados pelo D. Maria II e pelo FIMFA Lx, a companhia belga Karyatides traz a Lisboa mais um clássico da literatura adaptado ao seu teatro de objetos: o imortal Crime e Castigo, de Fiódor Dostoiévski. O texto do autor russo, que desvenda a anatomia de um crime, desde a sua fantasia até à sua confissão, é aqui apresentado num ritmo intenso, entre ação e reflexão, humor e delicadeza, pontuado por humor e canções, sem nunca perder a sua reconhecida pr…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15572/crime_e_castigo.png",
+    "cost": "Sob consulta",
+    "dateStart": "2026-05-28",
+    "dateEnd": "2026-05-30",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro do Bairro",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
+  },
+  {
+    "id": "culturaptgov-lugares-invisiveis-2026-05-30",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/lugares-invisiveis/",
+    "title": "Lugares Invisiveis",
+    "description": "\"O que é que o edifício de um teatro mostra e esconde? “Um lugar nunca se define apenas pelo que se vê, mas pelas histórias que guarda, pessoas que regista, futuros que ambiciona.” Regressamos aos Lugares Invisíveis do Teatro São João, depois da estreia em 2024. O ator e encenador Nuno Preto e a bailarina e criadora Daniela Cruz propõem um espetáculo-percurso pelo avesso do teatro, franqueando “portas que levam a outras portas, escadas que parecem nunca mais acabar, vozes que aparecem de repent…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15675/lugares-invisiveis68b85b56d8125.jpg",
+    "cost": "",
+    "dateStart": "2026-05-30",
+    "dateEnd": "2026-06-01",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-231864",
@@ -13359,7 +14458,32 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-n-o-se-pode-n-o-se-pode-2026-06-04",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/nao-se-pode-nao-se-pode/",
+    "title": "Não se pode! Não se pode!",
+    "description": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio junto ao portão? Só pode ser um ataque! Os gatos são perigosos, sabe-se lá o que trazem de fora. A menos que descubram o que existe para além do quintal... Não se pode! Não se pode! Em 2025, artistas de Lagos, Ourém e Ponte de Lima foram convocados a p…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15558/cartaz144685_grande.png",
+    "cost": "Ver Bilhética",
+    "dateStart": "2026-06-04",
+    "dateEnd": "2026-06-21",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Jardins do Bombarda",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.416Z"
   },
   {
     "id": "agendalx-225203",
@@ -13382,7 +14506,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-223353",
@@ -13407,7 +14531,57 @@
     "tags": [
       "pop"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.298Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-scheherezade-de-rimski-korsakov-2026-06-07",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/scheherezade-de-rimski-korsakov/",
+    "title": "Scheherezade de Rimski-Korsakov",
+    "description": "Virtuosismo orquestral: fogo, folclore e fantasia O Centro Cultural de Belém recebe um entusiasmante concerto com Alondra de la Parra e a Orquestra Sinfónica Portuguesa. O programa reúne três obras-primas do repertório sinfónico que evidenciam o virtuosismo e a inspiração na tradição musical europeia do final do Romantismo. A abrir, a vibrante suíte El amor brujo, de Manuel de Falla, inspirada na cultura flamenga espanhola. Na “Danza ritual del fuego”, com os seus ritmos intensos e orquestração…",
+    "category": "music",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15710/capturar.jpg",
+    "cost": "",
+    "dateStart": "2026-06-07",
+    "dateEnd": "2026-06-07",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Centro Cultural de Belém",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
+  },
+  {
+    "id": "culturaptgov-jardim-aberto-2026-06-09",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/jardim-aberto/",
+    "title": "Jardim Aberto",
+    "description": "\"Música no Feminino: Pioneiras do Romantismo\" A parceria entre o Teatro Nacional de São Carlos e o São Luiz Teatro Municipal continua num concerto dedicado a duas compositoras pioneiras do período romântico: celebra-se Elfrida Andrée e Amy Beach, cujas obras foram, durante décadas, ofuscadas pelas dos seus homólogos masculinos. O programa inclui o Quinteto com Piano em Mi menor (1865) de Andrée, uma obra lírica e ousada, em que se nota a influência da elegância de Mendelssohn sobre a voz distin…",
+    "category": "other",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15709/capturar.jpg",
+    "cost": "Gratuito",
+    "dateStart": "2026-06-09",
+    "dateEnd": "2026-06-09",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "São Luiz Teatro Municipal",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Lisboa",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
   },
   {
     "id": "agendalx-228274",
@@ -13432,7 +14606,7 @@
     "tags": [
       "estados-unidos-da-america"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-230104",
@@ -13458,7 +14632,32 @@
       "drag",
       "queer"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-as-escolas-art-sticas-no-tnsj-2026-06-11",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/as-escolas-artisticas-no-tnsj/",
+    "title": "As Escolas Artísticas no TNSJ",
+    "description": "\"Todos os anos, ao fecharmos uma temporada, olhamos o futuro. No programa As Escolas Artísticas no TNSJ, acolhemos os projetos e provas finais dos alunos de várias escolas de arte do Porto. Os espetáculos dos finalistas dos cursos de Teatro da ESMAE e da ACE envolvem todas as valências teatrais (interpretação, cenografia, figurinos, luz, som, direção de cena e produção) num exercício de experimentação que decanta um trajeto letivo em prática. As apresentações públicas dos finalistas das licenci…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15676/as-escolas-artisticas-no-tnsj6940371680a59.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-06-11",
+    "dateEnd": "2026-07-24",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro Carlos Alberto",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-229684",
@@ -13485,7 +14684,7 @@
       "familias",
       "gratuito"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-232295",
@@ -13511,7 +14710,32 @@
       "joana-craveiro",
       "teatro-do-vestido"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-o-beijo-no-asfalto-2026-06-18",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/o-beijo-no-asfalto/",
+    "title": "O Beijo no Asfalto",
+    "description": "\"Antes de morrer, um homem atropelado pede a um desconhecido, que correra para o salvar, um beijo na boca. O gesto provoca a reprovação pública, o preconceito sexual anima a perseguição policial e a especulação jornalística. No Brasil, à época, O Beijo no Asfalto (1960), de Nelson Rodrigues, “não foi um sucesso tranquilo”, provocou indignação e polémica. E aqui, agora? À vitalidade do olhar de Miguel Loureiro cabe a leitura desta “tragédia carioca” numa encenação que respeita o português do Bra…",
+    "category": "theatre",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15677/o-beijo-no-asfalto69861d71715e5.jpg",
+    "cost": "",
+    "dateStart": "2026-06-18",
+    "dateEnd": "2026-07-05",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-230498",
@@ -13538,7 +14762,32 @@
       "festival",
       "pop-rock"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-o-anjo-pornogr-fico-confer-ncia-de-ruy-castro-2026-06-20",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/o-anjo-pornografico-conferencia-de-ruy-castro/",
+    "title": "O Anjo Pornográfico: Conferência de Ruy Castro",
+    "description": "\"O que se sabe ao certo sobre Nelson Rodrigues? Eis a mais curta e simples das respostas: sabe-se aquilo que consta da monumental biografia de Ruy Castro, O Anjo Pornográfico. Publicada no Brasil em 1992, e reeditada entre nós em 2017, a obra revela uma vida acidentada, de altos e baixos, sucessos e fracassos, amores e traições, doença, morte e crime. Na introdução, o biógrafo escreve: “A história de Nelson é mais trágica e rocambolesca do que qualquer uma de suas narrativas, e tão fascinante q…",
+    "category": "literature",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15678/o-anjo-pornografico-conferencia-de-ruy-castro694194cfa0ee4.jpg",
+    "cost": "Entrada gratuita",
+    "dateStart": "2026-06-20",
+    "dateEnd": "2026-06-20",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-223654",
@@ -13563,7 +14812,32 @@
     "tags": [
       "10"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-suor-angelica-gianni-schicchi-2026-06-27",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/suor-angelica-gianni-schicchi/",
+    "title": "Suor Angelica | Gianni Schicchi",
+    "description": "Esta produção revisita duas visões contrastantes da condição humana: a pungente tragédia de Suor Angelica e a desabrida comicidade de Gianni Schicchi. Trata-se da segunda e terceira partes de Il Trittico (1918), a trilogia operática de Giacomo Puccini. No centro da primeira ópera, está a figura de Irmã Angélica que, como penitência por uma gravidez que manchara o nome da família, se viu obrigada a tomar o véu, renunciando à convivência com o próprio filho. Uma visita da sua tia ao convento prec…",
+    "category": "other",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15708/capturar.jpg",
+    "cost": "Sob consulta",
+    "dateStart": "2026-06-27",
+    "dateEnd": "2026-06-27",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Coliseu Porto Ageas",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.414Z"
   },
   {
     "id": "agendalx-231794",
@@ -13586,7 +14860,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-228333",
@@ -13613,7 +14887,7 @@
       "christiane-jatahy",
       "ibsen"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-231854",
@@ -13636,7 +14910,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-230523",
@@ -13661,7 +14935,7 @@
     "tags": [
       "heavy-metal"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-233998",
@@ -13689,7 +14963,7 @@
       "parque-mayer",
       "teatro-musical"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-230536",
@@ -13714,7 +14988,32 @@
     "tags": [
       "rock"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-festival-da-voz-2026-07-09",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/festival-da-voz/",
+    "title": "Festival da Voz",
+    "description": "\"No ideário do TNSJ, a voz sempre constituiu um dos elementos cénicos essenciais. A ela dedicamos um festival que se centra na sua exploração enquanto matéria criativa no plano musical e poético. Reúne nomes do panorama nacional e internacional, entre consagrados e emergentes, que partilham uma vontade de inovação e expansão das possibilidades expressivas da voz. Nos vários alicerces do programa, que inclui concertos, performances, instalações e conferências, representam-se diferentes perspetiv…",
+    "category": "music",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15679/festival-da-voz693c54ee260ec.jpg",
+    "cost": "7,50 € — 16,00 € PASSE GERAL 25,00 €",
+    "dateStart": "2026-07-09",
+    "dateEnd": "2026-07-12",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro São Carlos / Teatro Carlos Alberto",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-233897",
@@ -13741,7 +15040,32 @@
       "lgbtqi",
       "queer"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
+  },
+  {
+    "id": "culturaptgov-territ-rio-ix-2026-07-17",
+    "source": "culturaptgov",
+    "sourceUrl": "http://culturaportugal.gov.pt/pt/conhecer/eventos/gepac-2026/territorio-ix/",
+    "title": "Território IX",
+    "description": "\"Neste território, não há fronteiras. O programa que nasceu para abrir novos espaços de partilha criativa entre jovens bailarinos e coreógrafos consagrados chega à nona edição. Território é uma iniciativa dos Estúdios Victor Córdon e conta este ano com as presenças de Wayne McGregor, coreógrafo britânico cujo trabalho cruza dança contemporânea com ciência e tecnologia, e Liliana Barros, coreógrafa e intérprete portuguesa, autora de uma obra que se distingue por uma “forte componente visual e um…",
+    "category": "dance",
+    "imageUrl": "http://culturaportugal.gov.pt/media/15680/territorio-ix693c4f91df830-2.jpg",
+    "cost": "",
+    "dateStart": "2026-07-17",
+    "dateEnd": "2026-07-18",
+    "timeStart": null,
+    "timeEnd": null,
+    "isRecurring": false,
+    "recurrenceNote": "",
+    "venue": "Teatro São João",
+    "address": "",
+    "lat": 38.7071,
+    "lng": -9.13549,
+    "city": "Porto",
+    "tags": [
+      "Adultos"
+    ],
+    "fetchedAt": "2026-03-28T10:10:35.415Z"
   },
   {
     "id": "agendalx-231176",
@@ -13767,7 +15091,7 @@
       "sillyseason",
       "william-shakespeare"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-230541",
@@ -13793,7 +15117,7 @@
       "alternativa",
       "indie"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-228277",
@@ -13816,7 +15140,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-230515",
@@ -13843,7 +15167,7 @@
       "ar-livre",
       "festival"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-222782",
@@ -13868,7 +15192,7 @@
     "tags": [
       "pop-rock"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-233070",
@@ -13893,7 +15217,7 @@
     "tags": [
       "rock-alternativo"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-232493",
@@ -13919,7 +15243,7 @@
       "musica-portuguesa",
       "pop-rock"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-231872",
@@ -13942,7 +15266,7 @@
     "lng": null,
     "city": "Lisboa",
     "tags": [],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-233945",
@@ -13969,7 +15293,7 @@
       "escola-de-calceteiros",
       "familias"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   },
   {
     "id": "agendalx-229063",
@@ -13994,6 +15318,6 @@
     "tags": [
       "16"
     ],
-    "fetchedAt": "2026-03-28T09:50:54.299Z"
+    "fetchedAt": "2026-03-28T10:10:35.129Z"
   }
 ]
