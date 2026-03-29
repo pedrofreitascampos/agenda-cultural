@@ -1,13 +1,13 @@
 {
   "agendalx": {
-    "lastFetchAt": "2026-03-28T10:10:35.129Z",
-    "lastEventCount": 542,
+    "lastFetchAt": "2026-03-29T06:35:35.719Z",
+    "lastEventCount": 499,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "culturaptgov": {
-    "lastFetchAt": "2026-03-28T10:10:35.416Z",
-    "lastEventCount": 66,
+    "lastFetchAt": "2026-03-29T06:35:37.334Z",
+    "lastEventCount": 64,
     "lastError": null,
     "consecutiveFailures": 0
   }
