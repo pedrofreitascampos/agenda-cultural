@@ -250,5 +250,16 @@
   "estádio do sport lisboa e benfica|lisboa": null,
   "parque da belavista|lisboa": null,
   "estádio do restelo|lisboa": null,
-  "arquivo municipal de lisboa|lisboa": null
+  "arquivo municipal de lisboa|lisboa": null,
+  "espaço santa catarina|lisboa": null,
+  "escola superior de música de lisboa|lisboa": {
+    "lat": 38.7462213,
+    "lng": -9.1970674
+  },
+  "teatro ibérico|lisboa": {
+    "lat": 38.7267899,
+    "lng": -9.1120803
+  },
+  "rui freire-fine art|lisboa": null,
+  "museu de artes decorativas portuguesas da fundação ricardo do espírito santo silva|lisboa": null
 }
