@@ -299,10 +299,51 @@ function initFilters() {
   const today = new Date().toISOString().slice(0, 10);
   DOM.dateFrom.value = today;
 
+  // Date shortcut buttons
+  document.querySelectorAll('.date-shortcut-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var shortcut = this.dataset.shortcut;
+      var now = new Date();
+      var from = new Date(now);
+      var to = new Date(now);
+
+      if (shortcut === 'today') {
+        // Just today
+      } else if (shortcut === '3days') {
+        to.setDate(to.getDate() + 2);
+      } else if (shortcut === 'weekend') {
+        // Next Saturday and Sunday
+        var day = now.getDay(); // 0=Sun, 6=Sat
+        var daysToSat = (6 - day + 7) % 7;
+        if (daysToSat === 0 && day === 6) daysToSat = 0; // already Saturday
+        from.setDate(from.getDate() + daysToSat);
+        to = new Date(from);
+        to.setDate(to.getDate() + 1); // Sunday
+      } else if (shortcut === 'week') {
+        to.setDate(to.getDate() + 6);
+      }
+
+      DOM.dateFrom.value = from.toISOString().slice(0, 10);
+      DOM.dateTo.value = to.toISOString().slice(0, 10);
+
+      // Highlight active shortcut
+      document.querySelectorAll('.date-shortcut-btn').forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+
+      applyFilters();
+    });
+  });
+
   // Event listeners
   DOM.searchInput.addEventListener('input', debounce(applyFilters, 200));
-  DOM.dateFrom.addEventListener('change', applyFilters);
-  DOM.dateTo.addEventListener('change', applyFilters);
+  DOM.dateFrom.addEventListener('change', function () {
+    document.querySelectorAll('.date-shortcut-btn').forEach(function (b) { b.classList.remove('active'); });
+    applyFilters();
+  });
+  DOM.dateTo.addEventListener('change', function () {
+    document.querySelectorAll('.date-shortcut-btn').forEach(function (b) { b.classList.remove('active'); });
+    applyFilters();
+  });
   DOM.cityFilter.addEventListener('change', applyFilters);
   DOM.clearFilters.addEventListener('click', clearFilters);
 }
@@ -324,7 +365,28 @@ function renderCategoryChips() {
     '</button>';
   }
 
+  // Select all / none buttons
+  html = '<div class="chip-actions">' +
+    '<button class="chip-action" id="cat-select-all">Todas</button>' +
+    '<button class="chip-action" id="cat-select-none">Nenhuma</button>' +
+    '</div>' + html;
+
   DOM.categoryFilters.innerHTML = html;
+
+  // Select all / none handlers
+  document.getElementById('cat-select-all').addEventListener('click', function () {
+    State.filters.categories.clear();
+    DOM.categoryFilters.querySelectorAll('.chip').forEach(function (c) { c.classList.remove('active'); });
+    applyFilters();
+  });
+  document.getElementById('cat-select-none').addEventListener('click', function () {
+    State.filters.categories.clear();
+    DOM.categoryFilters.querySelectorAll('.chip').forEach(function (c) {
+      State.filters.categories.add(c.dataset.category);
+      c.classList.add('active');
+    });
+    applyFilters();
+  });
 
   // Click handlers
   DOM.categoryFilters.querySelectorAll('.chip').forEach(chip => {
@@ -1294,6 +1356,7 @@ function renderSourcesList() {
     egeac: { name: 'EGEAC Lisboa', region: 'Lisboa (municipal)' },
     porto: { name: 'Porto.pt', region: 'Porto (municipal)' },
     eventbrite: { name: 'Eventbrite', region: 'Portugal' },
+    gcal: { name: 'Google Calendar', region: 'Pessoal' },
   };
 
   let html = '';

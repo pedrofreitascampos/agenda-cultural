@@ -6,6 +6,7 @@
   <title>Agora — Agenda Cultural de Portugal</title>
   <meta name="description" content="Descobre eventos culturais em Portugal num mapa interativo. Musica, teatro, exposições, cinema e mais.">
   <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -72,6 +73,12 @@
 
       <div class="filter-section">
         <label class="filter-label">Datas</label>
+        <div class="date-shortcuts" id="date-shortcuts">
+          <button class="date-shortcut-btn" data-shortcut="today">Hoje</button>
+          <button class="date-shortcut-btn" data-shortcut="3days">3 dias</button>
+          <button class="date-shortcut-btn" data-shortcut="weekend">Fim-de-semana</button>
+          <button class="date-shortcut-btn" data-shortcut="week">Semana</button>
+        </div>
         <div class="date-inputs">
           <input type="date" id="date-from" class="filter-input">
           <span class="date-sep">–</span>
