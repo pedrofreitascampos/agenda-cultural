@@ -15,6 +15,9 @@ const testFiles = [
   './test-pipeline.js',
   './test-geocode.js',
   './test-culturaptgov.js',
+  './test-ccb.js',
+  './test-aondevamos.js',
+  './test-eventbrite.js',
 ];
 
 let totalPass = 0;

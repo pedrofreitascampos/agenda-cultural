@@ -26,6 +26,8 @@ const PRUNE_DAYS = 30; // Remove events that ended more than 30 days ago
 const SOURCES = [
   require('./sources/agendalx'),
   require('./sources/culturaptgov'),
+  require('./sources/ccb'),
+  require('./sources/aondevamos'),
   require('./sources/egeac'),
   require('./sources/porto'),
   require('./sources/eventbrite'),

@@ -90,6 +90,8 @@ const DOM = {
   authBtn: $('#auth-btn'),
   notificationsToggle: $('#notifications-toggle'),
   notificationBar: $('#notification-bar'),
+  timelineView: $('#timeline-view'),
+  timelineContent: $('#timeline-content'),
 };
 
 // ─── Map Setup ───────────────────────────────────────────────
@@ -387,6 +389,8 @@ function applyFilters() {
 
   if (State.view === 'map') {
     renderMarkers();
+  } else if (State.view === 'timeline') {
+    renderTimeline();
   } else {
     renderAgenda();
   }
@@ -774,6 +778,91 @@ function bindAgendaCardClicks() {
   });
 }
 
+// ─── Timeline View ──────────────────────────────────────────
+
+function renderTimeline() {
+  var events = State.filtered.slice().sort(function (a, b) {
+    return (a.dateStart || '').localeCompare(b.dateStart || '');
+  });
+
+  if (events.length === 0) {
+    DOM.timelineContent.innerHTML =
+      '<div class="agenda-empty"><p>Nenhum evento encontrado.</p></div>';
+    return;
+  }
+
+  // Group by date
+  var groups = groupByDate(events);
+  var today = new Date().toISOString().slice(0, 10);
+  var html = '';
+
+  for (var i = 0; i < groups.length; i++) {
+    var date = groups[i][0];
+    var dayEvents = groups[i][1];
+
+    var isToday = date === today;
+    var headerLabel = isToday ? 'Hoje — ' + formatDisplayDate(date) : formatDisplayDate(date);
+    var dayName = '';
+    try {
+      var d = new Date(date + 'T00:00:00');
+      var days = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+      dayName = days[d.getDay()];
+    } catch {}
+
+    html += '<div class="timeline-day' + (isToday ? ' today' : '') + '">';
+    html += '<div class="timeline-day-header">';
+    html += '<span class="timeline-date">' + escapeHtml(headerLabel) + '</span>';
+    html += '<span class="timeline-weekday">' + escapeHtml(dayName) + '</span>';
+    html += '<span class="timeline-count">' + dayEvents.length + '</span>';
+    html += '</div>';
+
+    for (var j = 0; j < dayEvents.length; j++) {
+      var e = dayEvents[j];
+      var cat = CATEGORIES[e.category] || CATEGORIES.other;
+      var status = State.userEvents[e.id];
+      var statusClass = status ? ' status-' + status : '';
+      var meta = [];
+      if (e.timeStart) meta.push(e.timeStart);
+      if (e.venue) meta.push(e.venue);
+      if (e.city) meta.push(e.city);
+      if (e.cost) meta.push(e.cost);
+
+      html += '<div class="timeline-card' + statusClass + '" data-event-id="' + escapeHtml(e.id) + '">';
+      if (e.imageUrl) {
+        html += '<div class="timeline-card-img" style="background-image:url(' + escapeHtml(e.imageUrl) + ')"></div>';
+      }
+      html += '<div class="timeline-card-body">';
+      html += '<div class="timeline-card-cat" style="color:' + cat.color + '">' + cat.icon + ' ' + escapeHtml(cat.label) + '</div>';
+      html += '<div class="timeline-card-title">' + escapeHtml(e.title) + '</div>';
+      html += '<div class="timeline-card-meta">' + escapeHtml(meta.join(' · ')) + '</div>';
+      html += '</div>';
+      if (status) {
+        html += '<span class="agenda-card-status ' + status + '">' +
+          (status === 'watching' ? 'A ver' : 'Confirmado') + '</span>';
+      }
+      html += '</div>';
+    }
+
+    html += '</div>';
+  }
+
+  DOM.timelineContent.innerHTML = html;
+
+  // Bind clicks
+  DOM.timelineContent.querySelectorAll('.timeline-card').forEach(function (card) {
+    card.addEventListener('click', function () {
+      var event = findEventById(this.dataset.eventId);
+      if (event) openDetail(event);
+    });
+  });
+
+  // Scroll to today
+  var todayEl = DOM.timelineContent.querySelector('.timeline-day.today');
+  if (todayEl) {
+    setTimeout(function () { todayEl.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
+  }
+}
+
 // ─── Custom Events ───────────────────────────────────────────
 
 function getAllEventsIncludingCustom() {
@@ -938,14 +1027,22 @@ function switchView(view) {
     btn.classList.toggle('active', btn.dataset.view === view);
   });
 
+  // Hide all views
+  $('#map').classList.add('hidden');
+  DOM.timelineView.classList.add('hidden');
+  DOM.agendaView.classList.add('hidden');
+
+  // Show filter panel for map and timeline
+  DOM.filterPanel.classList.toggle('hidden', view === 'agenda');
+
   if (view === 'map') {
     $('#map').classList.remove('hidden');
-    DOM.agendaView.classList.add('hidden');
-    DOM.filterPanel.classList.remove('hidden');
     setTimeout(() => DOM.map.invalidateSize(), 100);
     renderMarkers();
+  } else if (view === 'timeline') {
+    DOM.timelineView.classList.remove('hidden');
+    renderTimeline();
   } else {
-    $('#map').classList.add('hidden');
     DOM.agendaView.classList.remove('hidden');
     DOM.filterPanel.classList.remove('hidden');
     renderAgenda();
@@ -1192,6 +1289,8 @@ function renderSourcesList() {
   const SOURCE_REGISTRY = {
     agendalx: { name: 'Agenda Cultural de Lisboa', region: 'Lisboa' },
     culturaptgov: { name: 'Portal da Cultura', region: 'Nacional (governo)' },
+    ccb: { name: 'Centro Cultural de Belém', region: 'Lisboa' },
+    aondevamos: { name: 'Aonde Vamos', region: 'Nacional' },
     egeac: { name: 'EGEAC Lisboa', region: 'Lisboa (municipal)' },
     porto: { name: 'Porto.pt', region: 'Porto (municipal)' },
     eventbrite: { name: 'Eventbrite', region: 'Portugal' },
@@ -1229,6 +1328,11 @@ function renderSourcesList() {
     '</div>';
   }
 
+  // Global sync button
+  html += '<div style="padding:12px 0">' +
+    '<button class="btn-sync" id="sync-data-btn">\u21BB Sincronizar dados</button>' +
+    '</div>';
+
   if (!html) {
     html = '<div style="padding:20px;text-align:center;color:var(--color-text-dim)">Nenhuma fonte configurada</div>';
   }
@@ -1248,6 +1352,35 @@ function renderSourcesList() {
       applyFilters();
     });
   });
+
+  // Bind sync button
+  var syncBtn = document.getElementById('sync-data-btn');
+  if (syncBtn) {
+    syncBtn.addEventListener('click', syncData);
+  }
+}
+
+async function syncData() {
+  var btn = document.getElementById('sync-data-btn');
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = '\u21BB A sincronizar...';
+  }
+
+  try {
+    await Promise.all([loadEvents(), loadSources()]);
+    applyFilters();
+    updateAgendaBadges();
+    renderSourcesList();
+    toast('Dados atualizados');
+  } catch {
+    toast('Erro ao sincronizar');
+  }
+
+  if (btn) {
+    btn.disabled = false;
+    btn.textContent = '\u21BB Sincronizar dados';
+  }
 }
 
 function savePreferences() {

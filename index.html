@@ -45,6 +45,7 @@
     </div>
     <nav class="header-tabs">
       <button class="tab-btn active" data-view="map">Mapa</button>
+      <button class="tab-btn" data-view="timeline">Timeline</button>
       <button class="tab-btn" data-view="agenda">A Minha Agenda</button>
     </nav>
     <div class="header-right">
@@ -97,6 +98,11 @@
 
     <!-- Map Container -->
     <div id="map"></div>
+
+    <!-- Timeline View (hidden by default) -->
+    <div id="timeline-view" class="hidden">
+      <div id="timeline-content" class="timeline-content"></div>
+    </div>
 
     <!-- Agenda View (hidden by default) -->
     <div id="agenda-view" class="hidden">

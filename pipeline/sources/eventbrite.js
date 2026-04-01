@@ -196,7 +196,7 @@ function normalize(raw) {
 
   // Build unique ID
   const urlSlug = sourceUrl
-    .replace(/.*eventbrite\.com\/e\//, '')
+    .replace(/.*eventbrite\.[a-z]+\/e\//, '')
     .replace(/[?#].*/, '')
     .replace(/\/$/, '')
     .slice(0, 80) || title.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 60);
