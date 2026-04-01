@@ -43,6 +43,9 @@ const State = {
   firebaseReady: false,
   weather: null,          // current weather + forecast cache
   weatherEnabled: true,
+  notificationsEnabled: false,
+  _syncingFromFirebase: false,  // guard for real-time sync re-render
+  _firebaseRefs: {},            // active .on() listeners for cleanup
 };
 
 // ─── DOM References ──────────────────────────────────────────
@@ -84,6 +87,9 @@ const DOM = {
   eventModalTitle: $('#event-modal-title'),
   eventForm: $('#event-form'),
   efDelete: $('#ef-delete'),
+  authBtn: $('#auth-btn'),
+  notificationsToggle: $('#notifications-toggle'),
+  notificationBar: $('#notification-bar'),
 };
 
 // ─── Map Setup ───────────────────────────────────────────────
@@ -396,6 +402,45 @@ function clearFilters() {
   applyFilters();
 }
 
+// ─── Google Calendar Integration ────────────────────────────
+
+function buildCalendarUrl(event) {
+  var start = event.dateStart.replace(/-/g, '');
+  var dates;
+  if (event.timeStart) {
+    var startDT = start + 'T' + event.timeStart.replace(':', '') + '00';
+    var endDT;
+    if (event.timeEnd) {
+      endDT = start + 'T' + event.timeEnd.replace(':', '') + '00';
+    } else {
+      // Default to +2 hours
+      var h = parseInt(event.timeStart.split(':')[0], 10) + 2;
+      var m = event.timeStart.split(':')[1] || '00';
+      endDT = start + 'T' + String(h).padStart(2, '0') + m + '00';
+    }
+    dates = startDT + '/' + endDT;
+  } else {
+    // All-day event — Google Calendar expects end to be day+1 for all-day
+    var endDate = event.dateEnd || event.dateStart;
+    var endParts = endDate.split('-');
+    var d = new Date(parseInt(endParts[0], 10), parseInt(endParts[1], 10) - 1, parseInt(endParts[2], 10));
+    d.setDate(d.getDate() + 1);
+    var endStr = d.getFullYear() +
+      String(d.getMonth() + 1).padStart(2, '0') +
+      String(d.getDate()).padStart(2, '0');
+    dates = start + '/' + endStr;
+  }
+  var params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: event.title,
+    dates: dates,
+    location: [event.venue, event.city].filter(Boolean).join(', '),
+    details: ((event.description || '').substring(0, 500) +
+      (event.sourceUrl ? '\n' + event.sourceUrl : '')).trim(),
+  });
+  return 'https://calendar.google.com/calendar/render?' + params.toString();
+}
+
 // ─── Event Detail Drawer ─────────────────────────────────────
 
 function openDetail(event) {
@@ -424,6 +469,10 @@ function openDetail(event) {
   html += renderStatusButton(event.id, 'watching', '\uD83D\uDC41\uFE0F A ver', status);
   html += renderStatusButton(event.id, 'attending', '\u2705 Confirmado', status);
   html += '</div>';
+
+  // Google Calendar button
+  html += '<a class="btn-calendar" href="' + escapeHtml(buildCalendarUrl(event)) +
+    '" target="_blank" rel="noopener">\uD83D\uDCC5 Adicionar ao Google Calendar</a>';
 
   // Info rows
   html += '<div class="detail-info">';
@@ -531,9 +580,10 @@ function saveUserEvents() {
     localStorage.setItem('agora_userEvents', JSON.stringify(State.userEvents));
   } catch { /* storage full or unavailable */ }
 
-  // Firebase sync (if authenticated)
   if (State.userId && State.firebaseReady) {
-    firebase.database().ref('users/' + State.userId + '/events').set(State.userEvents);
+    State._syncingFromFirebase = true;
+    firebase.database().ref('users/' + State.userId + '/events').set(State.userEvents)
+      .finally(function () { State._syncingFromFirebase = false; });
   }
 }
 
@@ -866,7 +916,9 @@ function saveCustomEvents() {
   } catch { /* full */ }
 
   if (State.userId && State.firebaseReady) {
-    firebase.database().ref('users/' + State.userId + '/customEvents').set(State.customEvents);
+    State._syncingFromFirebase = true;
+    firebase.database().ref('users/' + State.userId + '/customEvents').set(State.customEvents)
+      .finally(function () { State._syncingFromFirebase = false; });
   }
 }
 
@@ -929,7 +981,7 @@ function initMobileSheet() {
 
 function initFirebase() {
   // Check if config exists
-  if (typeof window.__APP_CONFIG === 'undefined' || !window.__APP_CONFIG.firebase.apiKey) {
+  if (typeof window.__APP_CONFIG === 'undefined' || !window.__APP_CONFIG.firebase || !window.__APP_CONFIG.firebase.apiKey) {
     return; // No Firebase config — run in offline/localStorage mode
   }
 
@@ -938,32 +990,99 @@ function initFirebase() {
   try {
     firebase.initializeApp(config);
     State.firebaseReady = true;
-
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        State.userId = user.uid;
-        // Load user events from Firebase
-        firebase.database().ref('users/' + user.uid + '/events').once('value').then(function (snap) {
-          if (snap.val()) {
-            State.userEvents = snap.val();
-            saveUserEvents();
-          }
-        });
-        firebase.database().ref('users/' + user.uid + '/customEvents').once('value').then(function (snap) {
-          if (snap.val()) {
-            State.customEvents = snap.val();
-            saveCustomEvents();
-          }
-          if (State.view === 'agenda') renderAgenda();
-          updateAgendaBadges();
-        });
-      } else {
-        State.userId = null;
-      }
-    });
   } catch (err) {
     console.warn('Firebase init failed:', err);
+    return;
   }
+
+  // Show auth button
+  DOM.authBtn.classList.remove('hidden');
+  DOM.authBtn.addEventListener('click', handleAuthClick);
+
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      State.userId = user.uid;
+      updateAuthButton(user);
+      attachFirebaseListeners(user.uid);
+    } else {
+      detachFirebaseListeners();
+      State.userId = null;
+      updateAuthButton(null);
+    }
+  });
+}
+
+function handleAuthClick() {
+  if (State.userId) {
+    firebase.auth().signOut();
+  } else {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+      var allowed = window.__APP_CONFIG.allowedEmails;
+      if (allowed && allowed.length > 0 && allowed.indexOf(result.user.email) === -1) {
+        firebase.auth().signOut();
+        toast('Email não autorizado');
+      }
+    }).catch(function (err) {
+      if (err.code !== 'auth/popup-closed-by-user') {
+        toast('Erro ao iniciar sessão');
+        console.warn('Auth error:', err);
+      }
+    });
+  }
+}
+
+function updateAuthButton(user) {
+  if (user) {
+    var initial = (user.displayName || user.email || '?').charAt(0).toUpperCase();
+    if (user.photoURL) {
+      DOM.authBtn.innerHTML = '<img src="' + escapeHtml(user.photoURL) + '" class="auth-avatar" alt="">';
+    } else {
+      DOM.authBtn.textContent = initial;
+    }
+    DOM.authBtn.title = 'Sair (' + escapeHtml(user.email || '') + ')';
+    DOM.authBtn.classList.add('signed-in');
+  } else {
+    DOM.authBtn.textContent = 'Entrar';
+    DOM.authBtn.title = 'Iniciar sessão';
+    DOM.authBtn.classList.remove('signed-in');
+  }
+}
+
+function attachFirebaseListeners(uid) {
+  var eventsRef = firebase.database().ref('users/' + uid + '/events');
+  var customRef = firebase.database().ref('users/' + uid + '/customEvents');
+
+  State._firebaseRefs.events = eventsRef;
+  State._firebaseRefs.custom = customRef;
+
+  eventsRef.on('value', function (snap) {
+    if (State._syncingFromFirebase) return;
+    var val = snap.val();
+    if (val !== null) {
+      State.userEvents = val;
+      try { localStorage.setItem('agora_userEvents', JSON.stringify(val)); } catch {}
+    }
+    if (State.view === 'agenda') renderAgenda();
+    updateAgendaBadges();
+  });
+
+  customRef.on('value', function (snap) {
+    if (State._syncingFromFirebase) return;
+    var val = snap.val();
+    if (val !== null) {
+      State.customEvents = val;
+      try { localStorage.setItem('agora_customEvents', JSON.stringify(val)); } catch {}
+    }
+    if (State.view === 'agenda') renderAgenda();
+    updateAgendaBadges();
+  });
+}
+
+function detachFirebaseListeners() {
+  if (State._firebaseRefs.events) State._firebaseRefs.events.off('value');
+  if (State._firebaseRefs.custom) State._firebaseRefs.custom.off('value');
+  State._firebaseRefs = {};
 }
 
 // ─── Data Loading ────────────────────────────────────────────
@@ -1073,6 +1192,9 @@ function renderSourcesList() {
   const SOURCE_REGISTRY = {
     agendalx: { name: 'Agenda Cultural de Lisboa', region: 'Lisboa' },
     culturaptgov: { name: 'Portal da Cultura', region: 'Nacional (governo)' },
+    egeac: { name: 'EGEAC Lisboa', region: 'Lisboa (municipal)' },
+    porto: { name: 'Porto.pt', region: 'Porto (municipal)' },
+    eventbrite: { name: 'Eventbrite', region: 'Portugal' },
   };
 
   let html = '';
@@ -1133,6 +1255,7 @@ function savePreferences() {
     localStorage.setItem('agora_prefs', JSON.stringify({
       disabledSources: State.disabledSources,
       weatherEnabled: State.weatherEnabled,
+      notificationsEnabled: State.notificationsEnabled,
     }));
   } catch { /* storage full */ }
 }
@@ -1144,6 +1267,7 @@ function loadPreferences() {
       const prefs = JSON.parse(stored);
       State.disabledSources = prefs.disabledSources || {};
       State.weatherEnabled = prefs.weatherEnabled !== false;
+      State.notificationsEnabled = prefs.notificationsEnabled || false;
     }
   } catch { /* corrupt */ }
   DOM.weatherToggle.checked = State.weatherEnabled;
@@ -1352,6 +1476,101 @@ function renderDetailWeather(event) {
   return html;
 }
 
+// ─── Notifications ──────────────────────────────────────────
+
+function initNotifications() {
+  DOM.notificationsToggle.checked = State.notificationsEnabled;
+  DOM.notificationsToggle.addEventListener('change', function () {
+    State.notificationsEnabled = this.checked;
+    savePreferences();
+    if (this.checked) {
+      requestNotificationPermission();
+      checkUpcomingEvents();
+    } else {
+      DOM.notificationBar.classList.add('hidden');
+    }
+  });
+}
+
+function requestNotificationPermission() {
+  if (!('Notification' in window)) return;
+  if (Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
+}
+
+function checkUpcomingEvents() {
+  if (!State.notificationsEnabled) return;
+
+  var now = new Date();
+  var tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+  var todayStr = now.toISOString().slice(0, 10);
+  var tomorrowStr = tomorrow.toISOString().slice(0, 10);
+  var dismissed = {};
+  try {
+    dismissed = JSON.parse(sessionStorage.getItem('agora_dismissed_notifs') || '{}');
+  } catch {}
+
+  var allEvents = getAllEventsIncludingCustom();
+  var upcoming = allEvents.filter(function (e) {
+    var status = State.userEvents[e.id];
+    if (!status && e.source !== 'custom') return false;
+    if (dismissed[e.id]) return false;
+    return e.dateStart === todayStr || e.dateStart === tomorrowStr;
+  });
+
+  if (upcoming.length === 0) {
+    DOM.notificationBar.classList.add('hidden');
+    return;
+  }
+
+  // In-app notification bar
+  var labels = upcoming.map(function (e) {
+    var when = e.dateStart === todayStr ? 'Hoje' : 'Amanhã';
+    var time = e.timeStart ? ' às ' + e.timeStart : '';
+    return '<strong>' + escapeHtml(e.title) + '</strong> — ' + when + time;
+  });
+
+  DOM.notificationBar.innerHTML =
+    '<div class="notif-content">' +
+      '<span class="notif-icon">\uD83D\uDD14</span>' +
+      '<div class="notif-text">' + labels.join('<br>') + '</div>' +
+      '<button class="notif-dismiss" onclick="dismissNotifications()" title="Fechar">&times;</button>' +
+    '</div>';
+  DOM.notificationBar.classList.remove('hidden');
+
+  // Browser notification (if permitted)
+  if ('Notification' in window && Notification.permission === 'granted') {
+    var alreadySent = sessionStorage.getItem('agora_notif_sent');
+    if (!alreadySent) {
+      var body = upcoming.map(function (e) {
+        var when = e.dateStart === todayStr ? 'Hoje' : 'Amanhã';
+        return e.title + ' — ' + when + (e.timeStart ? ' às ' + e.timeStart : '');
+      }).join('\n');
+      new Notification('Agora — Eventos próximos', { body: body, icon: 'favicon.ico' });
+      sessionStorage.setItem('agora_notif_sent', '1');
+    }
+  }
+}
+
+function dismissNotifications() {
+  DOM.notificationBar.classList.add('hidden');
+  // Mark all current upcoming events as dismissed for this session
+  var now = new Date();
+  var tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+  var todayStr = now.toISOString().slice(0, 10);
+  var tomorrowStr = tomorrow.toISOString().slice(0, 10);
+  var dismissed = {};
+  try { dismissed = JSON.parse(sessionStorage.getItem('agora_dismissed_notifs') || '{}'); } catch {}
+  getAllEventsIncludingCustom().forEach(function (e) {
+    if ((State.userEvents[e.id] || e.source === 'custom') &&
+        (e.dateStart === todayStr || e.dateStart === tomorrowStr)) {
+      dismissed[e.id] = true;
+    }
+  });
+  sessionStorage.setItem('agora_dismissed_notifs', JSON.stringify(dismissed));
+}
+
 // ─── Init ────────────────────────────────────────────────────
 
 async function init() {
@@ -1377,6 +1596,7 @@ async function init() {
   initEventModal();
   initMobileSheet();
   initSettings();
+  initNotifications();
   initFirebase();
 
   // Apply initial filters
@@ -1385,6 +1605,10 @@ async function init() {
 
   // Fetch weather (non-blocking)
   fetchWeather();
+
+  // Check for upcoming events (notifications)
+  checkUpcomingEvents();
+  setInterval(checkUpcomingEvents, 60 * 60 * 1000);
 
   // Detail drawer close
   DOM.detailClose.addEventListener('click', closeDetail);

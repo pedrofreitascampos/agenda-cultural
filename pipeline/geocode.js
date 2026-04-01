@@ -13,9 +13,21 @@ const fs = require('fs');
 const path = require('path');
 
 const CACHE_PATH = path.join(__dirname, '..', 'data', 'venue-cache.json');
+const OVERRIDES_PATH = path.join(__dirname, '..', 'data', 'venue-overrides.json');
 const NOMINATIM_URL = 'https://nominatim.openstreetmap.org/search';
 
 let cache = null;
+let overrides = null;
+
+function loadOverrides() {
+  if (overrides) return overrides;
+  try {
+    overrides = JSON.parse(fs.readFileSync(OVERRIDES_PATH, 'utf-8'));
+  } catch {
+    overrides = {};
+  }
+  return overrides;
+}
 
 function loadCache() {
   if (cache) return cache;
@@ -44,56 +56,96 @@ function cacheKey(venue, city) {
  * Look up coordinates for a venue.
  * Returns { lat, lng } or null.
  */
+/**
+ * Clean venue name for better geocoding results.
+ * Strips parentheticals, "um teatro em cada bairro", hours, etc.
+ */
+function cleanVenueName(venue) {
+  return venue
+    .replace(/\s*\(.*?\)\s*/g, ' ')              // remove parentheticals
+    .replace(/\s*-\s*um teatro em cada bairro/i, '')
+    .replace(/\s*\d{1,2}h\d{0,2}\s*/gi, ' ')     // remove times like "21h00"
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * Try a Nominatim query. Returns { lat, lng } or null.
+ */
+async function nominatimLookup(query, log) {
+  const params = new URLSearchParams({
+    q: query,
+    countrycodes: 'pt',
+    format: 'json',
+    limit: '1',
+  });
+  const url = `${NOMINATIM_URL}?${params.toString()}`;
+  const start = Date.now();
+
+  await sleep(1100);
+
+  const res = await fetch(url, {
+    headers: {
+      'User-Agent': 'Agora-CulturalEventsMap/1.0 (https://github.com/; agora-events@pm.me)',
+      'Accept': 'application/json',
+    },
+  });
+
+  const durationMs = Date.now() - start;
+
+  if (!res.ok) {
+    log.api('nominatim', url, res.status, durationMs);
+    return null;
+  }
+
+  const data = await res.json();
+  log.api('nominatim', url, res.status, durationMs, { results: data.length });
+
+  if (data.length > 0) {
+    return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+  }
+  return null;
+}
+
 async function geocode(venue, city, log) {
   if (!venue) return null;
 
+  const o = loadOverrides();
   const c = loadCache();
   const key = cacheKey(venue, city);
 
-  // Cache hit
+  // 1. Manual overrides take priority
+  if (o[key]) return o[key];
+
+  // 2. Cache hit
   if (c[key] !== undefined) {
     if (c[key] === null) return null; // previously failed
     return c[key]; // { lat, lng }
   }
 
-  // Nominatim lookup
-  const query = city ? `${venue}, ${city}, Portugal` : `${venue}, Portugal`;
-  const url = `${NOMINATIM_URL}?q=${encodeURIComponent(query)}&format=json&limit=1`;
-  const start = Date.now();
-
+  // 3. Nominatim lookup with multiple strategies
   try {
-    // Rate limit: 1 req/sec
-    await sleep(1100);
+    const cleaned = cleanVenueName(venue);
 
-    const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'Agora-CulturalEventsMap/1.0 (https://github.com/; agora-events@pm.me)',
-        'Accept': 'application/json',
-      },
-    });
+    // Try 1: cleaned venue + city
+    let result = await nominatimLookup(
+      city ? `${cleaned}, ${city}, Portugal` : `${cleaned}, Portugal`, log
+    );
 
-    const durationMs = Date.now() - start;
-
-    if (!res.ok) {
-      log.api('nominatim', url, res.status, durationMs);
-      c[key] = null;
-      return null;
+    // Try 2: venue name only (some venues are indexed without city)
+    if (!result && cleaned !== venue) {
+      result = await nominatimLookup(cleaned + ', Portugal', log);
     }
 
-    const data = await res.json();
-    log.api('nominatim', url, res.status, durationMs, { results: data.length });
-
-    if (data.length > 0) {
-      const result = { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+    if (result) {
       c[key] = result;
       return result;
     }
 
-    // No results
     c[key] = null;
     return null;
   } catch (err) {
-    log.api('nominatim', url, 'error', Date.now() - start, { error: String(err) });
+    log.api('nominatim', NOMINATIM_URL, 'error', 0, { error: String(err) });
     c[key] = null;
     return null;
   }
