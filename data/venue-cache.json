@@ -261,5 +261,10 @@
     "lng": -9.1120803
   },
   "rui freire-fine art|lisboa": null,
-  "museu de artes decorativas portuguesas da fundação ricardo do espírito santo silva|lisboa": null
+  "museu de artes decorativas portuguesas da fundação ricardo do espírito santo silva|lisboa": null,
+  "biblioteca do iscte|lisboa": null,
+  "assembleia da república|lisboa": {
+    "lat": 38.7127151,
+    "lng": -9.1538085
+  }
 }
