@@ -9,13 +9,13 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
 
   <!-- Leaflet -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 
   <!-- MarkerCluster -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
-  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="anonymous">
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" integrity="sha384-eXVCORTRlv4FUUgS/xmOyr66XBVraen8ATNLMESp92FKXLAMiKkerixTiBvXriZr" crossorigin="anonymous"></script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,6 +214,11 @@
           <label class="filter-label" for="ef-notes">Notas</label>
           <textarea id="ef-notes" class="filter-input" rows="3" placeholder="Notas pessoais..."></textarea>
         </div>
+        <label class="toggle-row" style="padding:4px 0">
+          <span>Partilhar com outros</span>
+          <input type="checkbox" id="ef-shared">
+          <span class="toggle-slider"></span>
+        </label>
         <div class="form-actions">
           <button type="button" id="ef-delete" class="btn-danger hidden">Apagar</button>
           <button type="submit" class="btn-primary">Guardar</button>
@@ -246,6 +251,15 @@
           <input type="checkbox" id="notifications-toggle">
           <span class="toggle-slider"></span>
         </label>
+        <div class="notif-days-row" id="notif-days-row">
+          <label class="filter-label" for="notif-days">Avisar com antecedência de</label>
+          <select id="notif-days" class="filter-input" style="width:auto">
+            <option value="0">No dia</option>
+            <option value="1" selected>1 dia</option>
+            <option value="3">3 dias</option>
+            <option value="7">1 semana</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>

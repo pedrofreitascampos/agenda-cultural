@@ -247,6 +247,42 @@ html, body {
   color: var(--color-text);
 }
 
+/* ─── Geocode Button ─────────────────────────────────────────── */
+
+.btn-geocode {
+  background: none;
+  border: 1px dashed var(--color-border-light);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font: inherit;
+  font-size: 12px;
+  color: var(--color-accent);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btn-geocode:hover {
+  background: rgba(139, 92, 246, 0.08);
+  border-style: solid;
+}
+
+.btn-geocode:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.notif-days-row {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notif-days-row .filter-label {
+  margin: 0;
+  white-space: nowrap;
+}
+
 /* ─── Google Calendar Button ─────────────────────────────────── */
 
 .btn-calendar {

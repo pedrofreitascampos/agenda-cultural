@@ -44,6 +44,8 @@ const State = {
   weather: null,          // current weather + forecast cache
   weatherEnabled: true,
   notificationsEnabled: false,
+  notificationDays: 1,          // days before event to alert
+  sharedEvents: [],             // events shared by other users
   _syncingFromFirebase: false,  // guard for real-time sync re-render
   _firebaseRefs: {},            // active .on() listeners for cleanup
 };
@@ -507,6 +509,69 @@ function buildCalendarUrl(event) {
   return 'https://calendar.google.com/calendar/render?' + params.toString();
 }
 
+// ─── Client-side Geocoding ───────────────────────────────────
+
+async function geocodeEvent(eventId) {
+  var event = findEventById(eventId);
+  if (!event) return;
+
+  var btn = DOM.detailContent.querySelector('.btn-geocode');
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = 'A localizar...';
+  }
+
+  var query = [event.venue, event.address, event.city, 'Portugal'].filter(Boolean).join(', ');
+  var params = new URLSearchParams({
+    q: query,
+    countrycodes: 'pt',
+    format: 'json',
+    limit: '1',
+  });
+  var url = 'https://nominatim.openstreetmap.org/search?' + params.toString();
+
+  try {
+    var res = await fetch(url, {
+      headers: { 'Accept': 'application/json' },
+    });
+    var data = await res.json();
+
+    if (data.length > 0) {
+      event.lat = parseFloat(data[0].lat);
+      event.lng = parseFloat(data[0].lon);
+
+      // Persist: update in State.events or customEvents
+      var idx = State.events.findIndex(function (e) { return e.id === eventId; });
+      if (idx >= 0) {
+        State.events[idx].lat = event.lat;
+        State.events[idx].lng = event.lng;
+      }
+      var cidx = State.customEvents.findIndex(function (e) { return e.id === eventId; });
+      if (cidx >= 0) {
+        State.customEvents[cidx].lat = event.lat;
+        State.customEvents[cidx].lng = event.lng;
+        saveCustomEvents();
+      }
+
+      toast('Localização encontrada');
+      openDetail(event); // Re-render detail with coords
+      if (State.view === 'map') renderMarkers();
+    } else {
+      toast('Localização não encontrada');
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = 'Localizar no mapa';
+      }
+    }
+  } catch (err) {
+    toast('Erro ao localizar');
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = 'Localizar no mapa';
+    }
+  }
+}
+
 // ─── Event Detail Drawer ─────────────────────────────────────
 
 function openDetail(event) {
@@ -549,6 +614,20 @@ function openDetail(event) {
   if (event.city) html += infoRow('\uD83C\uDFD9\uFE0F', event.city);
   if (event.cost) html += infoRow('\uD83D\uDCB6', event.cost);
   if (event.isRecurring && event.recurrenceNote) html += infoRow('\uD83D\uDD01', event.recurrenceNote, true);
+
+  // Geocode button — show if no coordinates but has location info
+  if (event.lat == null && (event.venue || event.address || event.city)) {
+    html += '<div class="detail-info-row">' +
+      '<span class="detail-info-icon">\uD83D\uDDFA\uFE0F</span>' +
+      '<button class="btn-geocode" data-event-id="' + escapeHtml(event.id) + '">' +
+      'Localizar no mapa</button></div>';
+  } else if (event.lat != null) {
+    html += '<div class="detail-info-row">' +
+      '<span class="detail-info-icon">\uD83D\uDDFA\uFE0F</span>' +
+      '<span class="detail-info-text muted">' +
+      event.lat.toFixed(4) + ', ' + event.lng.toFixed(4) + '</span></div>';
+  }
+
   html += '</div>';
 
   // Weather forecast for event dates
@@ -587,6 +666,15 @@ function openDetail(event) {
       toggleEventStatus(this.dataset.eventId, this.dataset.status);
     });
   });
+
+  // Bind geocode button
+  var geocodeBtn = DOM.detailContent.querySelector('.btn-geocode');
+  if (geocodeBtn) {
+    geocodeBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      geocodeEvent(this.dataset.eventId);
+    });
+  }
 }
 
 function renderStatusButton(eventId, statusType, label, currentStatus) {
@@ -928,7 +1016,7 @@ function renderTimeline() {
 // ─── Custom Events ───────────────────────────────────────────
 
 function getAllEventsIncludingCustom() {
-  return State.events.concat(State.customEvents);
+  return State.events.concat(State.customEvents).concat(State.sharedEvents);
 }
 
 function findEventById(id) {
@@ -955,6 +1043,7 @@ function openEventModal(existingEvent) {
   f.querySelector('#ef-cost').value = existingEvent ? (existingEvent.cost || '') : '';
   f.querySelector('#ef-url').value = existingEvent ? (existingEvent.sourceUrl || '') : '';
   f.querySelector('#ef-notes').value = existingEvent ? (existingEvent.description || '') : '';
+  f.querySelector('#ef-shared').checked = existingEvent ? (existingEvent.shared || false) : false;
 
   DOM.eventModal.classList.remove('hidden');
 }
@@ -1011,6 +1100,7 @@ function saveCustomEvent() {
     lng: null,
     city: f.querySelector('#ef-city').value.trim(),
     tags: [],
+    shared: f.querySelector('#ef-shared').checked,
     fetchedAt: new Date().toISOString(),
   };
 
@@ -1070,7 +1160,34 @@ function saveCustomEvents() {
     State._syncingFromFirebase = true;
     firebase.database().ref('users/' + State.userId + '/customEvents').set(State.customEvents)
       .finally(function () { State._syncingFromFirebase = false; });
+
+    // Sync shared events to public node
+    var shared = State.customEvents.filter(function (e) { return e.shared; });
+    firebase.database().ref('shared/' + State.userId).set(shared);
   }
+}
+
+function loadSharedEvents() {
+  if (!State.firebaseReady) return;
+
+  firebase.database().ref('shared').on('value', function (snap) {
+    var all = snap.val();
+    if (!all) return;
+
+    // Collect shared events from all users (except our own)
+    State.sharedEvents = [];
+    for (var uid in all) {
+      if (uid === State.userId) continue;
+      var events = all[uid];
+      if (Array.isArray(events)) {
+        events.forEach(function (e) {
+          e.source = 'shared';
+          State.sharedEvents.push(e);
+        });
+      }
+    }
+    applyFilters();
+  });
 }
 
 function loadCustomEvents() {
@@ -1163,6 +1280,7 @@ function initFirebase() {
       State.userId = user.uid;
       updateAuthButton(user);
       attachFirebaseListeners(user.uid);
+      loadSharedEvents();
     } else {
       detachFirebaseListeners();
       State.userId = null;
@@ -1357,6 +1475,7 @@ function renderSourcesList() {
     porto: { name: 'Porto.pt', region: 'Porto (municipal)' },
     eventbrite: { name: 'Eventbrite', region: 'Portugal' },
     gcal: { name: 'Google Calendar', region: 'Pessoal' },
+    shared: { name: 'Partilhados', region: 'Comunidade' },
   };
 
   let html = '';
@@ -1452,6 +1571,7 @@ function savePreferences() {
       disabledSources: State.disabledSources,
       weatherEnabled: State.weatherEnabled,
       notificationsEnabled: State.notificationsEnabled,
+      notificationDays: State.notificationDays,
     }));
   } catch { /* storage full */ }
 }
@@ -1464,6 +1584,7 @@ function loadPreferences() {
       State.disabledSources = prefs.disabledSources || {};
       State.weatherEnabled = prefs.weatherEnabled !== false;
       State.notificationsEnabled = prefs.notificationsEnabled || false;
+      State.notificationDays = prefs.notificationDays != null ? prefs.notificationDays : 1;
     }
   } catch { /* corrupt */ }
   DOM.weatherToggle.checked = State.weatherEnabled;
@@ -1676,6 +1797,9 @@ function renderDetailWeather(event) {
 
 function initNotifications() {
   DOM.notificationsToggle.checked = State.notificationsEnabled;
+  var daysSelect = document.getElementById('notif-days');
+  if (daysSelect) daysSelect.value = String(State.notificationDays);
+
   DOM.notificationsToggle.addEventListener('change', function () {
     State.notificationsEnabled = this.checked;
     savePreferences();
@@ -1686,6 +1810,14 @@ function initNotifications() {
       DOM.notificationBar.classList.add('hidden');
     }
   });
+
+  if (daysSelect) {
+    daysSelect.addEventListener('change', function () {
+      State.notificationDays = parseInt(this.value, 10);
+      savePreferences();
+      checkUpcomingEvents();
+    });
+  }
 }
 
 function requestNotificationPermission() {
@@ -1699,9 +1831,10 @@ function checkUpcomingEvents() {
   if (!State.notificationsEnabled) return;
 
   var now = new Date();
-  var tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
   var todayStr = now.toISOString().slice(0, 10);
-  var tomorrowStr = tomorrow.toISOString().slice(0, 10);
+  var days = State.notificationDays || 1;
+  var futureDate = new Date(now.getTime() + days * 24 * 60 * 60 * 1000);
+  var futureStr = futureDate.toISOString().slice(0, 10);
   var dismissed = {};
   try {
     dismissed = JSON.parse(sessionStorage.getItem('agora_dismissed_notifs') || '{}');
@@ -1712,7 +1845,7 @@ function checkUpcomingEvents() {
     var status = State.userEvents[e.id];
     if (!status && e.source !== 'custom') return false;
     if (dismissed[e.id]) return false;
-    return e.dateStart === todayStr || e.dateStart === tomorrowStr;
+    return e.dateStart >= todayStr && e.dateStart <= futureStr;
   });
 
   if (upcoming.length === 0) {
@@ -1722,7 +1855,8 @@ function checkUpcomingEvents() {
 
   // In-app notification bar
   var labels = upcoming.map(function (e) {
-    var when = e.dateStart === todayStr ? 'Hoje' : 'Amanhã';
+    var daysUntil = Math.round((new Date(e.dateStart) - new Date(todayStr)) / (24 * 60 * 60 * 1000));
+    var when = daysUntil === 0 ? 'Hoje' : daysUntil === 1 ? 'Amanhã' : 'Em ' + daysUntil + ' dias';
     var time = e.timeStart ? ' às ' + e.timeStart : '';
     return '<strong>' + escapeHtml(e.title) + '</strong> — ' + when + time;
   });

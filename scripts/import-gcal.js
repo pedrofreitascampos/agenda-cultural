@@ -85,15 +85,26 @@ for (const e of gcalEvents) {
 
 console.log('Converted:', converted.length, 'events');
 
-// Merge into existing events.json
+// Merge into existing events.json (upsert — update existing, add new)
 const existing = JSON.parse(fs.readFileSync(EVENTS_PATH, 'utf-8'));
-const existingIds = new Set(existing.map(e => e.id));
+const existingMap = new Map(existing.map(e => [e.id, e]));
 
 let added = 0;
+let updated = 0;
 for (const ev of converted) {
-  if (!existingIds.has(ev.id)) {
+  if (existingMap.has(ev.id)) {
+    // Update dates and details for existing events
+    const old = existingMap.get(ev.id);
+    old.dateStart = ev.dateStart;
+    old.dateEnd = ev.dateEnd;
+    old.timeStart = ev.timeStart;
+    old.timeEnd = ev.timeEnd;
+    old.address = ev.address || old.address;
+    old.fetchedAt = ev.fetchedAt;
+    updated++;
+  } else {
     existing.push(ev);
-    existingIds.add(ev.id);
+    existingMap.set(ev.id, ev);
     added++;
   }
 }
@@ -102,4 +113,4 @@ for (const ev of converted) {
 existing.sort((a, b) => (a.dateStart || '').localeCompare(b.dateStart || ''));
 
 fs.writeFileSync(EVENTS_PATH, JSON.stringify(existing, null, 2) + '\n');
-console.log('Added', added, 'new events. Total:', existing.length);
+console.log('Added', added, 'new, updated', updated, 'existing. Total:', existing.length);
