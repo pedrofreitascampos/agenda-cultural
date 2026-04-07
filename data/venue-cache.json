@@ -267,5 +267,19 @@
     "lat": 38.7127151,
     "lng": -9.1538085
   },
-  "luiza andaluz centro de conhecimento|lisboa": null
+  "luiza andaluz centro de conhecimento|lisboa": null,
+  "passevite|lisboa": null,
+  "studio 8a|lisboa": null,
+  "centro cultural de carnide|lisboa": {
+    "lat": 38.7696361,
+    "lng": -9.1910355
+  },
+  "gabinete de estudos olisiponenses (geo)|lisboa": {
+    "lat": 38.7466532,
+    "lng": -9.1825908
+  },
+  "teatro taborda|lisboa": {
+    "lat": 38.7148275,
+    "lng": -9.1328085
+  }
 }
