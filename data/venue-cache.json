@@ -281,5 +281,10 @@
   "teatro taborda|lisboa": {
     "lat": 38.7148275,
     "lng": -9.1328085
+  },
+  "auditório fernando pessa|lisboa": null,
+  "biblioteca de marvila|lisboa": {
+    "lat": 38.7402321,
+    "lng": -9.1091537
   }
 }
