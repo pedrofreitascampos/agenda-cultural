@@ -286,5 +286,17 @@
   "biblioteca de marvila|lisboa": {
     "lat": 38.7402321,
     "lng": -9.1091537
+  },
+  "faculdade de direito da universidade de lisboa|lisboa": {
+    "lat": 38.7518246,
+    "lng": -9.1573521
+  },
+  "igreja de nossa senhora da pena|lisboa": {
+    "lat": 38.7177566,
+    "lng": -9.1392826
+  },
+  "faculdade de ciências (universidade de lisboa)|lisboa": {
+    "lat": 38.7599994,
+    "lng": -9.157773
   }
 }
