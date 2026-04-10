@@ -298,5 +298,29 @@
   "faculdade de ciências (universidade de lisboa)|lisboa": {
     "lat": 38.7599994,
     "lng": -9.157773
-  }
+  },
+  "praça do comércio|lisboa": {
+    "lat": 38.7077934,
+    "lng": -9.1365543
+  },
+  "convento de são pedro de alcântara|lisboa": {
+    "lat": 38.7150183,
+    "lng": -9.1452968
+  },
+  "museu de lisboa - fábrica de moagem|lisboa": null,
+  "o.ur studio|lisboa": null,
+  "livraria lisboa cultura|lisboa": {
+    "lat": 38.7131285,
+    "lng": -9.1396973
+  },
+  "teatro bocage|lisboa": {
+    "lat": 38.7198421,
+    "lng": -9.1340559
+  },
+  "casa cheia - espaço de pesquisa artística|lisboa": null,
+  "fábrica da musa|lisboa": {
+    "lat": 38.7448788,
+    "lng": -9.1015883
+  },
+  "espaço alkantara|lisboa": null
 }
