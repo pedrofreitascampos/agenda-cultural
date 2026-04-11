@@ -322,5 +322,19 @@
     "lat": 38.7448788,
     "lng": -9.1015883
   },
-  "espaço alkantara|lisboa": null
+  "espaço alkantara|lisboa": null,
+  "galeria quadrum|lisboa": null,
+  "avenida da liberdade|lisboa": {
+    "lat": 38.7247512,
+    "lng": -9.1497126
+  },
+  "pavilhão branco|lisboa": {
+    "lat": 38.7576718,
+    "lng": -9.1568901
+  },
+  "loja 16|lisboa": {
+    "lat": 38.7077507,
+    "lng": -9.1365919
+  },
+  "centro português de serigrafia - centro cultural de belém|lisboa": null
 }
