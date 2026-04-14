@@ -336,5 +336,23 @@
     "lat": 38.7077507,
     "lng": -9.1365919
   },
-  "centro português de serigrafia - centro cultural de belém|lisboa": null
+  "centro português de serigrafia - centro cultural de belém|lisboa": null,
+  "procur.arte|lisboa": null,
+  "balletto|lisboa": null,
+  "a pequena galeria|lisboa": null,
+  "numa|lisboa": {
+    "lat": 38.7210679,
+    "lng": -9.1530005
+  },
+  "jardim botânico tropical|lisboa": {
+    "lat": 38.6995985,
+    "lng": -9.201922
+  },
+  "galeria sá da costa|lisboa": null,
+  "trema arte contemporânea|lisboa": null,
+  "lisboa incomum|lisboa": null,
+  "plantome|lisboa": {
+    "lat": 38.7548123,
+    "lng": -9.1754807
+  }
 }
