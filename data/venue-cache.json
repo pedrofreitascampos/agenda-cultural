@@ -354,5 +354,13 @@
   "plantome|lisboa": {
     "lat": 38.7548123,
     "lng": -9.1754807
+  },
+  "baobá livraria|lisboa": {
+    "lat": 38.7159417,
+    "lng": -9.1652579
+  },
+  "centro comercial colombo|lisboa": {
+    "lat": 38.7547749,
+    "lng": -9.1889082
   }
 }
