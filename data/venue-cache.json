@@ -362,5 +362,35 @@
   "centro comercial colombo|lisboa": {
     "lat": 38.7547749,
     "lng": -9.1889082
-  }
+  },
+  "espaço fundação meo|lisboa": null,
+  "arquivo nacional da torre do tombo|lisboa": {
+    "lat": 38.7545238,
+    "lng": -9.1563781
+  },
+  "livraria buchholz|lisboa": {
+    "lat": 38.7230793,
+    "lng": -9.1493951
+  },
+  "monsantos open air|lisboa": {
+    "lat": 38.7270743,
+    "lng": -9.2075901
+  },
+  "teatro meridional|lisboa": {
+    "lat": 38.7597179,
+    "lng": -9.1817377
+  },
+  "praça dos restauradores|lisboa": {
+    "lat": 38.7157093,
+    "lng": -9.1416527
+  },
+  "quinta conde dos arcos|lisboa": {
+    "lat": 38.7704967,
+    "lng": -9.1086764
+  },
+  "epic sana marquês hotel|lisboa": {
+    "lat": 38.7273604,
+    "lng": -9.14838
+  },
+  "espaço duplacena|lisboa": null
 }
