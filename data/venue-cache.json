@@ -392,5 +392,21 @@
     "lat": 38.7273604,
     "lng": -9.14838
   },
-  "espaço duplacena|lisboa": null
+  "espaço duplacena|lisboa": null,
+  "praça paiva couceiro|lisboa": {
+    "lat": 38.7313301,
+    "lng": -9.1277647
+  },
+  "igreja evangélica alemã|lisboa": {
+    "lat": 38.7384567,
+    "lng": -9.1612186
+  },
+  "academia nacional de belas artes|lisboa": {
+    "lat": 38.7088933,
+    "lng": -9.1398053
+  },
+  "cordoaria nacional|lisboa": {
+    "lat": 38.6976631,
+    "lng": -9.1910248
+  }
 }
