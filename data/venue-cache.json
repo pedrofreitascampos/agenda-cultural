@@ -408,5 +408,36 @@
   "cordoaria nacional|lisboa": {
     "lat": 38.6976631,
     "lng": -9.1910248
+  },
+  "largo do intendente|lisboa": {
+    "lat": 38.7208279,
+    "lng": -9.1348794
+  },
+  "her clique|lisboa": null,
+  "galeria bessa pereira|lisboa": {
+    "lat": 38.7155043,
+    "lng": -9.154308
+  },
+  "capela de nossa senhora da saúde|lisboa": {
+    "lat": 38.8198546,
+    "lng": -9.2025605
+  },
+  "a base|lisboa": {
+    "lat": 38.7458334,
+    "lng": -9.1524386
+  },
+  "galeria antónio prates|lisboa": null,
+  "espaço m - sede da metropolitana|lisboa": null,
+  "igreja da graça|lisboa": {
+    "lat": 39.0902756,
+    "lng": -9.2587681
+  },
+  "largo de santo antónio da sé|lisboa": {
+    "lat": 38.710085,
+    "lng": -9.1341959
+  },
+  "torre de belém|lisboa": {
+    "lat": 38.691586,
+    "lng": -9.2159288
   }
 }
