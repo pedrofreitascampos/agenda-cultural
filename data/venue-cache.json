@@ -439,5 +439,37 @@
   "torre de belém|lisboa": {
     "lat": 38.691586,
     "lng": -9.2159288
+  },
+  "jahn und jahn|lisboa": null,
+  "grupo dramático e escolar os combatentes|lisboa": null,
+  "cinema city - campo pequeno|lisboa": {
+    "lat": 38.7428552,
+    "lng": -9.1456729
+  },
+  "uccla - união das cidades capitais da língua portuguesa|lisboa": null,
+  "oficina do cego|lisboa": null,
+  "igreja de são roque|lisboa": {
+    "lat": 38.7136202,
+    "lng": -9.1434271
+  },
+  "jardim vasco da gama|lisboa": {
+    "lat": 38.6960926,
+    "lng": -9.2030212
+  },
+  "carmo rooftop|lisboa": {
+    "lat": 38.7125451,
+    "lng": -9.139991
+  },
+  "alameda d. afonso henriques|lisboa": {
+    "lat": 38.8610416,
+    "lng": -9.3318559
+  },
+  "a voz do operário|lisboa": {
+    "lat": 38.7164253,
+    "lng": -9.1294345
+  },
+  "cerveteca|lisboa": {
+    "lat": 38.74103,
+    "lng": -9.1364616
   }
 }
