@@ -471,5 +471,25 @@
   "cerveteca|lisboa": {
     "lat": 38.74103,
     "lng": -9.1364616
+  },
+  "mala|lisboa": {
+    "lat": 39.3117692,
+    "lng": -9.068861
+  },
+  "fnac - avenida de roma|lisboa": {
+    "lat": 38.7429853,
+    "lng": -9.1387516
+  },
+  "museu de marinha|lisboa": {
+    "lat": 38.6971218,
+    "lng": -9.2080263
+  },
+  "buraco|lisboa": {
+    "lat": 38.9789457,
+    "lng": -9.1524548
+  },
+  "reitoria da universidade nova de lisboa|lisboa": {
+    "lat": 38.7337411,
+    "lng": -9.1603855
   }
 }
