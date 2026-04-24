@@ -491,5 +491,20 @@
   "reitoria da universidade nova de lisboa|lisboa": {
     "lat": 38.7337411,
     "lng": -9.1603855
+  },
+  "convento dos cardaes|lisboa": {
+    "lat": 38.7147596,
+    "lng": -9.1482203
+  },
+  "direção municipal de cultura|lisboa": null,
+  "casa da liberdade - mário cesariny|lisboa": null,
+  "pátio da galé|lisboa": null,
+  "galeria 1758|lisboa": {
+    "lat": 38.8370523,
+    "lng": -9.0916133
+  },
+  "carpintarias de são lázaro|lisboa": {
+    "lat": 38.718419,
+    "lng": -9.1362554
   }
 }
