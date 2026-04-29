@@ -521,5 +521,9 @@
     "lat": 38.7426355,
     "lng": -9.2038359
   },
-  "centro de informação urbana de lisboa (ciul)|lisboa": null
+  "centro de informação urbana de lisboa (ciul)|lisboa": null,
+  "museu nacional de arqueologia|lisboa": {
+    "lat": 38.6973662,
+    "lng": -9.2070794
+  }
 }
