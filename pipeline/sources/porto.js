@@ -2,148 +2,222 @@
 
 /**
  * Porto.pt municipal events source module.
- * Extracts events from porto.pt/pt/eventos/ — Next.js server-rendered.
- * No public API. Events are parsed from embedded RSC data or JSON-LD.
+ * Next.js server component — events live inside RSC payload script tags:
+ *   <script>self.__next_f.push([1,"...escaped JSON..."])</script>
  *
- * Site: https://www.porto.pt/pt/eventos/
+ * The payload contains an "events":{"items":[...]} block; we extract each
+ * event object by tracking brace depth from a stable starting marker
+ * (`{"__typename":"Event"`).
  */
 
 const { stripHtml } = require('../normalize');
 
 const EVENTS_URL = 'https://www.porto.pt/pt/eventos/';
+const MAX_PAGES = 5;
 
 const CATEGORY_MAP = {
-  'cultura':      'other',
-  'desporto':     'other',
-  'economia':     'other',
-  'política':     'other',
-  'politica':     'other',
-  'sociedade':    'other',
-  'turismo':      'other',
+  'cultura':       'other',
+  'desporto':      'other',
+  'economia':      'other',
+  'política':      'other',
+  'politica':      'other',
+  'sociedade':     'other',
+  'turismo':       'other',
+  'música':        'music',
+  'musica':        'music',
+  'teatro':        'theatre',
+  'dança':         'dance',
+  'danca':         'dance',
+  'cinema':        'cinema',
+  'exposição':     'exhibitions',
+  'exposicao':     'exhibitions',
+  'festival':      'festivals',
+  'literatura':    'literature',
+  'oficina':       'workshops',
+  'workshop':      'workshops',
+  'família':       'family',
+  'familia':       'family',
 };
 
 /**
- * Extract events from Porto.pt HTML.
- * Tries JSON-LD first, then falls back to parsing embedded Next.js data.
+ * Decode the JSON-escaped string carried inside an RSC push payload back to
+ * regular JSON text. The browser receives this content as a single JS string
+ * literal, so backslash-escapes must be unwrapped before we can JSON.parse.
+ */
+function unescapeRscString(s) {
+  // The RSC payload string uses standard JSON string escapes; let JSON.parse handle it.
+  try {
+    return JSON.parse('"' + s + '"');
+  } catch {
+    return s.replace(/\\"/g, '"').replace(/\\\\/g, '\\').replace(/\\n/g, '\n');
+  }
+}
+
+/**
+ * Find a balanced JSON object starting at a given index, by tracking brace
+ * depth and respecting strings/escapes. Returns the substring or null.
+ */
+function readJsonObject(text, startIdx) {
+  if (text[startIdx] !== '{') return null;
+  let depth = 0;
+  let inString = false;
+  let escape = false;
+  for (let i = startIdx; i < text.length; i++) {
+    const ch = text[i];
+    if (escape) { escape = false; continue; }
+    if (ch === '\\') { escape = true; continue; }
+    if (ch === '"') { inString = !inString; continue; }
+    if (inString) continue;
+    if (ch === '{') depth++;
+    else if (ch === '}') {
+      depth--;
+      if (depth === 0) return text.slice(startIdx, i + 1);
+    }
+  }
+  return null;
+}
+
+/**
+ * Extract event objects from a single Porto.pt HTML page.
+ * Concatenates all RSC payload chunks into one decoded text buffer, then
+ * walks `{"__typename":"Event"` markers and JSON-parses each balanced object.
  */
 function extractEvents(html) {
   const events = [];
 
-  // Try JSON-LD
-  const ldJsonRegex = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
-  let match;
-  while ((match = ldJsonRegex.exec(html)) !== null) {
-    try {
-      const data = JSON.parse(match[1]);
-      if (data['@type'] === 'Event') events.push(data);
-      if (Array.isArray(data)) {
-        data.filter(d => d['@type'] === 'Event').forEach(e => events.push(e));
-      }
-    } catch { /* skip */ }
+  // Concatenate all RSC chunks. Each chunk: self.__next_f.push([1,"...escaped..."])
+  const chunkRe = /self\.__next_f\.push\(\[\d+,"([\s\S]*?)"\]\)/g;
+  let chunkMatch;
+  let buf = '';
+  while ((chunkMatch = chunkRe.exec(html)) !== null) {
+    buf += unescapeRscString(chunkMatch[1]);
   }
 
-  // Try to find event data in Next.js server data
-  // Porto.pt embeds event data in RSC format — look for event-like objects
-  const eventPattern = /"title":"([^"]+)"[^}]*"startDate":"(\d{4}-\d{2}-\d{2})[^}]*"slug":"([^"]+)"/g;
-  let m;
-  while ((m = eventPattern.exec(html)) !== null) {
-    // Check if we already got this from JSON-LD
-    const title = m[1];
-    if (!events.find(e => e.name === title)) {
-      events.push({
-        name: title,
-        startDate: m[2],
-        url: 'https://www.porto.pt/pt/evento/' + m[3] + '/',
-        _fromRSC: true,
-      });
-    }
+  if (!buf) return events;
+
+  const marker = '{"__typename":"Event"';
+  let idx = 0;
+  const seen = new Set();
+  while ((idx = buf.indexOf(marker, idx)) !== -1) {
+    const objStr = readJsonObject(buf, idx);
+    if (!objStr) { idx += marker.length; continue; }
+    idx += objStr.length;
+    let obj;
+    try { obj = JSON.parse(objStr); } catch { continue; }
+    if (!obj || !obj.title || !obj.id) continue;
+    if (seen.has(obj.id)) continue;
+    seen.add(obj.id);
+    events.push(obj);
   }
 
   return events;
 }
 
 /**
- * Fetch events from Porto.pt.
+ * Fetch events from Porto.pt — paginated.
  */
 async function fetchEvents(log) {
-  const start = Date.now();
+  const allEvents = [];
+  const seen = new Set();
 
-  try {
-    const res = await fetch(EVENTS_URL, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html',
-        'Accept-Language': 'pt-PT,pt;q=0.9',
-      },
-    });
+  for (let page = 1; page <= MAX_PAGES; page++) {
+    const url = page === 1 ? EVENTS_URL : EVENTS_URL + '?page=' + page;
+    const start = Date.now();
 
-    const durationMs = Date.now() - start;
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          'Accept': 'text/html',
+          'Accept-Language': 'pt-PT,pt;q=0.9',
+        },
+      });
 
-    if (!res.ok) {
-      log.api('porto', EVENTS_URL, res.status, durationMs);
-      throw new Error('HTTP ' + res.status);
+      const durationMs = Date.now() - start;
+
+      if (!res.ok) {
+        log.api('porto', url, res.status, durationMs);
+        if (page === 1) throw new Error('HTTP ' + res.status);
+        break;
+      }
+
+      const html = await res.text();
+      log.api('porto', url, res.status, durationMs, { bodyLength: html.length });
+
+      const pageEvents = extractEvents(html);
+      let newCount = 0;
+      for (const e of pageEvents) {
+        if (seen.has(e.id)) continue;
+        seen.add(e.id);
+        allEvents.push(e);
+        newCount++;
+      }
+      log.info('porto.page', { page, total: pageEvents.length, new: newCount });
+      if (newCount === 0) break; // no new events => last page
+    } catch (err) {
+      log.api('porto', url, 'error', Date.now() - start, { error: String(err) });
+      if (page === 1) throw err;
+      break;
     }
-
-    const html = await res.text();
-    log.api('porto', EVENTS_URL, res.status, durationMs, { bodyLength: html.length });
-
-    const events = extractEvents(html);
-    log.info('porto.parsed', { events: events.length });
-
-    return events;
-  } catch (err) {
-    log.api('porto', EVENTS_URL, 'error', Date.now() - start, { error: String(err) });
-    throw err;
   }
+
+  log.info('porto.parsed', { events: allEvents.length });
+  return allEvents;
 }
 
 /**
- * Normalize a single Porto.pt event.
+ * Map Porto category title to canonical category.
+ */
+function mapCategory(categoryTitle) {
+  if (!categoryTitle) return 'other';
+  const lower = categoryTitle.toLowerCase();
+  for (const [keyword, cat] of Object.entries(CATEGORY_MAP)) {
+    if (lower.includes(keyword)) return cat;
+  }
+  return 'other';
+}
+
+/**
+ * Normalize a Porto.pt event from the RSC payload shape.
  */
 function normalize(raw) {
-  if (!raw || !raw.name) return null;
+  if (!raw || !raw.title) return null;
 
-  const title = (typeof raw.name === 'string' ? raw.name : '').trim();
+  const title = String(raw.title).trim();
   if (!title) return null;
 
-  const dateStart = raw.startDate ? raw.startDate.slice(0, 10) : null;
-  const dateEnd = raw.endDate ? raw.endDate.slice(0, 10) : null;
-  if (!dateStart) return null;
+  const dates = Array.isArray(raw.dates) ? raw.dates : [];
+  const firstDate = dates[0] || {};
+  const startStr = firstDate.start || '';
+  const endStr = firstDate.end || '';
+
+  const dateStart = startStr ? startStr.slice(0, 10) : null;
+  const dateEnd = endStr ? endStr.slice(0, 10) : (dateStart || null);
+  if (!dateStart || !/^\d{4}-\d{2}-\d{2}$/.test(dateStart)) return null;
 
   let timeStart = null;
   let timeEnd = null;
-  if (raw.startDate && raw.startDate.includes('T')) {
-    timeStart = raw.startDate.slice(11, 16);
-  }
-  if (raw.endDate && raw.endDate.includes('T')) {
-    timeEnd = raw.endDate.slice(11, 16);
-  }
+  if (startStr.length >= 16) timeStart = startStr.slice(11, 16);
+  if (endStr.length >= 16) timeEnd = endStr.slice(11, 16);
 
-  let venue = '';
-  let city = 'Porto';
-  let lat = null;
-  let lng = null;
+  const locations = Array.isArray(raw.locations) ? raw.locations : [];
+  const firstLoc = locations[0] && locations[0].location ? locations[0].location : {};
+  const venue = firstLoc.locality || '';
+  const lat = firstLoc.latitude != null ? parseFloat(firstLoc.latitude) || null : null;
+  const lng = firstLoc.longitude != null ? parseFloat(firstLoc.longitude) || null : null;
 
-  if (raw.location) {
-    venue = raw.location.name || '';
-    if (raw.location.address) {
-      city = raw.location.address.addressLocality || 'Porto';
-    }
-    if (raw.location.geo) {
-      lat = parseFloat(raw.location.geo.latitude) || null;
-      lng = parseFloat(raw.location.geo.longitude) || null;
-    }
-  }
+  const thumb = raw.thumbnail || {};
+  const imageUrl = (thumb.medium && thumb.medium.url) || (thumb.large && thumb.large.url) || (thumb.small && thumb.small.url) || '';
 
-  const description = stripHtml(raw.description || '', 500);
-  const imageUrl = (typeof raw.image === 'string') ? raw.image : '';
-  const sourceUrl = raw.url || '';
+  const sourceUrl = raw.fullUrl || (raw.url ? 'https://www.porto.pt' + raw.url : '');
+  const description = stripHtml(raw.description || raw.searchDescription || '', 500);
+  const categoryTitle = raw.categoryPage && raw.categoryPage.title ? raw.categoryPage.title : '';
 
   const idSlug = title.toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
     .slice(0, 60);
-  const id = 'porto-' + idSlug + '-' + dateStart;
+  const id = 'porto-' + (raw.id || idSlug) + '-' + dateStart;
 
   return {
     id,
@@ -151,7 +225,7 @@ function normalize(raw) {
     sourceUrl,
     title: stripHtml(title, 200),
     description,
-    category: 'other',
+    category: mapCategory(categoryTitle),
     imageUrl,
     cost: '',
     dateStart,
@@ -161,10 +235,10 @@ function normalize(raw) {
     isRecurring: false,
     recurrenceNote: '',
     venue,
-    address: '',
+    address: firstLoc.address || '',
     lat,
     lng,
-    city,
+    city: 'Porto',
     tags: [],
     fetchedAt: new Date().toISOString(),
   };
@@ -177,4 +251,8 @@ module.exports = {
   CATEGORY_MAP,
   fetch: fetchEvents,
   normalize,
+  // Exported for tests:
+  _extractEvents: extractEvents,
+  _readJsonObject: readJsonObject,
+  _mapCategory: mapCategory,
 };

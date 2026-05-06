@@ -18,6 +18,8 @@ const testFiles = [
   './test-ccb.js',
   './test-aondevamos.js',
   './test-eventbrite.js',
+  './test-egeac.js',
+  './test-porto.js',
 ];
 
 let totalPass = 0;

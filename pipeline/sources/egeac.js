@@ -4,173 +4,201 @@
  * EGEAC (Empresa de Gestão de Equipamentos e Animação Cultural) source module.
  * Lisbon municipal cultural entity — manages theatres, museums, galleries.
  *
- * No public API. Events are scraped from the WordPress site's agenda page.
- * This source is fragile and may break if the site structure changes.
+ * No public API. Events are scraped from /programacao-espacos-culturais/, where
+ * each card is a `div.col-12.to-filter` element with data attributes:
+ *   data-categoria, data-inicio (YYYY-MM-DD), data-fim, data-local
  *
- * Site: https://egeac.pt/agenda/
- * Venues: https://egeac.pt/wp-json/wp/v2/espacos
+ * Title is in <strong> inside <p class="h5">, image in <img data-src=...>.
+ * Source URL comes from the first <a href> inside the card.
  */
 
 const { stripHtml } = require('../normalize');
 
-const AGENDA_URL = 'https://egeac.pt/agenda/';
+const PROGRAM_URL = 'https://egeac.pt/programacao-espacos-culturais/';
 
 const CATEGORY_MAP = {
-  'teatro':       'theatre',
-  'música':       'music',
-  'musica':       'music',
-  'dança':        'dance',
-  'danca':        'dance',
-  'cinema':       'cinema',
-  'exposição':    'exhibitions',
-  'exposicao':    'exhibitions',
-  'exposições':   'exhibitions',
-  'oficina':      'workshops',
-  'workshop':     'workshops',
-  'festival':     'festivals',
-  'literatura':   'literature',
-  'infantil':     'family',
-  'circo':        'theatre',
-  'concerto':     'music',
-  'performance':  'theatre',
+  'teatro':                    'theatre',
+  'novo circo':                'theatre',
+  'performance':               'theatre',
+  'música':                    'music',
+  'musica':                    'music',
+  'dança':                     'dance',
+  'danca':                     'dance',
+  'cinema':                    'cinema',
+  'exposição':                 'exhibitions',
+  'exposicao':                 'exhibitions',
+  'instalação':                'exhibitions',
+  'instalacao':                'exhibitions',
+  'inauguração':               'exhibitions',
+  'inauguracao':               'exhibitions',
+  'oficina':                   'workshops',
+  'workshop':                  'workshops',
+  'feira':                     'festivals',
+  'festa':                     'festivals',
+  'festival':                  'festivals',
+  'literatura':                'literature',
+  'apresentação':              'literature',
+  'apresentacao':              'literature',
+  'lançamento':                'literature',
+  'debate':                    'literature',
+  'conversa':                  'literature',
+  'conferência':               'literature',
+  'conferencia':               'literature',
+  'visita orientada':          'other',
+  'percursos':                 'other',
 };
 
+function decodeEntities(s) {
+  if (!s) return '';
+  return String(s)
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ');
+}
+
 /**
- * Extract event links and basic data from EGEAC agenda page HTML.
+ * Map EGEAC categoria string to our canonical category.
  */
-function extractEventLinks(html) {
+function mapCategory(categoria) {
+  if (!categoria) return 'other';
+  const lower = categoria.toLowerCase();
+  for (const [keyword, cat] of Object.entries(CATEGORY_MAP)) {
+    if (lower.includes(keyword)) return cat;
+  }
+  return 'other';
+}
+
+/**
+ * Extract events from the programmatic HTML cards.
+ * Strategy: locate every `<div ... to-filter ...>` opening tag, parse its
+ * data-* attrs, then take the body as the slice up to the next opening tag.
+ * This avoids brittle balanced-div matching on nested HTML.
+ */
+function extractEvents(html) {
   const events = [];
 
-  // Look for JSON-LD structured data first
-  const ldJsonRegex = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
-  let match;
-  while ((match = ldJsonRegex.exec(html)) !== null) {
-    try {
-      const data = JSON.parse(match[1]);
-      if (data['@type'] === 'Event') events.push(data);
-      if (Array.isArray(data)) {
-        for (const item of data) {
-          if (item['@type'] === 'Event') events.push(item);
-        }
-      }
-    } catch { /* skip */ }
+  // Capture each card's opening tag with its data attrs and the index of the
+  // tag's end (`>`). The body is everything from there until the next card.
+  const openTagRe = /<div[^>]*class="[^"]*\bto-filter\b[^"]*"[^>]*data-categoria="([^"]*)"[^>]*data-inicio="([^"]*)"[^>]*data-fim="([^"]*)"[^>]*data-local="([^"]*)"[^>]*>/g;
+
+  const matches = [];
+  let m;
+  while ((m = openTagRe.exec(html)) !== null) {
+    matches.push({
+      categoria: decodeEntities(m[1]),
+      dateStart: /^\d{4}-\d{2}-\d{2}$/.test(m[2]) ? m[2] : null,
+      dateEnd: /^\d{4}-\d{2}-\d{2}$/.test(m[3]) ? m[3] : null,
+      venue: decodeEntities(m[4]),
+      bodyStart: m.index + m[0].length,
+    });
+  }
+
+  for (let i = 0; i < matches.length; i++) {
+    const meta = matches[i];
+    const bodyEnd = i + 1 < matches.length ? matches[i + 1].bodyStart : html.length;
+    const body = html.slice(meta.bodyStart, bodyEnd);
+    const { categoria, dateStart, dateEnd, venue } = meta;
+
+    if (!dateStart) continue;
+
+    // Title: <p class="h5"><strong>TITLE</strong></p>
+    const titleMatch = /<p[^>]*class="[^"]*h5[^"]*"[^>]*>\s*<strong[^>]*>([\s\S]*?)<\/strong>/i.exec(body);
+    const title = titleMatch ? decodeEntities(stripHtml(titleMatch[1], 200)).trim() : '';
+    if (!title) continue;
+
+    // Source URL: first <a href="...">
+    const urlMatch = /<a[^>]+href="([^"]+)"/i.exec(body);
+    const sourceUrl = urlMatch ? decodeEntities(urlMatch[1]) : '';
+
+    // Image: <img data-src="..."> (lazy-loaded) or <img src="...">
+    const imgMatch = /<img[^>]+(?:data-src|src)="([^"]+\.(?:jpg|jpeg|png|webp)[^"]*)"/i.exec(body);
+    const imageUrl = imgMatch ? decodeEntities(imgMatch[1]) : '';
+
+    events.push({
+      categoria,
+      title,
+      dateStart,
+      dateEnd: dateEnd || dateStart,
+      venue,
+      sourceUrl,
+      imageUrl,
+    });
   }
 
   return events;
 }
 
 /**
- * Fetch events from EGEAC.
+ * Fetch events from EGEAC programming page.
  */
 async function fetchEvents(log) {
   const start = Date.now();
 
   try {
-    const res = await fetch(AGENDA_URL, {
+    const res = await fetch(PROGRAM_URL, {
       headers: {
-        'User-Agent': 'Agora-CulturalEventsMap/1.0 (https://github.com/; agora-events@pm.me)',
+        'User-Agent': 'Mozilla/5.0 (compatible; Agora-CulturalEventsMap/1.0; +https://github.com/)',
         'Accept': 'text/html',
+        'Accept-Language': 'pt-PT,pt;q=0.9',
       },
     });
 
     const durationMs = Date.now() - start;
 
     if (!res.ok) {
-      log.api('egeac', AGENDA_URL, res.status, durationMs);
+      log.api('egeac', PROGRAM_URL, res.status, durationMs);
       throw new Error('HTTP ' + res.status);
     }
 
     const html = await res.text();
-    log.api('egeac', AGENDA_URL, res.status, durationMs, { bodyLength: html.length });
+    log.api('egeac', PROGRAM_URL, res.status, durationMs, { bodyLength: html.length });
 
-    const events = extractEventLinks(html);
+    const events = extractEvents(html);
     log.info('egeac.parsed', { events: events.length });
 
     return events;
   } catch (err) {
-    log.api('egeac', AGENDA_URL, 'error', Date.now() - start, { error: String(err) });
+    log.api('egeac', PROGRAM_URL, 'error', Date.now() - start, { error: String(err) });
     throw err;
   }
 }
 
 /**
- * Normalize a single EGEAC event (JSON-LD schema.org format).
+ * Normalize a single EGEAC event card.
  */
 function normalize(raw) {
-  if (!raw || !raw.name) return null;
+  if (!raw || !raw.title || !raw.dateStart) return null;
 
-  const title = (typeof raw.name === 'string' ? raw.name : '').trim();
-  if (!title) return null;
-
-  const dateStart = raw.startDate ? raw.startDate.slice(0, 10) : null;
-  const dateEnd = raw.endDate ? raw.endDate.slice(0, 10) : null;
-  if (!dateStart) return null;
-
-  let timeStart = null;
-  let timeEnd = null;
-  if (raw.startDate && raw.startDate.includes('T')) {
-    timeStart = raw.startDate.slice(11, 16);
-  }
-  if (raw.endDate && raw.endDate.includes('T')) {
-    timeEnd = raw.endDate.slice(11, 16);
-  }
-
-  let venue = '';
-  let city = 'Lisboa';
-  let lat = null;
-  let lng = null;
-
-  if (raw.location) {
-    venue = raw.location.name || '';
-    if (raw.location.address) {
-      city = raw.location.address.addressLocality || 'Lisboa';
-    }
-    if (raw.location.geo) {
-      lat = parseFloat(raw.location.geo.latitude) || null;
-      lng = parseFloat(raw.location.geo.longitude) || null;
-    }
-  }
-
-  const description = stripHtml(raw.description || '', 500);
-  const imageUrl = (typeof raw.image === 'string') ? raw.image : '';
-  const sourceUrl = raw.url || '';
-
-  // Category from title/description keywords
-  const lowerTitle = title.toLowerCase();
-  let category = 'other';
-  for (const [keyword, cat] of Object.entries(CATEGORY_MAP)) {
-    if (lowerTitle.includes(keyword)) {
-      category = cat;
-      break;
-    }
-  }
-
-  const idSlug = title.toLowerCase()
+  const idSlug = raw.title.toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
     .slice(0, 60);
-  const id = 'egeac-' + idSlug + '-' + dateStart;
+  const id = 'egeac-' + idSlug + '-' + raw.dateStart;
 
   return {
     id,
     source: 'egeac',
-    sourceUrl,
-    title: stripHtml(title, 200),
-    description,
-    category,
-    imageUrl,
+    sourceUrl: raw.sourceUrl || '',
+    title: raw.title,
+    description: '',
+    category: mapCategory(raw.categoria),
+    imageUrl: raw.imageUrl || '',
     cost: '',
-    dateStart,
-    dateEnd: dateEnd || dateStart,
-    timeStart,
-    timeEnd,
+    dateStart: raw.dateStart,
+    dateEnd: raw.dateEnd || raw.dateStart,
+    timeStart: null,
+    timeEnd: null,
     isRecurring: false,
     recurrenceNote: '',
-    venue,
+    venue: raw.venue || '',
     address: '',
-    lat,
-    lng,
-    city,
+    lat: null,
+    lng: null,
+    city: 'Lisboa',
     tags: [],
     fetchedAt: new Date().toISOString(),
   };
@@ -183,4 +211,7 @@ module.exports = {
   CATEGORY_MAP,
   fetch: fetchEvents,
   normalize,
+  // Exported for tests:
+  _extractEvents: extractEvents,
+  _mapCategory: mapCategory,
 };
