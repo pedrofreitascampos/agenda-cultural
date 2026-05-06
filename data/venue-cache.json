@@ -530,5 +530,30 @@
     "lat": 38.7229201,
     "lng": -9.1397637
   },
-  "escola de fado de são vicente|lisboa": null
+  "escola de fado de são vicente|lisboa": null,
+  "teatro são luiz|lisboa": {
+    "lat": 38.7092675,
+    "lng": -9.1422979
+  },
+  "latoaria|lisboa": null,
+  "tba - teatro do bairro alto|lisboa": null,
+  "junta de freguesia de benfica|lisboa": {
+    "lat": 38.7487226,
+    "lng": -9.1974403
+  },
+  "museu do aljube resistência e liberdade|lisboa": {
+    "lat": 38.7101798,
+    "lng": -9.1325527
+  },
+  "associação pessoa e companhia|lisboa": null,
+  "museu geológico|lisboa": {
+    "lat": 38.7131073,
+    "lng": -9.1497546
+  },
+  "espaço parasita|lisboa": null,
+  "lisboa comedy club|lisboa": {
+    "lat": 38.7283396,
+    "lng": -9.1445298
+  },
+  "museu de lisboa - fábrica da moagem|lisboa": null
 }
