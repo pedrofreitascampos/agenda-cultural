@@ -555,5 +555,23 @@
     "lat": 38.7283396,
     "lng": -9.1445298
   },
-  "museu de lisboa - fábrica da moagem|lisboa": null
+  "museu de lisboa - fábrica da moagem|lisboa": null,
+  "academia de amadores de música|lisboa": {
+    "lat": 38.7122658,
+    "lng": -9.1423712
+  },
+  "mercado do bairro padre cruz|lisboa": {
+    "lat": 38.7698759,
+    "lng": -9.1907505
+  },
+  "galeria zé dos bois|lisboa": {
+    "lat": 38.7117647,
+    "lng": -9.1445614
+  },
+  "cinema nos vasco da gama|lisboa": null,
+  "livraria almedina rato|lisboa": null,
+  "igreja do loreto|lisboa": {
+    "lat": 38.7108749,
+    "lng": -9.1427631
+  }
 }
