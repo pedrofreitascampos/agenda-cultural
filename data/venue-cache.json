@@ -573,5 +573,10 @@
   "igreja do loreto|lisboa": {
     "lat": 38.7108749,
     "lng": -9.1427631
-  }
+  },
+  "doca da marinha|lisboa": {
+    "lat": 38.7080825,
+    "lng": -9.1314262
+  },
+  "torreão nascente da cordoaria nacional|lisboa": null
 }
