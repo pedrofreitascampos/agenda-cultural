@@ -588,5 +588,9 @@
   "hotel roma|lisboa": {
     "lat": 38.7456519,
     "lng": -9.1404255
+  },
+  "museu de arte popular|lisboa": {
+    "lat": 38.6936571,
+    "lng": -9.2083154
   }
 }
