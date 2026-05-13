@@ -592,5 +592,23 @@
   "museu de arte popular|lisboa": {
     "lat": 38.6936571,
     "lng": -9.2083154
+  },
+  "ribeira das naus|lisboa": {
+    "lat": 38.7542322,
+    "lng": -9.1535029
+  },
+  "uma galeria|lisboa": null,
+  "cpbc - companhia portuguesa de bailado contemporâneo|lisboa": {
+    "lat": 38.7411957,
+    "lng": -9.1025306
+  },
+  "adega belém|lisboa": {
+    "lat": 38.6974047,
+    "lng": -9.2025475
+  },
+  "museu das artes decorativas|lisboa": null,
+  "anfiteatro keil do amaral|lisboa": {
+    "lat": 38.7202406,
+    "lng": -9.194291
   }
 }
