@@ -610,5 +610,30 @@
   "anfiteatro keil do amaral|lisboa": {
     "lat": 38.7202406,
     "lng": -9.194291
+  },
+  "colégio almada negreiros (universidade nova de lisboa)|lisboa": {
+    "lat": 38.7325867,
+    "lng": -9.1608298
+  },
+  "associação batoto yetu portugal|lisboa": null,
+  "hotel bairro alto|lisboa": {
+    "lat": 38.7110683,
+    "lng": -9.1444491
+  },
+  "cantina velha (universidade de lisboa)|lisboa": {
+    "lat": 38.7513029,
+    "lng": -9.1603615
+  },
+  "reitoria da universidade de lisboa|lisboa": {
+    "lat": 38.7527769,
+    "lng": -9.1579087
+  },
+  "fundação cidade de lisboa|lisboa": {
+    "lat": 38.7586791,
+    "lng": -9.1535753
+  },
+  "biblioteca arquitecto cosmelli sant'anna|lisboa": {
+    "lat": 38.7220278,
+    "lng": -9.1511845
   }
 }
