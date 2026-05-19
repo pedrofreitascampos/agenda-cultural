@@ -652,5 +652,11 @@
   "the late birds|lisboa": {
     "lat": 38.711531,
     "lng": -9.1477347
-  }
+  },
+  "28art gallery|lisboa": null,
+  "museu nacional dos coches|lisboa": {
+    "lat": 38.6968643,
+    "lng": -9.1979875
+  },
+  "studio plantasia|lisboa": null
 }
