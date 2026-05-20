@@ -658,5 +658,24 @@
     "lat": 38.6968643,
     "lng": -9.1979875
   },
-  "studio plantasia|lisboa": null
+  "studio plantasia|lisboa": null,
+  "galeria de são mamede|lisboa": {
+    "lat": 38.7156838,
+    "lng": -9.1459996
+  },
+  "livraria zé dos bois|lisboa": null,
+  "jardim zoológico de lisboa|lisboa": {
+    "lat": 38.7453673,
+    "lng": -9.1719039
+  },
+  "biblioteca da penha de frança|lisboa": {
+    "lat": 38.7273425,
+    "lng": -9.1254325
+  },
+  "mac - movimento de arte contemporânea|lisboa": null,
+  "loft marvila|lisboa": null,
+  "biblioteca de belém|lisboa": {
+    "lat": 38.6972339,
+    "lng": -9.1959379
+  }
 }
