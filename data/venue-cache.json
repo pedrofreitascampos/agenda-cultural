@@ -688,5 +688,9 @@
   "galeria quadrado azul|lisboa": null,
   "vda - vieira de almeida|lisboa": null,
   "galeria do torreão nascente da cordoaria nacional|lisboa": null,
-  "igreja anglicana de são jorge|lisboa": null
+  "igreja anglicana de são jorge|lisboa": null,
+  "museu nacional do traje|lisboa": {
+    "lat": 38.775792,
+    "lng": -9.1670058
+  }
 }
