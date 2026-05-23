@@ -692,5 +692,16 @@
   "museu nacional do traje|lisboa": {
     "lat": 38.775792,
     "lng": -9.1670058
+  },
+  "aea space|lisboa": null,
+  "vários locais|lisboa": null,
+  "estúdio trama|lisboa": null,
+  "palácio galveias|lisboa": {
+    "lat": 38.7414704,
+    "lng": -9.1435673
+  },
+  "tinta nos nervos|lisboa": {
+    "lat": 38.7085019,
+    "lng": -9.1538815
   }
 }
