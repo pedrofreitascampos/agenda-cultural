@@ -703,5 +703,27 @@
   "tinta nos nervos|lisboa": {
     "lat": 38.7085019,
     "lng": -9.1538815
+  },
+  "oceanário de lisboa|lisboa": {
+    "lat": 38.7635196,
+    "lng": -9.0937161
+  },
+  "vila berta|lisboa": {
+    "lat": 38.71785,
+    "lng": -9.1289898
+  },
+  "parque das nações|lisboa": {
+    "lat": 38.7638712,
+    "lng": -9.0953729
+  },
+  "m8triarch|lisboa": null,
+  "mercado de sapadores|lisboa": {
+    "lat": 38.7218156,
+    "lng": -9.1290278
+  },
+  "casa-atelier vieira da silva|lisboa": null,
+  "quinta das conchas|lisboa": {
+    "lat": 38.7673617,
+    "lng": -9.155521
   }
 }
