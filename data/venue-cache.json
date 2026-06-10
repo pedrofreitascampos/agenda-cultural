@@ -766,5 +766,18 @@
   "teatro nacional d. maria ii|lisboa": {
     "lat": 38.7147786,
     "lng": -9.1397709
+  },
+  "palacete gomes freire|lisboa": null,
+  "igreja de santo andré|lisboa": {
+    "lat": 38.9364757,
+    "lng": -9.3377465
+  },
+  "casa do coreto|lisboa": {
+    "lat": 38.7599743,
+    "lng": -9.1892806
+  },
+  "igreja de nossa senhora das mercês|lisboa": {
+    "lat": 38.7126432,
+    "lng": -9.1505083
   }
 }
