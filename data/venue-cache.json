@@ -782,5 +782,9 @@
   },
   "centro comercial do campo pequeno|lisboa": null,
   "beato riverside rooftop|lisboa": null,
-  "hospital de são josé/ santo antónio dos capuchos / santa marta|lisboa": null
+  "hospital de são josé/ santo antónio dos capuchos / santa marta|lisboa": null,
+  "centro nacional de cultura|lisboa": {
+    "lat": 38.7096314,
+    "lng": -9.1423748
+  }
 }

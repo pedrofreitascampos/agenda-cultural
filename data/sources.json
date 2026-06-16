@@ -1,42 +1,42 @@
 {
   "agendalx": {
-    "lastFetchAt": "2026-06-15T08:19:35.522Z",
-    "lastEventCount": 386,
+    "lastFetchAt": "2026-06-16T08:12:06.849Z",
+    "lastEventCount": 399,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "culturaptgov": {
-    "lastFetchAt": "2026-06-15T08:19:37.017Z",
-    "lastEventCount": 66,
+    "lastFetchAt": "2026-06-16T08:12:07.808Z",
+    "lastEventCount": 65,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "ccb": {
-    "lastFetchAt": "2026-06-15T08:19:47.507Z",
-    "lastEventCount": 0,
+    "lastFetchAt": "2026-06-16T08:16:27.368Z",
+    "lastEventCount": 500,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "aondevamos": {
-    "lastFetchAt": "2026-06-15T08:19:48.220Z",
+    "lastFetchAt": "2026-06-16T08:16:27.728Z",
     "lastEventCount": 0,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "egeac": {
-    "lastFetchAt": "2026-06-15T08:19:51.079Z",
-    "lastEventCount": 110,
+    "lastFetchAt": "2026-06-16T08:16:38.629Z",
+    "lastEventCount": 117,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "porto": {
-    "lastFetchAt": "2026-06-15T08:20:01.568Z",
+    "lastFetchAt": "2026-06-16T08:16:49.117Z",
     "lastEventCount": 0,
     "lastError": "TypeError: fetch failed",
-    "consecutiveFailures": 1
+    "consecutiveFailures": 2
   },
   "eventbrite": {
-    "lastFetchAt": "2026-06-15T08:20:01.919Z",
+    "lastFetchAt": "2026-06-16T08:16:49.434Z",
     "lastEventCount": 0,
     "lastError": null,
     "consecutiveFailures": 0
