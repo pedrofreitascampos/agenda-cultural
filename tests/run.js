@@ -20,6 +20,8 @@ const testFiles = [
   './test-eventbrite.js',
   './test-egeac.js',
   './test-porto.js',
+  './test-pumpkin.js',
+  './test-newsletter.js',
 ];
 
 let totalPass = 0;

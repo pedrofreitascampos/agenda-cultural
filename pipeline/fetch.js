@@ -31,6 +31,8 @@ const SOURCES = [
   require('./sources/egeac'),
   require('./sources/porto'),
   require('./sources/eventbrite'),
+  require('./sources/pumpkin'),
+  require('./sources/newsletter'),
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────
