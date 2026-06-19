@@ -34,6 +34,7 @@ const SOURCES = [
   require('./sources/pumpkin'),
   require('./sources/newsletter'),
   require('./sources/ticketmaster'),
+  require('./sources/meoarena'),
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────

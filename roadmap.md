@@ -33,9 +33,9 @@ Editorial agenda newsletters (Lisboa Secreta, Time Out Lisboa, Pumpkin overlap, 
 Ranked candidates from a web sweep + the `newsletters - agenda` Gmail label. Probe `/wp-json/wp/v2/mec-events` (Modern Events Calendar) and `/wp-json/tribe/events/v1/events` (The Events Calendar) on WP candidates — that's the AgendaLx-grade structured-feed pattern.
 
 - [x] **Ticketmaster Discovery API** — built 2026-06-19 (`sources/ticketmaster.js`). ⏳ **Activation pending**: register a free key at developer.ticketmaster.com → add repo secret `TICKETMASTER_API_KEY` (CI already wired). Inert no-op until keyed.
-- [ ] **Agenda Cultural do Porto** — `wp-json/wp/v2/mec-events` confirmed live; structured. Medium.
+- [~] **Agenda Cultural do Porto** — ❌ investigated 2026-06-19, NOT viable: the `wp-json/wp/v2/mec-events` endpoint is live but exposes NO event date/venue (MEC stores them in postmeta the REST API doesn't surface; no Yoast Event schema; `content.rendered` is freeform prose). Would require per-event detail-page HTML parsing — Porto-only, overlaps `porto.js`. Skip unless a real structured route appears.
 - [ ] **Cartaz Cultural de Lisboa** — `wp-json/wp/v2/posts` live; nightlife/stand-up/cinema. Medium (HTML parse for date/venue).
-- [ ] **MEO/Altice Arena** — clean HTML `/agenda`, unique big-venue inventory. Easy-Medium.
+- [x] **MEO/Altice Arena** — built 2026-06-19 (`sources/meoarena.js`). Scrapes `arena.meo.pt/agenda-completa` (~31 dated concert/shows); single venue → coords hardcoded (skips geocoding). PT-abbrev date parser handles single / "E" / "A" ranges.
 - [ ] **Dezanove** — `/feed` RSS, zero-overlap LGBTQ+ niche. Medium.
 - [ ] **AML – Lisboa Metro** — `aml.pt/agenda` wp-json live (posts only); extends to Cascais/Sintra/Oeiras/Almada. Medium.
 - [ ] **NoCartaz** — press claims open JSON API, 8,800+ events nationwide; `/api/events` 404'd, needs XHR inspection. Highest leverage IF endpoint found.
