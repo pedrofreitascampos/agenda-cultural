@@ -22,6 +22,7 @@ const testFiles = [
   './test-porto.js',
   './test-pumpkin.js',
   './test-newsletter.js',
+  './test-ticketmaster.js',
 ];
 
 let totalPass = 0;

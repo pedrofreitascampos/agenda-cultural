@@ -33,6 +33,7 @@ const SOURCES = [
   require('./sources/eventbrite'),
   require('./sources/pumpkin'),
   require('./sources/newsletter'),
+  require('./sources/ticketmaster'),
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────

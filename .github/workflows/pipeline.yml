@@ -22,6 +22,8 @@ jobs:
 
       - name: Fetch, normalize, geocode events
         run: node pipeline/fetch.js
+        env:
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
 
       - name: Commit updated data
         run: |

@@ -32,7 +32,7 @@ Editorial agenda newsletters (Lisboa Secreta, Time Out Lisboa, Pumpkin overlap, 
 
 Ranked candidates from a web sweep + the `newsletters - agenda` Gmail label. Probe `/wp-json/wp/v2/mec-events` (Modern Events Calendar) and `/wp-json/tribe/events/v1/events` (The Events Calendar) on WP candidates — that's the AgendaLx-grade structured-feed pattern.
 
-- [ ] **Ticketmaster Discovery API** — free JSON, the only source with reliable geo-coords + ticket URLs. Easy (~1 day). **Build first.**
+- [x] **Ticketmaster Discovery API** — built 2026-06-19 (`sources/ticketmaster.js`). ⏳ **Activation pending**: register a free key at developer.ticketmaster.com → add repo secret `TICKETMASTER_API_KEY` (CI already wired). Inert no-op until keyed.
 - [ ] **Agenda Cultural do Porto** — `wp-json/wp/v2/mec-events` confirmed live; structured. Medium.
 - [ ] **Cartaz Cultural de Lisboa** — `wp-json/wp/v2/posts` live; nightlife/stand-up/cinema. Medium (HTML parse for date/venue).
 - [ ] **MEO/Altice Arena** — clean HTML `/agenda`, unique big-venue inventory. Easy-Medium.
@@ -98,6 +98,7 @@ Most feature work below depends on Firebase being live. Tackle this first.
 
 ## Recently done
 
+- 2026-06-19 — **Ticketmaster Discovery API source** (`sources/ticketmaster.js`) — concerts/shows in PT, the only source with reliable geo-coords (events skip geocoding) + ticket URLs. Repo's first keyed source: `TICKETMASTER_API_KEY` env, graceful no-op when unset; CI secret wired in `pipeline.yml`. 22 tests. ⏳ pending key registration to activate.
 - 2026-06-19 — **Pumpkin.pt source** (`sources/pumpkin.js`) — kids/family events, HTML scrape of `/eventos/?onde=lisboa`, paginated, English-month-abbrev date shim, 17 tests. ~125 events/run. Fills the family category gap.
 - 2026-06-19 — **Curated-newsletter source contract** (`sources/newsletter.js`) — reads a local `data/curated-newsletter.json` drop-file (no scrape); validates URL scheme (closes part of [H-1]); routes through normal geocode/dedup/merge. The companion side (extraction + commit) is tracked under "Curated newsletter → Agora" below.
 - 2026-05-21 — EGEAC + Porto scraper rewrites with tests (commit `f1fdd12`).
