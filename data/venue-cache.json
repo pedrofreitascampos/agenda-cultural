@@ -818,5 +818,45 @@
   "upon angels|lisboa": {
     "lat": 38.7217928,
     "lng": -9.134668
-  }
+  },
+  "lisboa centro|lisboa": {
+    "lat": 38.7101095,
+    "lng": -9.3957767
+  },
+  "grande lisboa, grande porto|lisboa": null,
+  "grande lisboa|lisboa": {
+    "lat": 38.750976,
+    "lng": -9.1521822
+  },
+  "grande lisboa, oeiras &amp; cascais|lisboa": null,
+  "loures|lisboa": {
+    "lat": 38.8308741,
+    "lng": -9.1684512
+  },
+  "grande lisboa, lisboa centro|lisboa": null,
+  "online, grande lisboa, bragança, aveiro, santarém|lisboa": null,
+  "grande lisboa, santarém|lisboa": null,
+  "oeiras &amp; cascais|lisboa": null,
+  "almada, setúbal|lisboa": {
+    "lat": 38.6771175,
+    "lng": -9.1524547
+  },
+  "loures, aveiro|lisboa": null,
+  "almada|lisboa": {
+    "lat": 38.9298385,
+    "lng": -9.3433733
+  },
+  "sintra|lisboa": {
+    "lat": 38.8355446,
+    "lng": -9.3522371
+  },
+  "mafra|lisboa": {
+    "lat": 38.9369782,
+    "lng": -9.3282374
+  },
+  "grande lisboa, almada|lisboa": null,
+  "online, grande lisboa, almada|lisboa": null,
+  "grande lisboa, lisboa centro, oeiras &amp; cascais|lisboa": null,
+  "lisboa centro, grande porto, coimbra|lisboa": null,
+  "algarve, almada, lisboa centro|lisboa": null
 }
