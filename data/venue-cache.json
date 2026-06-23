@@ -858,5 +858,9 @@
   "online, grande lisboa, almada|lisboa": null,
   "grande lisboa, lisboa centro, oeiras &amp; cascais|lisboa": null,
   "lisboa centro, grande porto, coimbra|lisboa": null,
-  "algarve, almada, lisboa centro|lisboa": null
+  "algarve, almada, lisboa centro|lisboa": null,
+  "grande lisboa, mafra|lisboa": {
+    "lat": 38.9393935,
+    "lng": -9.3282261
+  }
 }
