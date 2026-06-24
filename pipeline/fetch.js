@@ -35,6 +35,7 @@ const SOURCES = [
   require('./sources/newsletter'),
   require('./sources/ticketmaster'),
   require('./sources/meoarena'),
+  require('./sources/ticketline'),
 ];
 
 // ─── Helpers ─────────────────────────────────────────────────

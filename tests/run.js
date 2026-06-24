@@ -24,6 +24,7 @@ const testFiles = [
   './test-newsletter.js',
   './test-ticketmaster.js',
   './test-meoarena.js',
+  './test-ticketline.js',
 ];
 
 let totalPass = 0;
