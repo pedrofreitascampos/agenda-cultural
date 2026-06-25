@@ -78,8 +78,9 @@ Most feature work below depends on Firebase being live. Tackle this first.
 
 #### HIGH
 
-- [ ] **[H-1] Open redirect + stored XSS via unvalidated `sourceUrl` in `<a href>`.** `app.js:653` — `<a href="' + escapeHtml(event.sourceUrl) + '">`. `sourceUrl` comes from scraped sources (AgendaLx, Eventbrite, etc.) OR user input (`#ef-url` custom-event field). `javascript:alert(1)` survives `escapeHtml` (encodes characters, not schemes). Fix: validate scheme allowlist (`https:`, `http:`) before rendering; validate in `saveCustomEvents()` before persisting.
-- [ ] **[H-2] Inline `onclick` attribute with user-controlled `event.id` interpolation.** `app.js:644-645`. Single-quote escaping is incomplete (`replace(/'/g, "\\'")` misses backtick / `)`). Fragile pattern. Fix: eliminate the inline `onclick`; use `data-*` attribute + `addEventListener` like the rest of the file.
+- [x] **[H-1] Open redirect + stored XSS via unvalidated `sourceUrl` in `<a href>`.** Fixed 2026-06-26. Added `safeUrl()` (http(s) allowlist) applied to `sourceUrl` + `imageUrl` at render AND persist (`saveCustomEvent`). **Root-cause finding:** `escapeHtml` used `textContent`/`innerHTML`, which does NOT encode `"`/`'` — so *every* `escapeHtml`-in-attribute site was breakout-vulnerable, not just `sourceUrl`. Hardened `escapeHtml` to encode `&<>"'\``, closing attribute-breakout XSS across the whole UI. Verified with 14 unit assertions.
+- [x] **[H-2] Inline `onclick` with user-controlled `event.id` interpolation.** Fixed 2026-06-26. Replaced the inline `onclick="openEventModal(findEventById('…'))"` with a `.btn-edit-event` + `data-event-id` button bound via `addEventListener` after `innerHTML` (matches the existing `.btn-geocode`/`.status-btn` pattern). The fragile `replace(/'/g,…)` escaping is gone.
+- [ ] **[follow-up, LOW] CSS-injection via `imageUrl` in `background-image:url(...)`** — timeline card (~`app.js:1000`) interpolates `escapeHtml(e.imageUrl)` into a CSS `url()`; `escapeHtml` doesn't encode `)`/`(`, so a crafted imageUrl could inject CSS (not script — `javascript:` doesn't execute in CSS url()). Low severity; left out of the H-1/H-2 pass to keep it focused. Fix: run timeline `imageUrl` through `safeUrl()` too.
 
 #### MEDIUM
 

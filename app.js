@@ -583,8 +583,9 @@ function openDetail(event) {
   let html = '';
 
   // Image
-  if (event.imageUrl) {
-    html += '<img class="detail-image" src="' + escapeHtml(event.imageUrl) + '" alt="" onerror="this.style.display=\'none\'">';
+  var safeImg = safeUrl(event.imageUrl);
+  if (safeImg) {
+    html += '<img class="detail-image" src="' + escapeHtml(safeImg) + '" alt="" onerror="this.style.display=\'none\'">';
   }
 
   html += '<div class="detail-body">';
@@ -641,16 +642,17 @@ function openDetail(event) {
   // Source badge
   if (event.source === 'custom') {
     html += '<div style="font-size:11px;color:var(--color-text-dim);margin-bottom:12px">Evento pessoal</div>';
-    html += '<button class="btn-secondary" style="margin-bottom:12px" onclick="openEventModal(findEventById(\'' +
-      escapeHtml(event.id).replace(/'/g, "\\'") + '\'))">Editar evento</button>';
+    html += '<button class="btn-secondary btn-edit-event" style="margin-bottom:12px" data-event-id="' +
+      escapeHtml(event.id) + '">Editar evento</button>';
   } else {
     html += '<div style="font-size:11px;color:var(--color-text-dim);margin-bottom:12px">' +
       'Fonte: ' + escapeHtml(event.source) + '</div>';
   }
 
-  // Source link
-  if (event.sourceUrl) {
-    html += '<a class="detail-link" href="' + escapeHtml(event.sourceUrl) + '" target="_blank" rel="noopener">' +
+  // Source link \u2014 only render for valid http(s) URLs (blocks javascript: etc.) (H-1)
+  var safeSource = safeUrl(event.sourceUrl);
+  if (safeSource) {
+    html += '<a class="detail-link" href="' + escapeHtml(safeSource) + '" target="_blank" rel="noopener">' +
       (event.source === 'custom' ? 'Abrir link \u2197' : 'Ver na fonte original \u2197') + '</a>';
   }
 
@@ -673,6 +675,14 @@ function openDetail(event) {
     geocodeBtn.addEventListener('click', function (e) {
       e.stopPropagation();
       geocodeEvent(this.dataset.eventId);
+    });
+  }
+
+  // Bind edit button (custom events) — replaces the old inline onclick (H-2)
+  var editBtn = DOM.detailContent.querySelector('.btn-edit-event');
+  if (editBtn) {
+    editBtn.addEventListener('click', function () {
+      openEventModal(findEventById(this.dataset.eventId));
     });
   }
 }
@@ -1081,7 +1091,7 @@ function saveCustomEvent() {
   const event = {
     id: State.editingEventId || ('custom-' + Date.now() + '-' + Math.random().toString(36).slice(2, 8)),
     source: 'custom',
-    sourceUrl: f.querySelector('#ef-url').value.trim(),
+    sourceUrl: safeUrl(f.querySelector('#ef-url').value),
     title: title,
     description: f.querySelector('#ef-notes').value.trim(),
     category: f.querySelector('#ef-category').value,
@@ -1382,9 +1392,27 @@ async function loadEvents() {
 
 function escapeHtml(str) {
   if (!str) return '';
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
+  // Encode quotes/backtick too (not just <>&) so values are safe inside
+  // double-quoted HTML attributes, not only in text nodes. The old
+  // textContent/innerHTML approach left " and ' intact → attribute breakout.
+  return String(str).replace(/[&<>"'`]/g, function (c) {
+    return {
+      '&': '&amp;', '<': '&lt;', '>': '&gt;',
+      '"': '&quot;', "'": '&#39;', '`': '&#96;',
+    }[c];
+  });
+}
+
+// Allowlist URL-scheme guard: returns the URL only if it is an absolute
+// http(s) URL, else '' — blocks javascript:/data:/vbscript: and leading
+// control-char scheme smuggling (e.g. "\tjavascript:"). escapeHtml handles the
+// HTML context; this handles the scheme, which escapeHtml cannot (javascript:
+// has no special HTML chars). Use for any externally-sourced or user-entered
+// URL rendered into an href/src. (Security audit H-1.)
+function safeUrl(url) {
+  if (!url || typeof url !== 'string') return '';
+  const trimmed = url.trim();
+  return /^https?:\/\//i.test(trimmed) ? trimmed : '';
 }
 
 function debounce(fn, ms) {
