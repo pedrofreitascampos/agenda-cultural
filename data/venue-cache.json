@@ -967,5 +967,15 @@
   "local a anunciar|": null,
   "república da música (alvalade)|": null,
   "jardins do casino estoril|": null,
-  "lav - lisboa ao vivo | sala 1|": null
+  "lav - lisboa ao vivo | sala 1|": null,
+  "centro cultural de cascais, casa das histórias paula rego...|": null,
+  "campo de feiras de vila velha de rodão|": null,
+  "fnac - chiado|lisboa": {
+    "lat": 38.7108307,
+    "lng": -9.1393287
+  },
+  "escola secundária marquês de pombal|lisboa": {
+    "lat": 38.7003674,
+    "lng": -9.1948498
+  }
 }
