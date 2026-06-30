@@ -1030,5 +1030,23 @@
   "pavilhão de portugal (lisboa)|": {
     "lat": 38.7663417,
     "lng": -9.0949798
+  },
+  "centro vasco da gama|lisboa": {
+    "lat": 38.7676651,
+    "lng": -9.0968435
+  },
+  "fnac - vasco da gama|lisboa": null,
+  "titanic sur mer|lisboa": {
+    "lat": 38.7053246,
+    "lng": -9.1470277
+  },
+  "sé de lisboa|lisboa": {
+    "lat": 38.7098185,
+    "lng": -9.1328001
+  },
+  "arquivo aires mateus|lisboa": null,
+  "academia de santo amaro (lisboa)|": {
+    "lat": 38.7018354,
+    "lng": -9.1827685
   }
 }
