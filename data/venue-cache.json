@@ -1090,5 +1090,20 @@
   "lxfactory|lisboa": {
     "lat": 38.7021554,
     "lng": -9.178334
+  },
+  "rna studio|lisboa": null,
+  "estação elevatória a vapor dos barbadinhos|lisboa": {
+    "lat": 38.7198748,
+    "lng": -9.1199548
+  },
+  "reservatório da patriarcal|lisboa": {
+    "lat": 38.7161804,
+    "lng": -9.1487223
+  },
+  "rialto6|lisboa": null,
+  "praia do fogo - ribeira quente, destino: praia do fogo - ribeira...|": null,
+  "conservatório de música de coimbra|": {
+    "lat": 40.193035,
+    "lng": -8.4087481
   }
 }
