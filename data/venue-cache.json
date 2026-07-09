@@ -1126,5 +1126,14 @@
   "grande lisboa, loures|lisboa": {
     "lat": 38.9380421,
     "lng": -9.1289237
+  },
+  "mercado do forno do tijolo|lisboa": {
+    "lat": 38.7223563,
+    "lng": -9.1321403
+  },
+  "centro das artes do espectáculo (sever do vouga)|": null,
+  "museu de lisboa - torreão poente|lisboa": {
+    "lat": 38.7067592,
+    "lng": -9.1373654
   }
 }
