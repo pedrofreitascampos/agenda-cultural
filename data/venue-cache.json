@@ -1140,5 +1140,17 @@
     "lat": 38.7152692,
     "lng": -9.1391527
   },
-  "galeria filomena soares|lisboa": null
+  "galeria filomena soares|lisboa": null,
+  "circuito de vila real|": {
+    "lat": 41.3089807,
+    "lng": -7.7316151
+  },
+  "centro cultural de mirandela|": {
+    "lat": 41.485643,
+    "lng": -7.1783422
+  },
+  "estádio municipal de mafra|": {
+    "lat": 38.9408004,
+    "lng": -9.341598
+  }
 }
