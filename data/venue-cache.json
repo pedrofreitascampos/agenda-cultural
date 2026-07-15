@@ -1169,5 +1169,10 @@
     "lat": 38.7232216,
     "lng": -9.1451873
   },
-  "teatro sá da bandeira - sala principal, teatro tivoli bbva|": null
+  "teatro sá da bandeira - sala principal, teatro tivoli bbva|": null,
+  "ponto de encontro: praça do rossio|": null,
+  "vila adentro|": {
+    "lat": 37.0129672,
+    "lng": -7.9343448
+  }
 }
