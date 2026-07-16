@@ -1174,5 +1174,18 @@
   "vila adentro|": {
     "lat": 37.0129672,
     "lng": -7.9343448
-  }
+  },
+  "palácio nacional de belém|lisboa": {
+    "lat": 38.6982031,
+    "lng": -9.2004337
+  },
+  "rua da mouraria|lisboa": {
+    "lat": 38.7161207,
+    "lng": -9.1354197
+  },
+  "junta de freguesia de santa maria maior|lisboa": {
+    "lat": 38.7117155,
+    "lng": -9.1404509
+  },
+  "espaço bento martins|lisboa": null
 }
