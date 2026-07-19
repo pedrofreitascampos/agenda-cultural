@@ -1197,5 +1197,17 @@
   "teatro thalia|lisboa": {
     "lat": 38.7450025,
     "lng": -9.1693446
+  },
+  "kartodromo de castelo branco|": {
+    "lat": 39.8601429,
+    "lng": -7.4591121
+  },
+  "auditorio municipal antonio chainho (santiago do cacém)|": {
+    "lat": 38.0220108,
+    "lng": -8.6926781
+  },
+  "centro cultural do cartaxo|": {
+    "lat": 39.1590749,
+    "lng": -8.7864275
   }
 }
