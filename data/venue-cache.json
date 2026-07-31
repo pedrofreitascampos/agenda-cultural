@@ -1249,5 +1249,10 @@
   "teatro sá da bandeira - sala principal, teatro tivoli bbva, teatro...|": null,
   "marvão - igreja de são tiago, marvão - pátio do castelo, marvão -...|": null,
   "time out market - mercado da ribeira|lisboa": null,
-  "grande lisboa, faro|lisboa": null
+  "grande lisboa, faro|lisboa": null,
+  "jardim do arco do cego|lisboa": {
+    "lat": 38.7359649,
+    "lng": -9.1423156
+  },
+  "lisboa centro, grande porto|lisboa": null
 }
