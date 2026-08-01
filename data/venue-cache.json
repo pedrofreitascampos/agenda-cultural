@@ -1254,5 +1254,25 @@
     "lat": 38.7359649,
     "lng": -9.1423156
   },
-  "lisboa centro, grande porto|lisboa": null
+  "lisboa centro, grande porto|lisboa": null,
+  "praça beato|lisboa": {
+    "lat": 38.7320773,
+    "lng": -9.105699
+  },
+  "tema - teatro municipal de oliveira de azeméis|": null,
+  "auditório casino estoril|": null,
+  "miradouro de são pedro de alcântara|": {
+    "lat": 38.7154373,
+    "lng": -9.1440476
+  },
+  "sagres campo pequeno|": {
+    "lat": 38.733653,
+    "lng": -9.1501683
+  },
+  "sagres campo pequeno, lav - lisboa ao vivo | sala 2, coliseu dos...|": null,
+  "coliseu porto ageas|": {
+    "lat": 41.1471403,
+    "lng": -8.6051922
+  },
+  "teatro tivoli bbva|": null
 }
