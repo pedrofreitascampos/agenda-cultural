@@ -1,73 +1,73 @@
 {
   "agendalx": {
-    "lastFetchAt": "2026-08-07T07:24:17.526Z",
-    "lastEventCount": 387,
+    "lastFetchAt": "2026-08-08T07:01:35.994Z",
+    "lastEventCount": 385,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "culturaptgov": {
-    "lastFetchAt": "2026-08-07T07:24:19.679Z",
+    "lastFetchAt": "2026-08-08T07:01:36.854Z",
     "lastEventCount": 37,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "ccb": {
-    "lastFetchAt": "2026-08-07T07:24:57.136Z",
-    "lastEventCount": 761,
+    "lastFetchAt": "2026-08-08T07:02:16.516Z",
+    "lastEventCount": 760,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "aondevamos": {
-    "lastFetchAt": "2026-08-07T07:24:57.793Z",
+    "lastFetchAt": "2026-08-08T07:02:17.041Z",
     "lastEventCount": 0,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "egeac": {
-    "lastFetchAt": "2026-08-07T07:25:01.223Z",
-    "lastEventCount": 215,
+    "lastFetchAt": "2026-08-08T07:02:19.666Z",
+    "lastEventCount": 217,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "porto": {
-    "lastFetchAt": "2026-08-07T07:25:04.263Z",
+    "lastFetchAt": "2026-08-08T07:02:22.327Z",
     "lastEventCount": 4,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "eventbrite": {
-    "lastFetchAt": "2026-08-07T07:25:04.581Z",
+    "lastFetchAt": "2026-08-08T07:02:22.499Z",
     "lastEventCount": 0,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "pumpkin": {
-    "lastFetchAt": "2026-08-07T07:26:16.239Z",
-    "lastEventCount": 116,
+    "lastFetchAt": "2026-08-08T07:03:21.730Z",
+    "lastEventCount": 119,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "newsletter": {
-    "lastFetchAt": "2026-08-07T07:26:16.240Z",
+    "lastFetchAt": "2026-08-08T07:03:21.730Z",
     "lastEventCount": 0,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "ticketmaster": {
-    "lastFetchAt": "2026-08-07T07:26:16.240Z",
+    "lastFetchAt": "2026-08-08T07:03:21.730Z",
     "lastEventCount": 0,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "meoarena": {
-    "lastFetchAt": "2026-08-07T07:26:17.105Z",
+    "lastFetchAt": "2026-08-08T07:03:23.079Z",
     "lastEventCount": 30,
     "lastError": null,
     "consecutiveFailures": 0
   },
   "ticketline": {
-    "lastFetchAt": "2026-08-07T07:26:22.109Z",
-    "lastEventCount": 58,
+    "lastFetchAt": "2026-08-08T07:03:25.051Z",
+    "lastEventCount": 61,
     "lastError": null,
     "consecutiveFailures": 0
   }

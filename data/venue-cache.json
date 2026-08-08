@@ -1300,5 +1300,17 @@
   },
   "igreja evangélica lisbonense - presbiteriana|lisboa": null,
   "livraria gondwana – leituras do hemisfério sul|lisboa": null,
-  "teatroesfera | monte abraão (queluz)|": null
+  "teatroesfera | monte abraão (queluz)|": null,
+  "campo maior|": {
+    "lat": 39.0125063,
+    "lng": -7.0692822
+  },
+  "casa comum|": {
+    "lat": 41.1462039,
+    "lng": -8.6156094
+  },
+  "mata municipal do bombarral|": {
+    "lat": 39.2673586,
+    "lng": -9.1566668
+  }
 }
