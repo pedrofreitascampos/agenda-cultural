@@ -1331,5 +1331,9 @@
   },
   "coletivo amarelo|lisboa": null,
   "forte santo antónio da barra - estoril|": null,
-  "grande lisboa, leiria, santarém|lisboa": null
+  "grande lisboa, leiria, santarém|lisboa": null,
+  "centro cultural de tábua|": {
+    "lat": 40.3621492,
+    "lng": -8.0318494
+  }
 }
