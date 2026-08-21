@@ -1343,5 +1343,15 @@
   },
   "parque de jogos 1º de maio|lisboa": null,
   "todo o pais, sintra, grande porto, braga, aveiro|lisboa": null,
-  "galeria liminare|lisboa": null
+  "galeria liminare|lisboa": null,
+  "concelho de vagos|": null,
+  "o gabinete de madame thao|lisboa": null,
+  "biblioteca são lázaro|lisboa": {
+    "lat": 38.720673,
+    "lng": -9.1382643
+  },
+  "idb lisbon|lisboa": {
+    "lat": 38.7723546,
+    "lng": -9.1053434
+  }
 }
