@@ -1370,5 +1370,23 @@
     "lat": 38.7197556,
     "lng": -9.129377
   },
-  "oficina municipal do teatro | o teatrão (coimbra)|": null
+  "oficina municipal do teatro | o teatrão (coimbra)|": null,
+  "casa-museu amália rodrigues|": {
+    "lat": 38.7153959,
+    "lng": -9.1546143
+  },
+  "parque vale do silêncio|lisboa": {
+    "lat": 38.7666344,
+    "lng": -9.1187559
+  },
+  "galeria antecâmara|lisboa": null,
+  "igreja de são bartolomeu|lisboa": {
+    "lat": 38.7302129,
+    "lng": -9.1084998
+  },
+  "hello, kristof|lisboa": null,
+  "quinta da alfarrobeira|lisboa": {
+    "lat": 38.7457241,
+    "lng": -9.1882372
+  }
 }
