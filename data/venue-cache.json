@@ -1392,5 +1392,16 @@
   "parque da cidade | porto|": {
     "lat": 41.1693616,
     "lng": -8.6797879
-  }
+  },
+  "jardim da luz (jardim teixeira rebelo)|lisboa": {
+    "lat": 38.7610263,
+    "lng": -9.1837201
+  },
+  "teatro bocage | lisboa|": {
+    "lat": 38.7198421,
+    "lng": -9.1340559
+  },
+  "teatro sá da bandeira - sala principal, teatro tivoli bbva,...|": null,
+  "teatro sá da bandeira - sala principal, conservatório de música de...|": null,
+  "academia de artes do estoril|": null
 }
