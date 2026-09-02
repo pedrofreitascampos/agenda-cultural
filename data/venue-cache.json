@@ -1403,5 +1403,9 @@
   },
   "teatro sá da bandeira - sala principal, teatro tivoli bbva,...|": null,
   "teatro sá da bandeira - sala principal, conservatório de música de...|": null,
-  "academia de artes do estoril|": null
+  "academia de artes do estoril|": null,
+  "teatro municipal de bragança|": {
+    "lat": 41.8068446,
+    "lng": -6.7601553
+  }
 }
