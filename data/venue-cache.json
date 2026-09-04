@@ -1409,5 +1409,15 @@
     "lng": -6.7601553
   },
   "grande lisboa, grande porto, braga, leiria, faro|lisboa": null,
-  "palácio das especiarias|lisboa": null
+  "palácio das especiarias|lisboa": null,
+  "jardim do campo grande (jardim mário soares)|lisboa": {
+    "lat": 38.7569537,
+    "lng": -9.1536273
+  },
+  "sociedade filarmónica joão rodrigues cordeiro|lisboa": null,
+  "levö|lisboa": {
+    "lat": 38.7271748,
+    "lng": -9.1361435
+  },
+  "pinguim café | bar/pub|": null
 }
