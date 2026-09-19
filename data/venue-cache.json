@@ -1480,5 +1480,16 @@
   "parque urbano da romeira | alenquer|": null,
   "classico beach bar by olivier | são joão da caparica|": null,
   "escola afonso domingues|": null,
-  "aeródromo vilar de luz - lpvl|": null
+  "aeródromo vilar de luz - lpvl|": null,
+  "todo o pais, lisboa centro|lisboa": null,
+  "centro desportivo nacional jamor | relvado informal (junto à pista 2)|": null,
+  "parque desert rain / parque papa francisco - bobadela , loures|": null,
+  "tapada da ajuda | lisboa|": {
+    "lat": 38.7124659,
+    "lng": -9.1882213
+  },
+  "cine-teatro da nazaré|": {
+    "lat": 39.6021461,
+    "lng": -9.0718474
+  }
 }
