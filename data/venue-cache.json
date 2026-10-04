@@ -1537,5 +1537,9 @@
   "teatro tivoli bbva, exponor - auditório|": null,
   "pavilhão rio | centro de congressos de lisboa|": null,
   "estacionamento do parque urbano de fânzeres|": null,
-  "cae portalegre (grande auditório)|": null
+  "cae portalegre (grande auditório)|": null,
+  "auditório de lavra | matosinhos|": {
+    "lat": 41.2595296,
+    "lng": -8.7180489
+  }
 }
