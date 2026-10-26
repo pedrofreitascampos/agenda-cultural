@@ -1571,5 +1571,11 @@
   "jam mouco | porto , espaço vita|": null,
   "academia de artes do estoril- auditório carlos avilez|": null,
   "auditório francisco de assis, auditório mirita casimiro | viseu,...|": null,
-  "grande lisboa, sintra, almada|lisboa": null
+  "grande lisboa, sintra, almada|lisboa": null,
+  "119 marvila studios|lisboa": null,
+  "universidade católica|lisboa": {
+    "lat": 38.7480289,
+    "lng": -9.1651934
+  },
+  "teatro tivoli bbva, convento são francisco - grande auditório, casa...|": null
 }
