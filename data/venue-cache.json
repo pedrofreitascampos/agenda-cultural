@@ -1579,5 +1579,9 @@
   },
   "teatro tivoli bbva, convento são francisco - grande auditório, casa...|": null,
   "grande lisboa, norte, centro, alentejo, algarve, açores, madeira e porto santo|lisboa": null,
-  "convento são francisco | black box|": null
+  "convento são francisco | black box|": null,
+  "alma shopping|": {
+    "lat": 40.2041918,
+    "lng": -8.4068611
+  }
 }
