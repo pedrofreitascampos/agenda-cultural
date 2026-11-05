@@ -1600,5 +1600,9 @@
   "museu da farmácia - auditório|": null,
   "galeria avenida da índia|lisboa": null,
   "sala estúdio valentim de barros - jardins do bombarda|": null,
-  "c.c.c. angra do heroísmo - grande auditório|": null
+  "c.c.c. angra do heroísmo - grande auditório|": null,
+  "multiusos de guimarães|": {
+    "lat": 41.4330963,
+    "lng": -8.3052986
+  }
 }
