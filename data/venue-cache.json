@@ -1611,5 +1611,9 @@
   "culturgest - auditório emílio rui vilar, culturgest - pequeno...|": null,
   "grande auditório do vilar oporto hotel|": null,
   "teatro de vila real - grande auditório|": null,
-  "palácio de vilalva - provedoria da justiça|lisboa": null
+  "palácio de vilalva - provedoria da justiça|lisboa": null,
+  "teatro angrense|": {
+    "lat": 38.6562728,
+    "lng": -27.2215356
+  }
 }
