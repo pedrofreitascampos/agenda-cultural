@@ -2,7 +2,7 @@
 
 Project-specific backlog for the Agora Lisbon cultural agenda app.
 
-Convention (defined in `~/projects/ai/companion/docs/architecture.md`):
+Convention (defined in `~/projects/companion/docs/architecture.md`):
 - **Top-level** (this file) — Agora-specific concerns
 - **Personal life** — `~/.claude/personal/roadmap.md` (gitignored, never in repo)
 
